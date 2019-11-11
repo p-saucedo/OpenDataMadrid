@@ -4,15 +4,34 @@ class ParserDir:
         pass
 
     
-    def parsearDireccion(self, direccion):
+    def parsearDireccion(s):
+        traducciones = {
+        "CALL." : "CALLE",
+        "C/" : "CALLE",
+        "AVDA." : "AVENIDA",
+        "AV " : "AVENIDA ",
+        "POLIG." : "POLIGONO",
+        "PASEO." : "PASEO",
+        "CTRA." : "CARRETERA",
+        "PLAZA." : "PLAZA",
+        "GTA." : "GLORIETA",
+        "PQUE." : "PARQUE",
+        "AUTOV." : "AUTOVIA",
+        "CUSTA." : "CUESTA",
+        "CMNO." : "CAMINO"
+        }
+        print("Original: {}".format(s))
+        for f_key, f_value in traducciones.items():
+            s = s.replace(f_key, f_value)
+        index = s.find('/')
+        if index == -1:
+            print("Final: {}".format(s))
+            return s
+        else:
+            ss = s[index-1:]
+            s = s.replace(ss,"")
+            print("Final: {}".format(s))
+            return s
+        
 
-        # Lo suyo seria utilizar expresiones regulares
-        pos = direccion.find("CALL.")
-        posfin= direccion.rfind("CALL.")
-        #print(direccion)
-        #if ( pos != -1):
-        #    pass
-        if( posfin != -1 ):
-            pass
-        direccion = direccion.replace("CALL.", "CALLE")
-        #print(direccion)
+    
