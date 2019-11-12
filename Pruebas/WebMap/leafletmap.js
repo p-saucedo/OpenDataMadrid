@@ -3,11 +3,11 @@ window.onload = function () {
 		attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
 	});
 
-    $.getJSON("map.geojson", function(data) {
+    $.getJSON("map2.geojson", function(data) {
 
     var geojson = L.geoJson(data, {
       onEachFeature: function (feature, layer) {
-        layer.bindPopup(feature.properties.Area_Name);
+        layer.bindPopup(feature.properties.CALLE);
       }
     });
 

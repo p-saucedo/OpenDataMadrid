@@ -1,10 +1,10 @@
-class ParserDir:
+class AddresFixer:
 
     def __init__(self):
         pass
 
     
-    def parsearDireccion(s):
+    def fixAddress(s):
         traducciones = {
         "CALL." : "CALLE",
         "C/" : "CALLE",
