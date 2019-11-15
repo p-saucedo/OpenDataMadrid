@@ -1,0 +1,11 @@
+{% extends "base_template.html" %}
+
+{% block title %}Welcome!{% endblock %}
+
+{% block content %}
+	<h1> Bienvenido a la APP</h1>
+	<form method="post" action="/upload-file/">
+		<input type="submit" value="Letś start!" name="start"/>
+	</form>
+	
+{% endblock %}

@@ -18,19 +18,20 @@ class AddresFixer:
         "PQUE." : "PARQUE",
         "AUTOV." : "AUTOVIA",
         "CUSTA." : "CUESTA",
-        "CMNO." : "CAMINO"
+        "CMNO." : "CAMINO",
+        "C�ADA.": "CAÑADA"
         }
-        print("Original: {}".format(s))
+        #print("Original: {}".format(s))
         for f_key, f_value in traducciones.items():
             s = s.replace(f_key, f_value)
         index = s.find('/')
         if index == -1:
-            print("Final: {}".format(s))
+        #    print("Final: {}".format(s))
             return s
         else:
             ss = s[index-1:]
             s = s.replace(ss,"")
-            print("Final: {}".format(s))
+        #    print("Final: {}".format(s))
             return s
         
 

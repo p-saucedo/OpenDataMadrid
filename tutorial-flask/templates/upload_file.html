@@ -1,0 +1,15 @@
+{% extends "base_template.html" %}
+
+{% block title %}Upload{% endblock %}
+
+{% block content %}
+<div class="form_upload">
+<form action="/visualize" method="POST" enctype="multipart/form-data">
+      <label>Select image</label>
+      <div class="custom-file">
+        <input type="file" class="custom-file-input" name="image" id="image">
+      </div>
+      <button type="submit" class="bt">Upload</button>
+</div>
+
+{% endblock %}
