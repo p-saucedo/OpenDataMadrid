@@ -3,11 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <title>{% block title %}{% endblock %}</title>
-    <link rel="stylesheet" href="{{ url_for("static", filename="style.css") }}">
+    <link rel="stylesheet" href="{{ url_for("static", filename="css/style.css") }}">
 </head>
 <body>
+  <header>
+      <div class="container">
+          <h1>Pablo Saucedo</h1>
+          <nav>
+            <span>About US</span>
+          </nav>
+      </div>
+  </header>
     <div class="header">
-        <h1>Plot it!</h1>
+        <h1></h1>
     </div>
     <div class="main">
             {% block content %}{% endblock %}
