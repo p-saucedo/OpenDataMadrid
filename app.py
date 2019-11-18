@@ -57,7 +57,7 @@ def main():
     # Geolocalizamos las direcciones
     print("Geolocalizando las direcciones...")
     geolocate_column = do_geocode(io['FullAddress'],geolocator)
-    #geolocate_column = io['FullAddress'].apply(geolocator.geocode)
+
     print(geolocate_column)
     
     # Rellenamos las columnas de longitud y latitud

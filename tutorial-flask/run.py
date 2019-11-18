@@ -2,9 +2,11 @@ from flask import Flask
 from flask import render_template
 from flask import request
 from flask import redirect
+from werkzeug import secure_filename
+from mainProc import mainProc
 import os
 app = Flask(__name__)
-posts = []
+
 
 
 @app.route("/")
@@ -15,31 +17,23 @@ def index():
 def upload_image():
     return render_template("upload_file.html")
 
-@app.route("/visualize/", methods=["GET", "POST"])
+@app.route("/visualize", methods=["GET", "POST"])
 def visualize_map():
-    if request.method == "POST":
+    if request.method == 'POST':
+        f = request.files['file']
+        f.save(os.path.join("uploads/", secure_filename(f.filename)))
+    
+    m = mainProc(secure_filename(f.filename), ';')
 
-        if request.files:
+    return render_template("visualize.html")
 
-            file = request.files["file"]
-
-            print(file)
-
-
-    return render_template("upload_file.html")
-
-@app.route("/p/<string:slug>/")
-def show_post(slug):
-    return render_template("post_view.html", slug_title=slug)
-
-@app.route("/admin/post/")
-@app.route("/admin/post/<int:post_id>/")
-def post_form(post_id=None):
-    return render_template("admin/post_form.html", post_id=post_id)
-
-@app.route("/signup/", methods=["GET", "POST"])
-def show_signup_form():
-    return render_template("signup_form.html")
+@app.route("/get_click", methods=["GET","POST"])
+def info_click():
+    if request.method == 'POST':
+        latitude = request.form['latitude']
+        longitude = request.form['longitude']
+        print("Has clickado en: " + str(latitude) + ", " + str(longitude) )
+    return render_template("visualize.html")
 
 if __name__ == '__main__':
     app.run(debug=True)

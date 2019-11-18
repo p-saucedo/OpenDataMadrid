@@ -8,6 +8,10 @@ body {
 	background-size: cover;*/
 
 }
+
+.title {
+    font-style: italic
+}
 h1, h2, h3, h4 {
     margin: 1em 0 .5em;
 	line-height: 1.25
