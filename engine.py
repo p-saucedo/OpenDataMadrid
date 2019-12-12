@@ -92,7 +92,6 @@ class Engine:
         model = None
         best_model = None
         acc = 0
-
         def __init__(self):
             pass
 
