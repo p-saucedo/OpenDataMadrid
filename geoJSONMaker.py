@@ -56,6 +56,6 @@ class GeoJSONMaker:
                     line_count += 1
             output += end
 
-        with open("maps/map.geojson", "w") as f:
+        with open("static/maps/map.geojson", "w") as f:
             f.write(output)
        

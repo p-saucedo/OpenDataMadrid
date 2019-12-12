@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<head>
+<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.6.4/leaflet.css" />
+<script src="http://cdn.leafletjs.com/leaflet-0.6.4/leaflet.js"></script>
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script src="https://github.com/patrickarlt/leaflet-virtual-grid/blob/master/src/virtual-grid.js"></script>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}"/>
+</head>
+
+<body>
+	<h1 class="title">Mapa de posiciones</h1>
+	<h3 id="subtitulo"></h3>
+
+	<h2 id="probabilidad">Probabilidad de accidente: {{prob}}</h2>
+	<h2 id="lesividad">En caso de accidente, la gravedad seria de : {{les}}</h2>
+	<div class="leyenda_lesividades">
+		<h4 id="lesividades"> Leyenda:<br>
+			01: Atencion en urgencias sin posterior ingreso - LEVE<br>
+			02: Ingreso inferior o igual a 24 horas - LEVE<br>
+			03: Ingreso superior a 24 horas - GRAVE<br>
+			04: Fallecido 24 horas - FALLECIDO<br>
+			05: Asistencia sanitaria ambulatoria con posterioridad - LEVE<br>
+			06: Asistencia sanitaria inmediata en centro de salud o mutua - LEVE<br>
+			07: Asistencia sanitaria solo en el lugar del accidente - LEVE<br>
+			14: Sin asistencia sanitaria<br>
+
+		</h4> 
+
+	</div>
+	
+	<div id="my-map"></div>
+</body>
+<script type=text/javascript src="{{ url_for('static', filename='js/leafletmap.js') }}"></script>
+
+</html>
