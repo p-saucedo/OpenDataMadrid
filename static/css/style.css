@@ -42,7 +42,9 @@ header > div.container > nav > span {
  }
 
 body {
-	background-color: aqua;
+	background-image: url('/static/img/map.jpg');
+	background-size:cover;
+	
 }
 
 body > div.main {
@@ -50,4 +52,6 @@ body > div.main {
 	background-color: #ffffff;
 	width: 200px;
 	height: 200px;
+	float: left;
+	margin-left: 20%;
  }
