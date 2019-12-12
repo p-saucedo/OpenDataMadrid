@@ -95,9 +95,9 @@ class Engine:
         def __init__(self):
             pass
 
-        def setData(self, estrategy, folds):
+        def setData(self, estrategy, folds, file):
             particiones = []
-            df = pd.read_csv("out_csv/geo_out2.csv", delimiter=';')
+            df = pd.read_csv(file, delimiter=';')
             
             X = np.array(df[["latitude","longitude"]])
             y = np.array(df[["LESIVIDAD*"]].fillna(14)) # 14 significa lo mismo que Nan: sin asistencia sanitaria
@@ -155,8 +155,8 @@ class Engine:
             predictions = self.model.predict(X_validation)
             return accuracy_score(Y_validation, predictions)
 
-        def validate(self, estrategy, folds = 5):
-            particiones = self.setData(estrategy, folds)
+        def validate(self, estrategy, f, folds = 5):
+            particiones = self.setData(estrategy, folds, f)
 
             if estrategy == 0:
                 p = particiones[0]

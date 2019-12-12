@@ -39,7 +39,7 @@ def visualize_map():
     
     m = mainProc(secure_filename(f.filename), delim, dir_c)
     global eRF
-    eRF.validate(1, folds=10)
+    eRF.validate(1, 'out_csv/geo_out.csv', folds=10)
     
     return render_template("visualize.html", prob = '0.0%', les = '0')
 
