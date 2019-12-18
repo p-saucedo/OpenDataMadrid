@@ -5,9 +5,11 @@
 <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
 <script src="https://github.com/patrickarlt/leaflet-virtual-grid/blob/master/src/virtual-grid.js"></script>
 <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}"/>
+<link rel="shortcut icon" href="{{ url_for('static', filename='img/favicon.ico') }}">
 </head>
 
 <body>
+	<div class="info">
 	<h1 class="title">Mapa de posiciones</h1>
 	<h3 id="subtitulo"></h3>
 
@@ -27,8 +29,9 @@
 		</h4> 
 
 	</div>
-	
+	</div>
 	<div id="my-map"></div>
+	<div id = heatmap></div>
 </body>
 <script type=text/javascript src="{{ url_for('static', filename='js/leafletmap.js') }}"></script>
 

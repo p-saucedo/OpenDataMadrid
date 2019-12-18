@@ -5,20 +5,33 @@
     <title>{% block title %}{% endblock %}</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
     <link rel="shortcut icon" href="{{ url_for('static', filename='img/favicon.ico') }}">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    
+    {% block head %}{% endblock %}
 </head>
 <body>
   <header>
       <div class="container">
-          <h1>Plot it!</h1>
+          <h1>OpenDataMadrid</h1>
           <nav>
-            <span>About US</span>
+            <span>About us</span>
           </nav>
       </div>
   </header>
     <div class="header">
         <h1></h1>
     </div>
-    <div class="main">
+    <div class="container p-3 my-3 bg-dark text-white">
             {% block content %}{% endblock %}
     </div>
 

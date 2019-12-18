@@ -5,8 +5,10 @@
 }
 
 #my-map {
-	width:960px;
-	height:500px;
+	width:600px;
+	height:360px;
+	float: right;
+
 }
 
 header {
@@ -54,4 +56,13 @@ body > div.main {
 	height: 200px;
 	float: left;
 	margin-left: 20%;
+ }
+
+ body > div.info {
+	background-color: #ffffff;
+ }
+
+ body > div#heatmap{
+	 width: 600px;
+	 height: 600px;
  }

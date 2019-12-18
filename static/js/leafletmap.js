@@ -11,6 +11,18 @@ window.onload = function () {
       }
     });
 
+    $.ajax({
+      url: '/get_heatmap',
+      type: 'POST',
+      success: function(response){
+        console.log(response)
+        $("#heatmap").html(response);
+      },
+      error: function(error){
+        console.log(error);
+      }
+    });
+
 
     var map = L.map('my-map')
     .fitBounds(geojson.getBounds());
