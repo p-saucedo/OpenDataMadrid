@@ -1,5 +1,6 @@
 import pandas as pd
 import numpy as np
+import os
 import matplotlib.pyplot as plt
 import matplotlib
 import math
@@ -23,9 +24,13 @@ import sklearn.metrics
 from sklearn.neighbors import KernelDensity
 from imblearn.over_sampling import *
 import warnings
+from watcher import get_logger
 
+logger = get_logger(__name__)
 
-
+basedir = os.path.dirname(os.path.abspath(__file__))
+data_dir = os.path.join(basedir, 'out_csv')
+filepath = os.path.join(data_dir, 'geo_out2.csv')
 
 class Particion:
     def __init__(self):
@@ -44,14 +49,13 @@ class Engine:
             pass
 
         def setData(self):
-            df = pd.read_csv("out_csv/geo_out.csv", delimiter=';')
-
+            logger.info("Reading {} file for the sake of training, testing and rendering Logistic Regression".format(filepath))
+            df = pd.read_csv(filepath, delimiter=';')
             X = np.array(df[["latitude","longitude"]])
-            y = np.array(df[["LESIVIDAD*"]].fillna(14)) # 14 significa lo mismo que Nan: sin asistencia sanitaria
+            y = np.array(df[["LESIVIDAD*"]].fillna(14)) # 14 significa lo mismo que NaN: sin asistencia sanitaria
            
             self.classes = np.unique(y)
 
-        
             ct = ColumnTransformer(
                 [
                     ('one_hot_encoding',OrdinalEncoder(categories='auto'), [0])
@@ -61,8 +65,9 @@ class Engine:
             )
 
             y = ct.fit_transform(y) # Lesividad codificada en OneHotEncoder
-           
+            
             X_train, X_validation, Y_train, Y_validation = model_selection.train_test_split(X, y, test_size=0.3, random_state=None)
+            logger.info("Data partition for Logistic Regression conducted.")
 
             #sc = StandardScaler()
             #X_train = sc.fit_transform(X_train)
@@ -73,7 +78,10 @@ class Engine:
 
         def train(self, X_train, Y_train):
            
-            self.model = linear_model.LogisticRegression(solver='liblinear',multi_class='auto',max_iter=2000)
+            self.model = linear_model.LogisticRegression(solver='liblinear',
+                                                            multi_class='auto',
+                                                            max_iter=2000)
+            logger.info("Fitting Logistic Regression model to training dataset.")
             self.model.fit(X_train, Y_train.ravel())
 
         def predict(self, X_validation, Y_validation):
@@ -86,6 +94,7 @@ class Engine:
 
             self.train(X_train, Y_train)
             acc = self.predict(X_validation, Y_validation)
+            logger.info("LogisticRegression accuracy over validation dataset: {}".format(acc*100))
             print("LogisticRegression acc: {}".format(acc*100))
 
     class RandomForest:
@@ -97,8 +106,8 @@ class Engine:
 
         def setData(self, estrategy, folds, file):
             particiones = []
+            logger.info("Reading {} file for the sake of training, testing and rendering Random Forest".format(filepath))
             df = pd.read_csv(file, delimiter=';')
-            
             X = np.array(df[["latitude","longitude"]])
             y = np.array(df[["LESIVIDAD*"]].fillna(14)) # 14 significa lo mismo que Nan: sin asistencia sanitaria
 
@@ -114,6 +123,7 @@ class Engine:
                 p.X_validation = X_validation
                 p.Y_validation = Y_validation
                 particiones.append(p)
+                logger.info("Data partition for Random Forest with strategy {} conducted.".format(estrategy))
             else:
                 # Solucion2: Cross-Validation
                 kf = KFold(n_splits=folds)
@@ -128,6 +138,7 @@ class Engine:
                     p.Y_validation = Y_validation
 
                     particiones.append(p)
+                logger.info("Data partition for Random Forest with strategy {} conducted.".format(estrategy))
 
             
 
@@ -140,7 +151,11 @@ class Engine:
 
         def resize(self, X, y):
             #sm = BorderlineSMOTE(random_state=32)
-            sm = RandomOverSampler(random_state=None,sampling_strategy='auto')
+            # Class to perform random over-sampling. Object to over-sample the minority 
+            # class(es) by picking samples at random with replacement.
+            logger.info("Oversampling imbalanced dataset.")
+            sm = RandomOverSampler(random_state=None,
+                                    sampling_strategy='auto')
             #sm2 = SMOTE(sampling_strategy = 'all', random_state = None, k_neighbors = 5)
             X_res, y_res = sm.fit_resample(X,y.ravel())
             #X_res, y_res = sm2.fit_resample(X_res,y_res)
@@ -148,14 +163,21 @@ class Engine:
             return X_res, y_res
 
         def train(self, X_train, Y_train):
-            self.model = RandomForestClassifier(n_estimators = 5, random_state = None, class_weight='balanced')
+            logger.info("Training and fitting RandomForestClassifier.")
+            self.model = RandomForestClassifier(n_estimators = 5, 
+                                                random_state = None, 
+                                                class_weight='balanced')
             self.model.fit(X_train, Y_train)
 
         def predict(self, X_validation, Y_validation):
+            logger.info("Testing model overvalidation dataset.")
             predictions = self.model.predict(X_validation)
             return accuracy_score(Y_validation, predictions)
 
         def validate(self, estrategy, f, folds = 5):
+            # TODO: GridSearch of Hyperparameters to discover the most accurate one.
+            # Example: https://github.com/eblancoh/Cube11Paths/blob/master/Auth_Engine/ml_engine/gridsearch_logregr.py
+            logger.info("Validating dataset over {} folds.".format(folds))
             particiones = self.setData(estrategy, folds, f)
 
             if estrategy == 0:
@@ -177,8 +199,8 @@ class Engine:
                         if (acc > self.acc):
                             self.best_model = self.model
                             self.acc = acc
-
-            print("El mejor modelo tiene un acc de {:.2f}%".format(self.acc*100))
+            logger.info("Best model has an accuracy of {:.2f}%".format(self.acc*100))
+            
 
         def predict_value(self, X_test):
             return int(self.best_model.predict(X_test)[0])
@@ -191,7 +213,7 @@ class Engine:
             
 
         def setData(self):
-            df = pd.read_csv("out_csv/geo_out2.csv", delimiter=';')
+            df = pd.read_csv(filepath, delimiter=';')
             
             X = np.array(df[["latitude","longitude"]])
 
@@ -201,7 +223,7 @@ class Engine:
 
         def plotData(self):
 
-            df = pd.read_csv("out_csv/geo_out2.csv", delimiter=';')
+            df = pd.read_csv(filepath, delimiter=';')
             
             X = np.array(df[["latitude","longitude"]])
             
@@ -301,7 +323,7 @@ class Engine:
             #fig.subplots_adjust(left=0.11, right=0.95, wspace=0.0, bottom=0.18)
 
             ax = axarr
-            df = pd.read_csv("out_csv/geo_out2.csv", delimiter=';')
+            df = pd.read_csv(filepath, delimiter=';')
             X = np.array(df['latitude'])
             Y = np.array(df['longitude'])
 
@@ -313,7 +335,6 @@ class Engine:
             ax.set_xlim((40.3,40.6))
             ax.set_ylim((-3.9,-3.5))
 
-           
             plt.show()
 
 

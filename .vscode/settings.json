@@ -1,5 +1,5 @@
 {
-    "python.pythonPath": "OpenDataEnv/bin/python3",
+    "python.pythonPath": "C:\\Users\\cx02092\\AppData\\Local\\Continuum\\anaconda3\\envs\\opendata\\python.exe",
     "python.linting.pylintEnabled": true,
     "python.linting.enabled": true
 }

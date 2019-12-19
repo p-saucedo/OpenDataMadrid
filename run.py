@@ -10,12 +10,26 @@ import folium
 from folium.plugins import HeatMap
 from folium.plugins import HeatMapWithTime
 import pandas as pd
+from watcher import get_logger
+from datetime import datetime
 
 
+# Vamos a loguearlo un poco, que nunca viene mal
+logger = get_logger(__name__)
+
+# Starting Flask app
 app = Flask(__name__)
 
+# Loading model aimed at severity prediction
+# TODO: sacar el entrenamiento de aquí, hacerlo fuera y sólo cagar un fichero .pkl
+# Se podría actualizar el modelo cada vez que se divulguen nuevos datos,
+# que es de higos a brevas.
+logger.info("Starting with RandomForest model loading and training.")
 eRF = eng.RandomForest()
 
+basedir = os.path.dirname(os.path.abspath(__file__))
+data_dir = os.path.join(basedir, 'out_csv')
+fpath_val = os.path.join(data_dir, 'geo_out.csv')
 
 @app.route("/")
 def index():
@@ -33,7 +47,7 @@ def visualize_map():
 
     if request.method == 'POST':
         f = request.files['file']
-        f.save(os.path.join("uploads/", secure_filename(f.filename)))
+        f.save(os.path.join(basedir, "uploads", secure_filename(f.filename)))
     
     if d == '1':
         delim = ';'
@@ -44,7 +58,7 @@ def visualize_map():
     
     m = mainProc(secure_filename(f.filename), delim, dir_c)
     global eRF
-    eRF.validate(1, 'out_csv/geo_out.csv', folds=10)
+    eRF.validate(1, fpath_val, folds=10)
 
 
     # Para crear el heatmap
@@ -87,14 +101,17 @@ def info_click():
     if request.method == 'POST':
         latitude = request.form['latitude']
         longitude = request.form['longitude']
-        print("Has clickado en: " + str(latitude) + ", " + str(longitude) )
+        #print("Has clickado en: " + str(latitude) + ", " + str(longitude) )
         x_test = np.array([float(latitude), float(longitude)])
         les = eRF.predict_value(x_test.reshape(1, -1))
-        print("Lesividad : {}".format(les))
+        print("You have clicked in {}, {} . Predicted Harm level in case of accident: {}".format(latitude, longitude, les))
+        logger.info("You have clicked in {}, {} . Predicted Harm level in case of accident: {}".format(latitude, longitude, les))
+        #print("Lesividad : {}".format(les))
         p = dict()
         p['lesividad'] = les
     return jsonify(p)
 
 
 if __name__ == '__main__':
+    logger.info("Starting app at {}".format(datetime.now()))
     app.run(debug=True)

@@ -27,3 +27,12 @@ La aplicación está montada en Flask y hace uso de la libreria de javascript [L
 Una vez desplegada la aplicación, con todos los datos tratados y mostrados en el mapa es hora de hacer uso del Machine Learning. El usuario podrá clickar en cualquier punto del mapa y recibirá la probabilidad que existe de tener un accidente en ese punto y, en caso de producirse, con qué gravedad. El motor hace uso de un clasificador *RandomForest* con un acc promedio de 97%. 
 
 Al ser un dataset relativamente pequeño y muy desbalanceado, hemos realizado un trabajo de *over-sampling* con el objetivo de mejorar el acc del clasificador, logrando con creces dicho objetivo. Este trabajo de *over-sampling* se realiza gracias a la libreria de python [imblearn](https://imbalanced-learn.readthedocs.io/en/stable/api.html).
+
+# TODOs:
+(El orden no indica prioridad)
+1. Poner un único mapa, basado en HTML que permita contemplar tanto el clustering como los pins de las localizaciones
+2. Filtrar la concentración y el número de pins por franja horaria
+3. Hacer un GridSearch de los modelos elegidos en base a los datos disponibles. Quedarnos sólamente con el mejor modelo (prioritario)
+4. Sacar el entrenamiento del modelo de la aplicación flask. Lo suyo sería cargar el mejor modelo ya entrenado. (prioritario). Este modelo se podría refrescar cada X días o meses. Mayor agilidad a la hora de desplegar la aplicación.
+6. Cerciorarnos de que todo el dataset desde 2015 está bien integrado. Dejar ya limpio el dataset para reducir el tiempo de consulta o servirlo en vivo.
+5. Pelearnos con Bootstrap para hacerlo más bonito.
