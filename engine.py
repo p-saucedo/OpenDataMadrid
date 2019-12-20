@@ -25,12 +25,13 @@ from sklearn.neighbors import KernelDensity
 from imblearn.over_sampling import *
 import warnings
 from watcher import get_logger
+from sklearn.model_selection import GridSearchCV
 
 logger = get_logger(__name__)
 
 basedir = os.path.dirname(os.path.abspath(__file__))
 data_dir = os.path.join(basedir, 'out_csv')
-filepath = os.path.join(data_dir, 'geo_out2.csv')
+filepath = os.path.join(data_dir, 'geo_out.csv')
 
 class Particion:
     def __init__(self):
@@ -104,69 +105,58 @@ class Engine:
         def __init__(self):
             pass
 
-        def setData(self, estrategy, folds, file):
+        def setData(self, folds, file):
             particiones = []
             logger.info("Reading {} file for the sake of training, testing and rendering Random Forest".format(filepath))
             df = pd.read_csv(file, delimiter=';')
             X = np.array(df[["latitude","longitude"]])
             y = np.array(df[["LESIVIDAD*"]].fillna(14)) # 14 significa lo mismo que Nan: sin asistencia sanitaria
 
-            if estrategy == 0:
-                # Solucion1: Coger datos validacion reales y hacer un data augmentation al train, hacer split despues pero desechar el nuevo train por el antiguo
-                X_train, X_validation, Y_train, Y_validation = model_selection.train_test_split(X, y, test_size=0.3, random_state=None, shuffle=True)
-                X_train, Y_train = self.resize(X_train,Y_train)
-                X_train, _ , Y_train, _ = model_selection.train_test_split(X_train, Y_train, test_size=0.3, random_state=None, shuffle=True)
-
+            kf = KFold(n_splits=folds)
+            X, y = self.resize(X,y)
+            for train_index, test_index in kf.split(X):
                 p = Particion()
+                X_train, X_validation = X[train_index], X[test_index]
+                Y_train, Y_validation = y[train_index], y[test_index]
                 p.X_train = X_train
                 p.Y_train = Y_train
                 p.X_validation = X_validation
                 p.Y_validation = Y_validation
+
                 particiones.append(p)
-                logger.info("Data partition for Random Forest with strategy {} conducted.".format(estrategy))
-            else:
-                # Solucion2: Cross-Validation
-                kf = KFold(n_splits=folds)
-                X, y = self.resize(X,y)
-                for train_index, test_index in kf.split(X):
-                    p = Particion()
-                    X_train, X_validation = X[train_index], X[test_index]
-                    Y_train, Y_validation = y[train_index], y[test_index]
-                    p.X_train = X_train
-                    p.Y_train = Y_train
-                    p.X_validation = X_validation
-                    p.Y_validation = Y_validation
-
-                    particiones.append(p)
-                logger.info("Data partition for Random Forest with strategy {} conducted.".format(estrategy))
-
-            
-
-
-            #sc = StandardScaler()
-            #X_train = sc.fit_transform(X_train)
-            #X_validation = sc.transform(X_validation)
+            logger.info("Data partition for Random Forest with Cross-Validation conducted.")
 
             return particiones
 
         def resize(self, X, y):
-            #sm = BorderlineSMOTE(random_state=32)
             # Class to perform random over-sampling. Object to over-sample the minority 
             # class(es) by picking samples at random with replacement.
             logger.info("Oversampling imbalanced dataset.")
             sm = RandomOverSampler(random_state=None,
                                     sampling_strategy='auto')
-            #sm2 = SMOTE(sampling_strategy = 'all', random_state = None, k_neighbors = 5)
+
             X_res, y_res = sm.fit_resample(X,y.ravel())
-            #X_res, y_res = sm2.fit_resample(X_res,y_res)
+
 
             return X_res, y_res
 
         def train(self, X_train, Y_train):
             logger.info("Training and fitting RandomForestClassifier.")
-            self.model = RandomForestClassifier(n_estimators = 5, 
+            """self.model = RandomForestClassifier(n_estimators = 5, 
                                                 random_state = None, 
-                                                class_weight='balanced')
+                                                class_weight='balanced')"""
+
+            parameter_candidates = [
+                {
+                'n_estimators': [3, 6, 9],
+                'min_samples_split': [2,4,6],
+                'class_weight': ['balanced', 'balanced_subsample']
+                }
+            ] 
+            self.model = GridSearchCV(estimator=RandomForestClassifier(), 
+                                    param_grid = parameter_candidates,
+                                    n_jobs= -1)
+            
             self.model.fit(X_train, Y_train)
 
         def predict(self, X_validation, Y_validation):
@@ -174,31 +164,24 @@ class Engine:
             predictions = self.model.predict(X_validation)
             return accuracy_score(Y_validation, predictions)
 
-        def validate(self, estrategy, f, folds = 5):
+        def validate(self, f, folds = 5):
             # TODO: GridSearch of Hyperparameters to discover the most accurate one.
             # Example: https://github.com/eblancoh/Cube11Paths/blob/master/Auth_Engine/ml_engine/gridsearch_logregr.py
             logger.info("Validating dataset over {} folds.".format(folds))
-            particiones = self.setData(estrategy, folds, f)
+            particiones = self.setData(folds, f)
 
-            if estrategy == 0:
-                p = particiones[0]
+            for i in range(folds):
+                p = particiones[i]
                 self.train(p.X_train, p.Y_train.ravel())
                 acc = self.predict(p.X_validation, p.Y_validation.ravel())
-                self.best_model = self.model
-                self.acc = acc
-
-            else:
-                for i in range(folds):
-                    p = particiones[i]
-                    self.train(p.X_train, p.Y_train.ravel())
-                    acc = self.predict(p.X_validation, p.Y_validation.ravel())
-                    if self.best_model == None:
+                if self.best_model == None:
+                    self.best_model = self.model
+                    self.acc = acc
+                else:
+                    if (acc > self.acc):
                         self.best_model = self.model
                         self.acc = acc
-                    else:
-                        if (acc > self.acc):
-                            self.best_model = self.model
-                            self.acc = acc
+
             logger.info("Best model has an accuracy of {:.2f}%".format(self.acc*100))
             
 

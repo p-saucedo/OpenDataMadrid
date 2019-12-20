@@ -1,11 +1,11 @@
 {% extends "base_template.html" %}
 
-{% block title %}Welcome!{% endblock %}
+{% block title %}OpenDataMadrid{% endblock %}
 
 {% block content %}
 	<h1> Bienvenido a la APP</h1>
-	<form method="post" action="/upload-file/">
-		<input type="submit" value="Let's start!" name="start"/>
+	<form method="post" action="/visualize">
+		<input type="submit" value=" Load maps " name="start"/>
 	</form>
 	
 {% endblock %}
