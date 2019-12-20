@@ -32,7 +32,5 @@ Al ser un dataset relativamente pequeño y muy desbalanceado, hemos realizado un
 (El orden no indica prioridad)
 1. Poner un único mapa, basado en HTML que permita contemplar tanto el clustering como los pins de las localizaciones
 2. Filtrar la concentración y el número de pins por franja horaria
-3. Hacer un GridSearch de los modelos elegidos en base a los datos disponibles. Quedarnos sólamente con el mejor modelo (prioritario)
-4. Sacar el entrenamiento del modelo de la aplicación flask. Lo suyo sería cargar el mejor modelo ya entrenado. (prioritario). Este modelo se podría refrescar cada X días o meses. Mayor agilidad a la hora de desplegar la aplicación.
 6. Cerciorarnos de que todo el dataset desde 2015 está bien integrado. Dejar ya limpio el dataset para reducir el tiempo de consulta o servirlo en vivo.
 5. Pelearnos con Bootstrap para hacerlo más bonito.
