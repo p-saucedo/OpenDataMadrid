@@ -3,19 +3,50 @@ window.onload = function () {
 		attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
 	});
     var base = '127.0.0.1:5000';
-    $.getJSON("/static/maps/map.geojson", function(data) {
+
+    // Opciones para el disenio de los iconos
+    var geojsonMarkerOptions = {
+      radius: 4,
+      fillColor: "#ff7800",
+      color: "#000",
+      weight: 1,
+      opacity: 1,
+      fillOpacity: 0.8
+  };
   
+    $.getJSON("/static/maps/map.geojson", function(data) {
+    coords = []
     var geojson = L.geoJson(data, {
+      // Para el disenio del icono
+      pointToLayer: function (feature, latlng) {
+          return L.circleMarker(latlng, geojsonMarkerOptions);
+      },
       onEachFeature: function (feature, layer) {
-        layer.bindPopup(feature.properties.CALLE);
+        c = []
+        c.push(feature.geometry.coordinates[1], feature.geometry.coordinates[0])
+        coords.push(c)
+        //layer.bindPopup(feature.properties.CALLE);
       }
     });
 
+    // Para el mapa de calor del mapa en JS
+    var heat = L.heatLayer(coords, {
+      radius: 30,
+      blur : 15,
+      maxZoom: 10,
+      max: 4.0,
+      gradient: {
+        0.4: 'yellow',
+        0.7: 'orange',
+        1.0: 'red'
+    }
+    });
+
+    // Para el mapa de calor del html
     $.ajax({
       url: '/get_heatmap',
       type: 'POST',
       success: function(response){
-        console.log(response)
         $("#heatmap").html(response);
       },
       error: function(error){
@@ -27,13 +58,12 @@ window.onload = function () {
     var map = L.map('my-map')
     .fitBounds(geojson.getBounds());
 
-
     var popup = L.popup();
     function onMapClick(e) {
-      popup
+      /*popup
         .setLatLng(e.latlng)
         .setContent("Has clickado en " + e.latlng.toString())
-        .openOn(map);
+        .openOn(map);*/
         var pos_dict = '{ "latitude": ' + e.latlng.lat + ',' +  '"longitude": ' + e.latlng.lng + '}';
         console.log(pos_dict)
         $.ajax({
@@ -41,12 +71,14 @@ window.onload = function () {
 			    data: JSON.parse(pos_dict),
 			    type: 'POST',
 			    success: function(response){
-            console.log(response)
+  
             var p = "Has clickado en " + e.latlng.lat + ", " + e.latlng.lng ;
             var l = "En caso de accidente, la gravedad seria de : " + response['lesividad'];
-            console.log(l)
+            var t = "Probabilidad de accidente: " + response['prob'] + " %";
+    
             $("#subtitulo").html(p);
             $("#lesividad").html(l);
+            $("#probabilidad").html(t);
 		    	},
 		  	  error: function(error){
 				    console.log(error);
@@ -57,6 +89,7 @@ window.onload = function () {
 
     
     map.on('click', onMapClick);
+    heat.addTo(map);
     basemap.addTo(map);
     geojson.addTo(map);
   });

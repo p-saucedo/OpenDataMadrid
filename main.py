@@ -3,11 +3,12 @@ import numpy as np
 eRL = eng.RegresionLogistica()
 eRF = eng.RandomForest()
 eKD = eng.KernelDensity()
+eK = eng.KDE()
 
 #eRL.validate()
-eRF.validate(1, folds=10)
+#eRF.validate(1, folds=10)
 #eKD.setData()
-
+eK.validate()
 #p = np.array([40.3731, -3.73081]).reshape(1,-1)
 #print(eRF.predict_value(p))
 #eKD.plotData()

@@ -5,10 +5,20 @@
 }
 
 #my-map {
-	width:600px;
-	height:360px;
+	width:500px;
+	height:313px;
 	float: right;
 
+}
+
+header > div.container > #titulo > a {
+	text-decoration: none;
+	color: white;
+}
+
+header > div.container > #titulo > a:hover {
+	color: white;
+	text-decoration: none;
 }
 
 header {

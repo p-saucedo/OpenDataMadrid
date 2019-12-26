@@ -321,3 +321,58 @@ class Engine:
             plt.show()
 
 
+    class KDE():
+        model = None
+        def __init__(self):
+            X = self.setData(file = filepath)
+            self.fit(X)
+
+
+        def setData(self, file):
+            logger.info("Reading {} file for the sake of training, testing and rendering KDE".format(file))
+            df = pd.read_csv(file, delimiter=';')
+            X = np.array(df[["latitude","longitude"]])
+
+            return X
+
+        def fit(self, X):
+
+            bandwidths = 10 ** np.linspace(0, 2, 100)
+            parameter_candidates = [
+                {
+                'bandwidth': bandwidths,
+                'kernel': ['gaussian', 'tophat', 'linear']
+                }
+            ] 
+  
+            grid = GridSearchCV(estimator=KernelDensity(), 
+                                param_grid = parameter_candidates,
+                                n_jobs= -1).fit(X)
+            
+            self.model = KernelDensity(bandwidth = grid.best_params_.get('bandwidth'),
+                                        kernel = grid.best_params_.get('kernel'))
+            
+            self.model.fit(X)
+            logger.info("KDE model is fitted")
+
+        def predict_proba(self, X):
+            logprobs = np.array(self.model.score_samples(X)).T
+            result = np.exp(logprobs)
+            return result
+
+        def predict_value(self, X):
+            prob = self.predict_proba(X)
+            print('Probabilidad de accidente es de {}%'.format(np.around(prob*100,4)[0]))
+            return np.around(prob*100,4)
+
+        def validate(self):
+            X = self.setData(filepath)
+
+            self.fit(X)
+            probas = self.predict_proba(X)
+
+            new_value = np.array([40.42551, -3.69191])
+            y = self.predict(new_value.reshape(1,-1))
+
+            print('Punto a predecir: {}'.format(new_value))
+            print('Probabilidad de accidente es de {}%'.format(np.around(y*100,4)[0]))

@@ -1,22 +1,32 @@
-<!DOCTYPE html>
-<head>
+{% extends "base_template.html" %}
+{% block head %}
+
 <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.6.4/leaflet.css" />
 <script src="http://cdn.leafletjs.com/leaflet-0.6.4/leaflet.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/iso8601-js-period@0.2.1/iso8601.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/leaflet-timedimension@1.1.1/dist/leaflet.timedimension.min.js"></script>
 <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-<script src="https://github.com/patrickarlt/leaflet-virtual-grid/blob/master/src/virtual-grid.js"></script>
+<script type="text/javascript" src="https://github.com/dwilhelm89/LeafletSlider/blob/master/SliderControl.js"></script>
+<script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
+
+
+<script src="{{ url_for('static', filename='js/leaflet-heat.js') }}"></script>
+<script type=text/javascript src="{{ url_for('static', filename='js/leafletmap.js') }}"></script>
+<script src="{{ url_for('static', filename='js/SliderControl.js') }}"></script>
 <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}"/>
 <link rel="shortcut icon" href="{{ url_for('static', filename='img/favicon.ico') }}">
-</head>
 
-<body>
+{% endblock %}
+
+{% block content %}
 	<div class="info">
 	<h1 class="title">Mapa de posiciones</h1>
 	<h3 id="subtitulo"></h3>
 
-	<h2 id="probabilidad">Probabilidad de accidente: {{prob}}</h2>
-	<h2 id="lesividad">En caso de accidente, la gravedad seria de : {{les}}</h2>
+	<h2 id="probabilidad" class="display-5">Probabilidad de accidente: {{prob}}</h2>
+	<h2 id="lesividad" class="display-5">En caso de accidente, la gravedad sería de : {{les}}</h2>
 	<div class="leyenda_lesividades">
-		<h4 id="lesividades"> Leyenda:<br>
+		<h5 id="lesividades"> Leyenda:<br>
 			01: Atencion en urgencias sin posterior ingreso - LEVE<br>
 			02: Ingreso inferior o igual a 24 horas - LEVE<br>
 			03: Ingreso superior a 24 horas - GRAVE<br>
@@ -26,13 +36,15 @@
 			07: Asistencia sanitaria solo en el lugar del accidente - LEVE<br>
 			14: Sin asistencia sanitaria<br>
 
-		</h4> 
+		</h5> 
 
 	</div>
 	</div>
-	<div id="my-map"></div>
-	<div id = heatmap></div>
-</body>
-<script type=text/javascript src="{{ url_for('static', filename='js/leafletmap.js') }}"></script>
-
-</html>
+	<div class="container">
+		<div class="row">
+			<div id="heatmap" class="col-sm-6"></div>
+			<div id="my-map" class="col-sm-6"></div>
+		</div>
+	</div>
+	
+{% endblock %}

@@ -10,7 +10,7 @@ import pandas as pd
 from watcher import get_logger
 from datetime import datetime, date
 from data_handler import check_updates, load_model
-
+from engine import Engine as eng
 # Vamos a loguearlo un poco, que nunca viene mal
 logger = get_logger(__name__)
 
@@ -27,6 +27,9 @@ basedir = os.path.dirname(os.path.abspath(__file__))
 data_dir = os.path.join(basedir, 'out_csv')
 fpath_val = os.path.join(data_dir, 'geo_out.csv')
 model = None
+
+kde_model = None
+
 @app.route("/")
 def index():
     # Aqui se llevara el control sobre la geolocalizacion de direcciones y sobre el entrenamiento del modelo
@@ -38,6 +41,10 @@ def visualize_map():
 
     global model
     model = load_model()
+
+    global kde_model
+    kde_model = eng.KDE()
+
     
     return render_template("visualize.html", prob = '0.0%', les = '0')
 
@@ -54,6 +61,8 @@ def heatmap():
     # Leamos el dataset
     df = pd.read_csv(fpath_val, delimiter=';')
     df['count'] = 1
+
+
     # Create an object sorted by timestamp in case chronological evolution is desired.
     # df_hour_list = []
     # for hour in df.HORA.sort_values().unique():
@@ -65,6 +74,9 @@ def heatmap():
                                                             .reset_index().values.tolist(), radius=8, max_zoom=13)\
                                                             .add_to(folium_map)
     
+    for i in range(0, len(df)):
+        folium.Marker([df.iloc[i]['latitude'], df.iloc[i]['longitude']], icon = folium.Icon(color='lightgray') ).add_to(folium_map)
+
     # HeatMapWithTime(df_hour_list, radius=8, min_opacity=0.5, max_opacity=0.8, auto_play=True).add_to(folium_map)
     return folium_map._repr_html_()
 
@@ -79,14 +91,18 @@ def info_click():
         global model
         les = int(model.predict(x_test.reshape(1,-1))[0])
 
+        global kde_model
+        prob = kde_model.predict_value(x_test.reshape(1,-1))
+
         print("You have clicked in {}, {} . Predicted Harm level in case of accident: {}".format(latitude, longitude, les))
         logger.info("You have clicked in {}, {} . Predicted Harm level in case of accident: {}".format(latitude, longitude, les))
 
         
         p = dict()
         p['lesividad'] = les
-    return jsonify(p)
+        p['prob'] = prob[0]
 
+    return jsonify(p)
 
 if __name__ == '__main__':
     logger.info("Starting app at {}".format(datetime.now()))
