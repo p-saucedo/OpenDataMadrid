@@ -4131,3 +4131,955 @@
 2019-12-26 13:17:57,632 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2019 13:17:57] "POST /get_click HTTP/1.1" 200 -
 2019-12-26 13:17:58,069 - __main__ - INFO - You have clicked in 40.475680726483795, -3.8445281982421875 . Predicted Harm level in case of accident: 2
 2019-12-26 13:17:58,070 - werkzeug - INFO - 127.0.0.1 - - [26/Dec/2019 13:17:58] "POST /get_click HTTP/1.1" 200 -
+2019-12-30 09:27:00,587 - __main__ - INFO - Starting app at 2019-12-30 09:27:00.587196
+2019-12-30 09:27:00,595 - werkzeug - INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2019-12-30 09:27:00,596 - werkzeug - INFO -  * Restarting with stat
+2019-12-30 09:27:01,975 - __main__ - INFO - Starting app at 2019-12-30 09:27:01.975182
+2019-12-30 09:27:01,979 - werkzeug - WARNING -  * Debugger is active!
+2019-12-30 09:27:01,987 - werkzeug - INFO -  * Debugger PIN: 604-780-389
+2019-12-30 09:27:08,595 - data_handler - INFO - Data is updated since 2019-12-20 00:00:00
+2019-12-30 09:27:08,609 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 09:27:08] "GET / HTTP/1.1" 200 -
+2019-12-30 09:27:08,672 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 09:27:08] "GET /static/css/style.css HTTP/1.1" 304 -
+2019-12-30 09:27:09,446 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 09:27:09] "GET /static/img/map.jpg HTTP/1.1" 200 -
+2019-12-30 09:27:13,466 - data_handler - INFO - RandomForestClassifier model loaded successfully.
+2019-12-30 09:27:13,466 - engine - INFO - Reading /home/psaucedo/Desktop/OpenDataMadrid/out_csv/geo_out.csv file for the sake of training, testing and rendering KDE
+2019-12-30 09:27:15,169 - engine - INFO - KDE model is fitted
+2019-12-30 09:27:15,177 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 09:27:15] "POST /visualize HTTP/1.1" 200 -
+2019-12-30 09:27:15,209 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 09:27:15] "GET /static/js/leafletmap.js HTTP/1.1" 200 -
+2019-12-30 09:27:15,211 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 09:27:15] "GET /static/js/leaflet-heat.js HTTP/1.1" 304 -
+2019-12-30 09:27:15,213 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 09:27:15] "GET /static/js/SliderControl.js HTTP/1.1" 304 -
+2019-12-30 09:27:15,944 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 09:27:15] "GET /static/maps/map.geojson HTTP/1.1" 304 -
+2019-12-30 09:27:16,093 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 09:27:16] "POST /get_heatmap HTTP/1.1" 200 -
+2019-12-30 09:27:40,830 - __main__ - INFO - You have clicked in 40.43721400958116, -3.66891860961914 . Predicted Harm level in case of accident: 7
+2019-12-30 09:27:40,831 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 09:27:40] "POST /get_click HTTP/1.1" 200 -
+2019-12-30 09:27:41,529 - __main__ - INFO - You have clicked in 40.43754064484924, -3.6683177947998042 . Predicted Harm level in case of accident: 7
+2019-12-30 09:27:41,530 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 09:27:41] "POST /get_click HTTP/1.1" 200 -
+2019-12-30 09:27:55,402 - __main__ - INFO - You have clicked in 40.52423878069866, -3.3467102050781246 . Predicted Harm level in case of accident: 3
+2019-12-30 09:27:55,403 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 09:27:55] "POST /get_click HTTP/1.1" 200 -
+2019-12-30 09:27:56,254 - __main__ - INFO - You have clicked in 40.52528265385008, -3.2958984375 . Predicted Harm level in case of accident: 3
+2019-12-30 09:27:56,254 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 09:27:56] "POST /get_click HTTP/1.1" 200 -
+2019-12-30 09:27:57,046 - __main__ - INFO - You have clicked in 40.49709237269567, -3.429107666015625 . Predicted Harm level in case of accident: 3
+2019-12-30 09:27:57,047 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 09:27:57] "POST /get_click HTTP/1.1" 200 -
+2019-12-30 09:28:01,194 - __main__ - INFO - You have clicked in 40.52319489128985, -3.3769226074218746 . Predicted Harm level in case of accident: 3
+2019-12-30 09:28:01,195 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 09:28:01] "POST /get_click HTTP/1.1" 200 -
+2019-12-30 09:28:01,933 - __main__ - INFO - You have clicked in 40.50753459933616, -3.407135009765625 . Predicted Harm level in case of accident: 3
+2019-12-30 09:28:01,933 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 09:28:01] "POST /get_click HTTP/1.1" 200 -
+2019-12-30 09:28:02,992 - __main__ - INFO - You have clicked in 40.37061262953356, -3.459320068359375 . Predicted Harm level in case of accident: 7
+2019-12-30 09:28:02,993 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 09:28:02] "POST /get_click HTTP/1.1" 200 -
+2019-12-30 09:28:09,208 - __main__ - INFO - You have clicked in 40.51066695034288, -3.525238037109375 . Predicted Harm level in case of accident: 3
+2019-12-30 09:28:09,209 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 09:28:09] "POST /get_click HTTP/1.1" 200 -
+2019-12-30 09:28:10,601 - __main__ - INFO - You have clicked in 40.504402102026525, -3.563690185546875 . Predicted Harm level in case of accident: 3
+2019-12-30 09:28:10,602 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 09:28:10] "POST /get_click HTTP/1.1" 200 -
+2019-12-30 09:28:11,167 - __main__ - INFO - You have clicked in 40.49291502689579, -3.55682373046875 . Predicted Harm level in case of accident: 3
+2019-12-30 09:28:11,168 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 09:28:11] "POST /get_click HTTP/1.1" 200 -
+2019-12-30 09:28:13,814 - __main__ - INFO - You have clicked in 40.50492419507126, -3.5453224182128906 . Predicted Harm level in case of accident: 3
+2019-12-30 09:28:13,815 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 09:28:13] "POST /get_click HTTP/1.1" 200 -
+2019-12-30 09:28:14,334 - __main__ - INFO - You have clicked in 40.50975336307896, -3.5465240478515625 . Predicted Harm level in case of accident: 3
+2019-12-30 09:28:14,334 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 09:28:14] "POST /get_click HTTP/1.1" 200 -
+2019-12-30 09:28:14,804 - __main__ - INFO - You have clicked in 40.514973694087224, -3.5451507568359375 . Predicted Harm level in case of accident: 3
+2019-12-30 09:28:14,805 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 09:28:14] "POST /get_click HTTP/1.1" 200 -
+2019-12-30 09:28:15,853 - __main__ - INFO - You have clicked in 40.510144902001805, -3.5317611694335938 . Predicted Harm level in case of accident: 3
+2019-12-30 09:28:15,854 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 09:28:15] "POST /get_click HTTP/1.1" 200 -
+2019-12-30 09:28:16,466 - __main__ - INFO - You have clicked in 40.505185240069686, -3.526611328125 . Predicted Harm level in case of accident: 3
+2019-12-30 09:28:16,467 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 09:28:16] "POST /get_click HTTP/1.1" 200 -
+2019-12-30 09:28:17,008 - __main__ - INFO - You have clicked in 40.50714304517334, -3.5125350952148438 . Predicted Harm level in case of accident: 3
+2019-12-30 09:28:17,008 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 09:28:17] "POST /get_click HTTP/1.1" 200 -
+2019-12-30 09:32:38,139 - data_handler - INFO - Data is updated since 2019-12-20 00:00:00
+2019-12-30 09:32:38,140 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 09:32:38] "GET / HTTP/1.1" 200 -
+2019-12-30 09:32:46,706 - data_handler - INFO - RandomForestClassifier model loaded successfully.
+2019-12-30 09:32:46,706 - engine - INFO - Reading /home/psaucedo/Desktop/OpenDataMadrid/out_csv/geo_out.csv file for the sake of training, testing and rendering KDE
+2019-12-30 09:32:48,357 - engine - INFO - KDE model is fitted
+2019-12-30 09:32:48,358 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 09:32:48] "POST /visualize HTTP/1.1" 200 -
+2019-12-30 09:32:48,385 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 09:32:48] "GET /static/css/style.css HTTP/1.1" 200 -
+2019-12-30 09:32:48,400 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 09:32:48] "GET /static/js/leaflet-heat.js HTTP/1.1" 200 -
+2019-12-30 09:32:48,400 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 09:32:48] "GET /static/js/leafletmap.js HTTP/1.1" 200 -
+2019-12-30 09:32:48,401 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 09:32:48] "GET /static/js/SliderControl.js HTTP/1.1" 200 -
+2019-12-30 09:32:49,221 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 09:32:49] "GET /static/img/map.jpg HTTP/1.1" 200 -
+2019-12-30 09:32:49,258 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 09:32:49] "GET /static/maps/map.geojson HTTP/1.1" 200 -
+2019-12-30 09:33:23,196 - data_handler - INFO - Data is updated since 2019-12-20 00:00:00
+2019-12-30 09:33:23,197 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 09:33:23] "GET / HTTP/1.1" 200 -
+2019-12-30 09:33:29,948 - data_handler - INFO - RandomForestClassifier model loaded successfully.
+2019-12-30 09:33:29,948 - engine - INFO - Reading /home/psaucedo/Desktop/OpenDataMadrid/out_csv/geo_out.csv file for the sake of training, testing and rendering KDE
+2019-12-30 09:33:30,778 - engine - INFO - KDE model is fitted
+2019-12-30 09:33:30,779 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 09:33:30] "POST /visualize HTTP/1.1" 200 -
+2019-12-30 09:33:30,804 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 09:33:30] "GET /static/css/style.css HTTP/1.1" 200 -
+2019-12-30 09:33:30,817 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 09:33:30] "GET /static/js/leafletmap.js HTTP/1.1" 200 -
+2019-12-30 09:33:30,821 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 09:33:30] "GET /static/js/leaflet-heat.js HTTP/1.1" 200 -
+2019-12-30 09:33:30,822 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 09:33:30] "GET /static/js/SliderControl.js HTTP/1.1" 200 -
+2019-12-30 09:33:31,632 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 09:33:31] "GET /static/img/map.jpg HTTP/1.1" 200 -
+2019-12-30 09:33:31,708 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 09:33:31] "GET /static/maps/map.geojson HTTP/1.1" 200 -
+2019-12-30 09:33:31,928 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 09:33:31] "POST /get_heatmap HTTP/1.1" 200 -
+2019-12-30 09:34:13,085 - data_handler - INFO - Data is updated since 2019-12-20 00:00:00
+2019-12-30 09:34:13,086 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 09:34:13] "GET / HTTP/1.1" 200 -
+2019-12-30 09:34:20,824 - data_handler - INFO - RandomForestClassifier model loaded successfully.
+2019-12-30 09:34:20,825 - engine - INFO - Reading /home/psaucedo/Desktop/OpenDataMadrid/out_csv/geo_out.csv file for the sake of training, testing and rendering KDE
+2019-12-30 09:34:21,629 - engine - INFO - KDE model is fitted
+2019-12-30 09:34:21,630 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 09:34:21] "POST /visualize HTTP/1.1" 200 -
+2019-12-30 09:34:21,658 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 09:34:21] "GET /static/css/style.css HTTP/1.1" 200 -
+2019-12-30 09:34:21,689 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 09:34:21] "GET /static/js/leafletmap.js HTTP/1.1" 200 -
+2019-12-30 09:34:21,700 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 09:34:21] "GET /static/js/SliderControl.js HTTP/1.1" 200 -
+2019-12-30 09:34:21,705 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 09:34:21] "GET /static/js/leaflet-heat.js HTTP/1.1" 200 -
+2019-12-30 09:34:22,526 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 09:34:22] "GET /static/img/map.jpg HTTP/1.1" 200 -
+2019-12-30 09:34:22,572 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 09:34:22] "GET /static/maps/map.geojson HTTP/1.1" 200 -
+2019-12-30 09:34:22,845 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 09:34:22] "POST /get_heatmap HTTP/1.1" 200 -
+2019-12-30 09:34:26,925 - __main__ - INFO - You have clicked in 40.749337730454826, -3.35906982421875 . Predicted Harm level in case of accident: 3
+2019-12-30 09:34:26,926 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 09:34:26] "POST /get_click HTTP/1.1" 200 -
+2019-12-30 09:34:27,396 - __main__ - INFO - You have clicked in 40.749337730454826, -3.35906982421875 . Predicted Harm level in case of accident: 3
+2019-12-30 09:34:27,396 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 09:34:27] "POST /get_click HTTP/1.1" 200 -
+2019-12-30 09:34:27,774 - __main__ - INFO - You have clicked in 40.749337730454826, -3.4332275390625 . Predicted Harm level in case of accident: 3
+2019-12-30 09:34:27,775 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 09:34:27] "POST /get_click HTTP/1.1" 200 -
+2019-12-30 09:34:28,512 - __main__ - INFO - You have clicked in 40.753499070431374, -3.372802734375 . Predicted Harm level in case of accident: 3
+2019-12-30 09:34:28,513 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 09:34:28] "POST /get_click HTTP/1.1" 200 -
+2019-12-30 09:34:58,108 - __main__ - INFO - You have clicked in 40.73893324113601, -2.955322265625 . Predicted Harm level in case of accident: 3
+2019-12-30 09:34:58,109 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 09:34:58] "POST /get_click HTTP/1.1" 200 -
+2019-12-30 09:34:58,650 - __main__ - INFO - You have clicked in 40.74309523218185, -2.96630859375 . Predicted Harm level in case of accident: 3
+2019-12-30 09:34:58,651 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 09:34:58] "POST /get_click HTTP/1.1" 200 -
+2019-12-30 09:34:59,487 - __main__ - INFO - You have clicked in 40.7701418259051, -3.09539794921875 . Predicted Harm level in case of accident: 3
+2019-12-30 09:34:59,487 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 09:34:59] "POST /get_click HTTP/1.1" 200 -
+2019-12-30 09:35:00,728 - __main__ - INFO - You have clicked in 40.73685214795608, -3.076171875 . Predicted Harm level in case of accident: 3
+2019-12-30 09:35:00,733 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 09:35:00] "POST /get_click HTTP/1.1" 200 -
+2019-12-30 09:45:46,913 - __main__ - INFO - Starting app at 2019-12-30 09:45:46.913149
+2019-12-30 09:45:46,918 - werkzeug - INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2019-12-30 09:45:46,919 - werkzeug - INFO -  * Restarting with stat
+2019-12-30 09:45:48,503 - __main__ - INFO - Starting app at 2019-12-30 09:45:48.503245
+2019-12-30 09:45:48,508 - werkzeug - WARNING -  * Debugger is active!
+2019-12-30 09:45:48,508 - werkzeug - INFO -  * Debugger PIN: 604-780-389
+2019-12-30 09:45:48,514 - data_handler - INFO - Data is updated since 2019-12-20 00:00:00
+2019-12-30 09:45:48,520 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 09:45:48] "GET / HTTP/1.1" 200 -
+2019-12-30 09:46:04,649 - data_handler - INFO - RandomForestClassifier model loaded successfully.
+2019-12-30 09:46:04,650 - engine - INFO - Reading /home/psaucedo/Desktop/OpenDataMadrid/out_csv/geo_out.csv file for the sake of training, testing and rendering KDE
+2019-12-30 09:46:06,339 - engine - INFO - KDE model is fitted
+2019-12-30 09:46:06,346 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 09:46:06] "POST /visualize HTTP/1.1" 200 -
+2019-12-30 09:46:06,379 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 09:46:06] "GET /static/css/style.css HTTP/1.1" 200 -
+2019-12-30 09:46:06,382 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 09:46:06] "GET /static/css/leaflet-slider.css HTTP/1.1" 200 -
+2019-12-30 09:46:06,383 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 09:46:06] "GET /static/js/leaflet-slider.js HTTP/1.1" 200 -
+2019-12-30 09:46:06,392 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 09:46:06] "GET /static/js/leafletmap.js HTTP/1.1" 200 -
+2019-12-30 09:46:06,394 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 09:46:06] "GET /static/js/SliderControl.js HTTP/1.1" 200 -
+2019-12-30 09:46:06,395 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 09:46:06] "GET /static/js/leaflet-heat.js HTTP/1.1" 200 -
+2019-12-30 09:46:06,487 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 09:46:06] "GET /static/img/map.jpg HTTP/1.1" 200 -
+2019-12-30 09:46:06,543 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 09:46:06] "GET /static/maps/map.geojson HTTP/1.1" 200 -
+2019-12-30 09:46:06,781 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 09:46:06] "POST /get_heatmap HTTP/1.1" 200 -
+2019-12-30 09:47:51,961 - data_handler - INFO - Data is updated since 2019-12-20 00:00:00
+2019-12-30 09:47:51,962 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 09:47:51] "GET / HTTP/1.1" 200 -
+2019-12-30 09:47:59,950 - data_handler - INFO - RandomForestClassifier model loaded successfully.
+2019-12-30 09:47:59,951 - engine - INFO - Reading /home/psaucedo/Desktop/OpenDataMadrid/out_csv/geo_out.csv file for the sake of training, testing and rendering KDE
+2019-12-30 09:48:00,854 - engine - INFO - KDE model is fitted
+2019-12-30 09:48:00,855 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 09:48:00] "POST /visualize HTTP/1.1" 200 -
+2019-12-30 09:48:00,885 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 09:48:00] "GET /static/css/style.css HTTP/1.1" 200 -
+2019-12-30 09:48:00,900 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 09:48:00] "GET /static/js/SliderControl.js HTTP/1.1" 200 -
+2019-12-30 09:48:00,900 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 09:48:00] "GET /static/js/leaflet-heat.js HTTP/1.1" 200 -
+2019-12-30 09:48:00,900 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 09:48:00] "GET /static/css/leaflet-slider.css HTTP/1.1" 200 -
+2019-12-30 09:48:00,902 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 09:48:00] "GET /static/js/leaflet-slider.js HTTP/1.1" 200 -
+2019-12-30 09:48:00,902 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 09:48:00] "GET /static/js/leafletmap.js HTTP/1.1" 200 -
+2019-12-30 09:48:01,021 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 09:48:01] "GET /static/img/map.jpg HTTP/1.1" 200 -
+2019-12-30 09:48:01,052 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 09:48:01] "GET /static/maps/map.geojson HTTP/1.1" 200 -
+2019-12-30 09:48:01,330 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 09:48:01] "POST /get_heatmap HTTP/1.1" 200 -
+2019-12-30 09:49:07,648 - data_handler - INFO - Data is updated since 2019-12-20 00:00:00
+2019-12-30 09:49:07,649 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 09:49:07] "GET / HTTP/1.1" 200 -
+2019-12-30 09:49:07,678 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 09:49:07] "GET /static/css/style.css HTTP/1.1" 200 -
+2019-12-30 09:49:07,738 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 09:49:07] "GET /static/img/map.jpg HTTP/1.1" 200 -
+2019-12-30 09:49:08,674 - data_handler - INFO - RandomForestClassifier model loaded successfully.
+2019-12-30 09:49:08,674 - engine - INFO - Reading /home/psaucedo/Desktop/OpenDataMadrid/out_csv/geo_out.csv file for the sake of training, testing and rendering KDE
+2019-12-30 09:49:09,522 - engine - INFO - KDE model is fitted
+2019-12-30 09:49:09,523 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 09:49:09] "POST /visualize HTTP/1.1" 200 -
+2019-12-30 09:49:09,558 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 09:49:09] "GET /static/css/leaflet-slider.css HTTP/1.1" 200 -
+2019-12-30 09:49:09,564 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 09:49:09] "GET /static/js/leaflet-slider.js HTTP/1.1" 200 -
+2019-12-30 09:49:09,569 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 09:49:09] "GET /static/js/SliderControl.js HTTP/1.1" 200 -
+2019-12-30 09:49:09,571 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 09:49:09] "GET /static/js/leafletmap.js HTTP/1.1" 200 -
+2019-12-30 09:49:09,572 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 09:49:09] "GET /static/js/leaflet-heat.js HTTP/1.1" 200 -
+2019-12-30 09:49:09,650 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 09:49:09] "GET /static/maps/map.geojson HTTP/1.1" 200 -
+2019-12-30 09:49:09,849 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 09:49:09] "POST /get_heatmap HTTP/1.1" 200 -
+2019-12-30 09:50:07,184 - data_handler - INFO - Data is updated since 2019-12-20 00:00:00
+2019-12-30 09:50:07,185 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 09:50:07] "GET / HTTP/1.1" 200 -
+2019-12-30 09:50:07,222 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 09:50:07] "GET /static/css/style.css HTTP/1.1" 200 -
+2019-12-30 09:50:08,305 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 09:50:08] "GET /static/img/map.jpg HTTP/1.1" 200 -
+2019-12-30 09:50:09,307 - data_handler - INFO - RandomForestClassifier model loaded successfully.
+2019-12-30 09:50:09,307 - engine - INFO - Reading /home/psaucedo/Desktop/OpenDataMadrid/out_csv/geo_out.csv file for the sake of training, testing and rendering KDE
+2019-12-30 09:50:10,189 - engine - INFO - KDE model is fitted
+2019-12-30 09:50:10,191 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 09:50:10] "POST /visualize HTTP/1.1" 200 -
+2019-12-30 09:50:10,220 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 09:50:10] "GET /static/css/leaflet-slider.css HTTP/1.1" 200 -
+2019-12-30 09:50:10,230 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 09:50:10] "GET /static/js/leafletmap.js HTTP/1.1" 200 -
+2019-12-30 09:50:10,231 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 09:50:10] "GET /static/js/SliderControl.js HTTP/1.1" 200 -
+2019-12-30 09:50:10,232 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 09:50:10] "GET /static/js/leaflet-slider.js HTTP/1.1" 200 -
+2019-12-30 09:50:10,233 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 09:50:10] "GET /static/js/leaflet-heat.js HTTP/1.1" 200 -
+2019-12-30 09:50:24,995 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 09:50:24] "GET /static/maps/map.geojson HTTP/1.1" 200 -
+2019-12-30 09:50:25,131 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 09:50:25] "POST /get_heatmap HTTP/1.1" 200 -
+2019-12-30 09:54:42,968 - data_handler - INFO - Data is updated since 2019-12-20 00:00:00
+2019-12-30 09:54:42,968 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 09:54:42] "GET / HTTP/1.1" 200 -
+2019-12-30 09:54:43,008 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 09:54:43] "GET /static/css/style.css HTTP/1.1" 200 -
+2019-12-30 09:54:43,184 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 09:54:43] "GET /static/img/map.jpg HTTP/1.1" 200 -
+2019-12-30 09:54:45,005 - data_handler - INFO - RandomForestClassifier model loaded successfully.
+2019-12-30 09:54:45,006 - engine - INFO - Reading /home/psaucedo/Desktop/OpenDataMadrid/out_csv/geo_out.csv file for the sake of training, testing and rendering KDE
+2019-12-30 09:54:45,884 - engine - INFO - KDE model is fitted
+2019-12-30 09:54:45,885 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 09:54:45] "POST /visualize HTTP/1.1" 200 -
+2019-12-30 09:54:45,914 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 09:54:45] "GET /static/js/leaflet-slider.js HTTP/1.1" 200 -
+2019-12-30 09:54:45,919 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 09:54:45] "GET /static/css/leaflet-slider.css HTTP/1.1" 200 -
+2019-12-30 09:54:45,936 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 09:54:45] "GET /static/js/leaflet-heat.js HTTP/1.1" 200 -
+2019-12-30 09:54:45,937 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 09:54:45] "GET /static/js/SliderControl.js HTTP/1.1" 200 -
+2019-12-30 09:54:45,939 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 09:54:45] "GET /static/js/leafletmap.js HTTP/1.1" 200 -
+2019-12-30 09:54:46,025 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 09:54:46] "GET /static/maps/map.geojson HTTP/1.1" 200 -
+2019-12-30 10:13:32,474 - data_handler - INFO - Data is updated since 2019-12-20 00:00:00
+2019-12-30 10:13:32,475 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 10:13:32] "GET / HTTP/1.1" 200 -
+2019-12-30 10:13:40,796 - data_handler - INFO - RandomForestClassifier model loaded successfully.
+2019-12-30 10:13:40,796 - engine - INFO - Reading /home/psaucedo/Desktop/OpenDataMadrid/out_csv/geo_out.csv file for the sake of training, testing and rendering KDE
+2019-12-30 10:13:42,474 - engine - INFO - KDE model is fitted
+2019-12-30 10:13:42,475 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 10:13:42] "POST /visualize HTTP/1.1" 200 -
+2019-12-30 10:13:42,496 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 10:13:42] "GET /static/css/style.css HTTP/1.1" 200 -
+2019-12-30 10:13:42,511 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 10:13:42] "GET /static/js/leafletmap.js HTTP/1.1" 200 -
+2019-12-30 10:13:42,516 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 10:13:42] "GET /static/js/leaflet-slider.js HTTP/1.1" 200 -
+2019-12-30 10:13:42,518 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 10:13:42] "GET /static/css/leaflet-slider.css HTTP/1.1" 200 -
+2019-12-30 10:13:42,520 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 10:13:42] "GET /static/js/SliderControl.js HTTP/1.1" 200 -
+2019-12-30 10:13:42,520 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 10:13:42] "GET /static/js/leaflet-heat.js HTTP/1.1" 200 -
+2019-12-30 10:13:42,651 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 10:13:42] "GET /static/img/map.jpg HTTP/1.1" 200 -
+2019-12-30 10:13:42,689 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 10:13:42] "GET /static/maps/map.geojson HTTP/1.1" 200 -
+2019-12-30 10:13:42,843 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 10:13:42] "POST /get_heatmap HTTP/1.1" 200 -
+2019-12-30 10:14:14,578 - data_handler - INFO - Data is updated since 2019-12-20 00:00:00
+2019-12-30 10:14:14,579 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 10:14:14] "GET / HTTP/1.1" 200 -
+2019-12-30 10:14:21,492 - data_handler - INFO - RandomForestClassifier model loaded successfully.
+2019-12-30 10:14:21,493 - engine - INFO - Reading /home/psaucedo/Desktop/OpenDataMadrid/out_csv/geo_out.csv file for the sake of training, testing and rendering KDE
+2019-12-30 10:14:22,429 - engine - INFO - KDE model is fitted
+2019-12-30 10:14:22,430 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 10:14:22] "POST /visualize HTTP/1.1" 200 -
+2019-12-30 10:14:22,455 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 10:14:22] "GET /static/css/style.css HTTP/1.1" 200 -
+2019-12-30 10:14:22,478 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 10:14:22] "GET /static/js/leaflet-slider.js HTTP/1.1" 200 -
+2019-12-30 10:14:22,481 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 10:14:22] "GET /static/js/leaflet-heat.js HTTP/1.1" 200 -
+2019-12-30 10:14:22,483 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 10:14:22] "GET /static/css/leaflet-slider.css HTTP/1.1" 200 -
+2019-12-30 10:14:22,486 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 10:14:22] "GET /static/js/leafletmap.js HTTP/1.1" 200 -
+2019-12-30 10:14:22,489 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 10:14:22] "GET /static/js/SliderControl.js HTTP/1.1" 200 -
+2019-12-30 10:14:22,655 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 10:14:22] "GET /static/img/map.jpg HTTP/1.1" 200 -
+2019-12-30 10:14:22,746 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 10:14:22] "GET /static/maps/map.geojson HTTP/1.1" 200 -
+2019-12-30 10:14:23,038 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 10:14:23] "POST /get_heatmap HTTP/1.1" 200 -
+2019-12-30 10:14:27,909 - __main__ - INFO - You have clicked in 40.763901280945866, -3.4909057617187496 . Predicted Harm level in case of accident: 3
+2019-12-30 10:14:27,909 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 10:14:27] "POST /get_click HTTP/1.1" 200 -
+2019-12-30 10:14:28,680 - __main__ - INFO - You have clicked in 40.75557964275589, -3.394775390625 . Predicted Harm level in case of accident: 3
+2019-12-30 10:14:28,681 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 10:14:28] "POST /get_click HTTP/1.1" 200 -
+2019-12-30 10:14:29,992 - __main__ - INFO - You have clicked in 40.753499070431374, -3.4442138671875 . Predicted Harm level in case of accident: 3
+2019-12-30 10:14:29,993 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 10:14:29] "POST /get_click HTTP/1.1" 200 -
+2019-12-30 10:14:30,670 - __main__ - INFO - You have clicked in 40.753499070431374, -3.3123779296875 . Predicted Harm level in case of accident: 3
+2019-12-30 10:14:30,671 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 10:14:30] "POST /get_click HTTP/1.1" 200 -
+2019-12-30 10:17:05,024 - __main__ - INFO - You have clicked in 40.76598152771282, -3.1256103515625 . Predicted Harm level in case of accident: 3
+2019-12-30 10:17:05,024 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 10:17:05] "POST /get_click HTTP/1.1" 200 -
+2019-12-30 10:23:58,653 - data_handler - INFO - Data is updated since 2019-12-20 00:00:00
+2019-12-30 10:23:58,654 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 10:23:58] "GET / HTTP/1.1" 200 -
+2019-12-30 10:24:05,265 - data_handler - INFO - RandomForestClassifier model loaded successfully.
+2019-12-30 10:24:05,265 - engine - INFO - Reading /home/psaucedo/Desktop/OpenDataMadrid/out_csv/geo_out.csv file for the sake of training, testing and rendering KDE
+2019-12-30 10:24:06,942 - engine - INFO - KDE model is fitted
+2019-12-30 10:24:06,944 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 10:24:06] "POST /visualize HTTP/1.1" 200 -
+2019-12-30 10:24:06,972 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 10:24:06] "GET /static/css/style.css HTTP/1.1" 200 -
+2019-12-30 10:24:06,997 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 10:24:06] "GET /static/js/leaflet-slider.js HTTP/1.1" 200 -
+2019-12-30 10:24:07,001 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 10:24:07] "GET /static/css/leaflet-slider.css HTTP/1.1" 200 -
+2019-12-30 10:24:07,004 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 10:24:07] "GET /static/js/SliderControl.js HTTP/1.1" 200 -
+2019-12-30 10:24:07,005 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 10:24:07] "GET /static/js/leafletmap.js HTTP/1.1" 200 -
+2019-12-30 10:24:07,007 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 10:24:07] "GET /static/js/leaflet-heat.js HTTP/1.1" 200 -
+2019-12-30 10:24:07,092 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 10:24:07] "GET /static/img/map.jpg HTTP/1.1" 200 -
+2019-12-30 10:24:07,134 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 10:24:07] "GET /static/maps/map.geojson HTTP/1.1" 200 -
+2019-12-30 10:24:07,366 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 10:24:07] "POST /get_heatmap HTTP/1.1" 200 -
+2019-12-30 10:29:15,098 - data_handler - INFO - Data is updated since 2019-12-20 00:00:00
+2019-12-30 10:29:15,099 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 10:29:15] "GET / HTTP/1.1" 200 -
+2019-12-30 10:29:15,142 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 10:29:15] "GET /static/css/style.css HTTP/1.1" 200 -
+2019-12-30 10:29:15,213 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 10:29:15] "GET /static/img/map.jpg HTTP/1.1" 200 -
+2019-12-30 10:29:16,393 - data_handler - INFO - RandomForestClassifier model loaded successfully.
+2019-12-30 10:29:16,393 - engine - INFO - Reading /home/psaucedo/Desktop/OpenDataMadrid/out_csv/geo_out.csv file for the sake of training, testing and rendering KDE
+2019-12-30 10:29:18,130 - engine - INFO - KDE model is fitted
+2019-12-30 10:29:18,131 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 10:29:18] "POST /visualize HTTP/1.1" 200 -
+2019-12-30 10:29:18,168 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 10:29:18] "GET /static/css/leaflet-slider.css HTTP/1.1" 200 -
+2019-12-30 10:29:18,188 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 10:29:18] "GET /static/js/leafletmap.js HTTP/1.1" 200 -
+2019-12-30 10:29:18,194 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 10:29:18] "GET /static/js/leaflet-slider.js HTTP/1.1" 200 -
+2019-12-30 10:29:18,197 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 10:29:18] "GET /static/js/SliderControl.js HTTP/1.1" 200 -
+2019-12-30 10:29:18,198 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 10:29:18] "GET /static/js/leaflet-heat.js HTTP/1.1" 200 -
+2019-12-30 10:29:18,365 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 10:29:18] "GET /static/maps/map.geojson HTTP/1.1" 200 -
+2019-12-30 10:29:18,585 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 10:29:18] "POST /get_heatmap HTTP/1.1" 200 -
+2019-12-30 10:29:27,820 - __main__ - INFO - You have clicked in 40.75557964275589, -2.98004150390625 . Predicted Harm level in case of accident: 3
+2019-12-30 10:29:27,821 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 10:29:27] "POST /get_click HTTP/1.1" 200 -
+2019-12-30 10:29:28,607 - __main__ - INFO - You have clicked in 40.734770989672406, -2.9690551757812496 . Predicted Harm level in case of accident: 3
+2019-12-30 10:29:28,608 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 10:29:28] "POST /get_click HTTP/1.1" 200 -
+2019-12-30 10:29:29,039 - __main__ - INFO - You have clicked in 40.54093880017256, -3.14208984375 . Predicted Harm level in case of accident: 3
+2019-12-30 10:29:29,040 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 10:29:29] "POST /get_click HTTP/1.1" 200 -
+2019-12-30 10:30:37,185 - data_handler - INFO - Data is updated since 2019-12-20 00:00:00
+2019-12-30 10:30:37,186 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 10:30:37] "GET / HTTP/1.1" 200 -
+2019-12-30 10:30:37,224 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 10:30:37] "GET /static/css/style.css HTTP/1.1" 200 -
+2019-12-30 10:30:37,276 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 10:30:37] "GET /static/img/map.jpg HTTP/1.1" 200 -
+2019-12-30 10:30:38,219 - data_handler - INFO - RandomForestClassifier model loaded successfully.
+2019-12-30 10:30:38,219 - engine - INFO - Reading /home/psaucedo/Desktop/OpenDataMadrid/out_csv/geo_out.csv file for the sake of training, testing and rendering KDE
+2019-12-30 10:30:39,096 - engine - INFO - KDE model is fitted
+2019-12-30 10:30:39,097 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 10:30:39] "POST /visualize HTTP/1.1" 200 -
+2019-12-30 10:30:39,123 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 10:30:39] "GET /static/css/leaflet-slider.css HTTP/1.1" 200 -
+2019-12-30 10:30:39,140 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 10:30:39] "GET /static/js/leaflet-slider.js HTTP/1.1" 200 -
+2019-12-30 10:30:39,146 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 10:30:39] "GET /static/js/leaflet-heat.js HTTP/1.1" 200 -
+2019-12-30 10:30:39,147 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 10:30:39] "GET /static/js/leafletmap.js HTTP/1.1" 200 -
+2019-12-30 10:30:39,150 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 10:30:39] "GET /static/js/SliderControl.js HTTP/1.1" 200 -
+2019-12-30 10:30:39,243 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 10:30:39] "GET /static/maps/map.geojson HTTP/1.1" 200 -
+2019-12-30 10:30:39,419 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 10:30:39] "POST /get_heatmap HTTP/1.1" 200 -
+2019-12-30 10:37:17,387 - __main__ - INFO - You have clicked in 40.4626214924114, -3.6474609374999996 . Predicted Harm level in case of accident: 6
+2019-12-30 10:37:17,388 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 10:37:17] "POST /get_click HTTP/1.1" 200 -
+2019-12-30 10:37:18,073 - __main__ - INFO - You have clicked in 40.42081487986971, -3.6309814453125 . Predicted Harm level in case of accident: 7
+2019-12-30 10:37:18,074 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 10:37:18] "POST /get_click HTTP/1.1" 200 -
+2019-12-30 10:37:18,782 - __main__ - INFO - You have clicked in 40.38525881895442, -3.635101318359375 . Predicted Harm level in case of accident: 14
+2019-12-30 10:37:18,783 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 10:37:18] "POST /get_click HTTP/1.1" 200 -
+2019-12-30 10:37:19,564 - __main__ - INFO - You have clicked in 40.44067626268237, -3.681793212890625 . Predicted Harm level in case of accident: 1
+2019-12-30 10:37:19,565 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 10:37:19] "POST /get_click HTTP/1.1" 200 -
+2019-12-30 10:37:20,213 - __main__ - INFO - You have clicked in 40.43649540640561, -3.7092590332031246 . Predicted Harm level in case of accident: 7
+2019-12-30 10:37:20,214 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 10:37:20] "POST /get_click HTTP/1.1" 200 -
+2019-12-30 10:37:21,885 - __main__ - INFO - You have clicked in 40.364334716590214, -3.66668701171875 . Predicted Harm level in case of accident: 14
+2019-12-30 10:37:21,885 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 10:37:21] "POST /get_click HTTP/1.1" 200 -
+2019-12-30 10:40:00,033 - data_handler - INFO - Data is updated since 2019-12-20 00:00:00
+2019-12-30 10:40:00,034 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 10:40:00] "GET / HTTP/1.1" 200 -
+2019-12-30 10:40:10,172 - data_handler - INFO - RandomForestClassifier model loaded successfully.
+2019-12-30 10:40:10,172 - engine - INFO - Reading /home/psaucedo/Desktop/OpenDataMadrid/out_csv/geo_out.csv file for the sake of training, testing and rendering KDE
+2019-12-30 10:40:11,854 - engine - INFO - KDE model is fitted
+2019-12-30 10:40:11,856 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 10:40:11] "POST /visualize HTTP/1.1" 200 -
+2019-12-30 10:40:11,887 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 10:40:11] "GET /static/css/style.css HTTP/1.1" 200 -
+2019-12-30 10:40:11,897 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 10:40:11] "GET /static/css/leaflet-slider.css HTTP/1.1" 200 -
+2019-12-30 10:40:11,901 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 10:40:11] "GET /static/js/leaflet-slider.js HTTP/1.1" 200 -
+2019-12-30 10:40:11,902 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 10:40:11] "GET /static/js/leafletmap.js HTTP/1.1" 200 -
+2019-12-30 10:40:11,904 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 10:40:11] "GET /static/js/leaflet-heat.js HTTP/1.1" 200 -
+2019-12-30 10:40:11,909 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 10:40:11] "GET /static/js/SliderControl.js HTTP/1.1" 200 -
+2019-12-30 10:40:12,017 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 10:40:12] "GET /static/img/map.jpg HTTP/1.1" 200 -
+2019-12-30 10:40:12,053 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 10:40:12] "GET /static/maps/map.geojson HTTP/1.1" 200 -
+2019-12-30 10:40:12,278 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 10:40:12] "POST /get_heatmap HTTP/1.1" 200 -
+2019-12-30 10:40:33,742 - data_handler - INFO - Data is updated since 2019-12-20 00:00:00
+2019-12-30 10:40:33,743 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 10:40:33] "GET / HTTP/1.1" 200 -
+2019-12-30 10:40:41,548 - data_handler - INFO - RandomForestClassifier model loaded successfully.
+2019-12-30 10:40:41,548 - engine - INFO - Reading /home/psaucedo/Desktop/OpenDataMadrid/out_csv/geo_out.csv file for the sake of training, testing and rendering KDE
+2019-12-30 10:40:42,401 - engine - INFO - KDE model is fitted
+2019-12-30 10:40:42,402 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 10:40:42] "POST /visualize HTTP/1.1" 200 -
+2019-12-30 10:40:42,435 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 10:40:42] "GET /static/css/style.css HTTP/1.1" 200 -
+2019-12-30 10:40:42,447 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 10:40:42] "GET /static/js/leaflet-heat.js HTTP/1.1" 200 -
+2019-12-30 10:40:42,449 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 10:40:42] "GET /static/js/leafletmap.js HTTP/1.1" 200 -
+2019-12-30 10:40:42,458 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 10:40:42] "GET /static/js/leaflet-slider.js HTTP/1.1" 200 -
+2019-12-30 10:40:42,466 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 10:40:42] "GET /static/js/SliderControl.js HTTP/1.1" 200 -
+2019-12-30 10:40:42,466 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 10:40:42] "GET /static/css/leaflet-slider.css HTTP/1.1" 200 -
+2019-12-30 10:40:42,646 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 10:40:42] "GET /static/img/map.jpg HTTP/1.1" 200 -
+2019-12-30 10:40:42,730 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 10:40:42] "GET /static/maps/map.geojson HTTP/1.1" 200 -
+2019-12-30 10:40:42,998 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 10:40:42] "POST /get_heatmap HTTP/1.1" 200 -
+2019-12-30 10:42:02,209 - data_handler - INFO - Data is updated since 2019-12-20 00:00:00
+2019-12-30 10:42:02,210 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 10:42:02] "GET / HTTP/1.1" 200 -
+2019-12-30 10:42:09,532 - data_handler - INFO - RandomForestClassifier model loaded successfully.
+2019-12-30 10:42:09,532 - engine - INFO - Reading /home/psaucedo/Desktop/OpenDataMadrid/out_csv/geo_out.csv file for the sake of training, testing and rendering KDE
+2019-12-30 10:42:10,422 - engine - INFO - KDE model is fitted
+2019-12-30 10:42:10,423 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 10:42:10] "POST /visualize HTTP/1.1" 200 -
+2019-12-30 10:42:10,448 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 10:42:10] "GET /static/css/style.css HTTP/1.1" 200 -
+2019-12-30 10:42:10,492 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 10:42:10] "GET /static/css/leaflet-slider.css HTTP/1.1" 200 -
+2019-12-30 10:42:10,500 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 10:42:10] "GET /static/js/leaflet-slider.js HTTP/1.1" 200 -
+2019-12-30 10:42:10,503 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 10:42:10] "GET /static/js/SliderControl.js HTTP/1.1" 200 -
+2019-12-30 10:42:10,504 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 10:42:10] "GET /static/js/leaflet-heat.js HTTP/1.1" 200 -
+2019-12-30 10:42:10,508 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 10:42:10] "GET /static/js/leafletmap.js HTTP/1.1" 200 -
+2019-12-30 10:42:10,637 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 10:42:10] "GET /static/img/map.jpg HTTP/1.1" 200 -
+2019-12-30 10:42:10,722 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 10:42:10] "GET /static/maps/map.geojson HTTP/1.1" 200 -
+2019-12-30 10:42:11,015 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 10:42:11] "POST /get_heatmap HTTP/1.1" 200 -
+2019-12-30 10:43:01,322 - data_handler - INFO - Data is updated since 2019-12-20 00:00:00
+2019-12-30 10:43:01,322 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 10:43:01] "GET / HTTP/1.1" 200 -
+2019-12-30 10:43:01,370 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 10:43:01] "GET /static/css/style.css HTTP/1.1" 200 -
+2019-12-30 10:43:01,440 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 10:43:01] "GET /static/img/map.jpg HTTP/1.1" 200 -
+2019-12-30 10:43:02,637 - data_handler - INFO - RandomForestClassifier model loaded successfully.
+2019-12-30 10:43:02,637 - engine - INFO - Reading /home/psaucedo/Desktop/OpenDataMadrid/out_csv/geo_out.csv file for the sake of training, testing and rendering KDE
+2019-12-30 10:43:03,516 - engine - INFO - KDE model is fitted
+2019-12-30 10:43:03,517 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 10:43:03] "POST /visualize HTTP/1.1" 200 -
+2019-12-30 10:43:03,558 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 10:43:03] "GET /static/css/leaflet-slider.css HTTP/1.1" 200 -
+2019-12-30 10:43:03,559 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 10:43:03] "GET /static/js/leaflet-slider.js HTTP/1.1" 200 -
+2019-12-30 10:43:03,564 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 10:43:03] "GET /static/js/leaflet-heat.js HTTP/1.1" 200 -
+2019-12-30 10:43:03,566 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 10:43:03] "GET /static/js/leafletmap.js HTTP/1.1" 200 -
+2019-12-30 10:43:03,571 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 10:43:03] "GET /static/js/SliderControl.js HTTP/1.1" 200 -
+2019-12-30 10:43:03,739 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 10:43:03] "GET /static/maps/map.geojson HTTP/1.1" 200 -
+2019-12-30 10:43:03,926 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 10:43:03] "POST /get_heatmap HTTP/1.1" 200 -
+2019-12-30 10:44:27,415 - data_handler - INFO - Data is updated since 2019-12-20 00:00:00
+2019-12-30 10:44:27,416 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 10:44:27] "GET / HTTP/1.1" 200 -
+2019-12-30 10:44:34,759 - data_handler - INFO - RandomForestClassifier model loaded successfully.
+2019-12-30 10:44:34,759 - engine - INFO - Reading /home/psaucedo/Desktop/OpenDataMadrid/out_csv/geo_out.csv file for the sake of training, testing and rendering KDE
+2019-12-30 10:44:35,607 - engine - INFO - KDE model is fitted
+2019-12-30 10:44:35,608 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 10:44:35] "POST /visualize HTTP/1.1" 200 -
+2019-12-30 10:44:35,631 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 10:44:35] "GET /static/css/style.css HTTP/1.1" 200 -
+2019-12-30 10:44:35,644 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 10:44:35] "GET /static/css/leaflet-slider.css HTTP/1.1" 200 -
+2019-12-30 10:44:35,652 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 10:44:35] "GET /static/js/leaflet-slider.js HTTP/1.1" 200 -
+2019-12-30 10:44:35,655 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 10:44:35] "GET /static/js/leaflet-heat.js HTTP/1.1" 200 -
+2019-12-30 10:44:35,656 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 10:44:35] "GET /static/js/SliderControl.js HTTP/1.1" 200 -
+2019-12-30 10:44:35,657 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 10:44:35] "GET /static/js/leafletmap.js HTTP/1.1" 200 -
+2019-12-30 10:44:35,746 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 10:44:35] "GET /static/img/map.jpg HTTP/1.1" 200 -
+2019-12-30 10:44:35,786 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 10:44:35] "GET /static/maps/map.geojson HTTP/1.1" 200 -
+2019-12-30 10:44:36,002 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 10:44:36] "POST /get_heatmap HTTP/1.1" 200 -
+2019-12-30 10:45:21,333 - data_handler - INFO - Data is updated since 2019-12-20 00:00:00
+2019-12-30 10:45:21,334 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 10:45:21] "GET / HTTP/1.1" 200 -
+2019-12-30 10:45:29,312 - data_handler - INFO - RandomForestClassifier model loaded successfully.
+2019-12-30 10:45:29,313 - engine - INFO - Reading /home/psaucedo/Desktop/OpenDataMadrid/out_csv/geo_out.csv file for the sake of training, testing and rendering KDE
+2019-12-30 10:45:30,158 - engine - INFO - KDE model is fitted
+2019-12-30 10:45:30,159 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 10:45:30] "POST /visualize HTTP/1.1" 200 -
+2019-12-30 10:45:30,193 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 10:45:30] "GET /static/css/style.css HTTP/1.1" 200 -
+2019-12-30 10:45:30,212 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 10:45:30] "GET /static/css/leaflet-slider.css HTTP/1.1" 200 -
+2019-12-30 10:45:30,229 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 10:45:30] "GET /static/js/leaflet-slider.js HTTP/1.1" 200 -
+2019-12-30 10:45:30,242 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 10:45:30] "GET /static/js/leafletmap.js HTTP/1.1" 200 -
+2019-12-30 10:45:30,244 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 10:45:30] "GET /static/js/SliderControl.js HTTP/1.1" 200 -
+2019-12-30 10:45:30,251 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 10:45:30] "GET /static/js/leaflet-heat.js HTTP/1.1" 200 -
+2019-12-30 10:45:30,400 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 10:45:30] "GET /static/img/map.jpg HTTP/1.1" 200 -
+2019-12-30 10:45:30,479 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 10:45:30] "GET /static/maps/map.geojson HTTP/1.1" 200 -
+2019-12-30 10:45:30,745 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 10:45:30] "POST /get_heatmap HTTP/1.1" 200 -
+2019-12-30 10:46:37,938 - data_handler - INFO - Data is updated since 2019-12-20 00:00:00
+2019-12-30 10:46:37,939 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 10:46:37] "GET / HTTP/1.1" 200 -
+2019-12-30 10:46:37,973 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 10:46:37] "GET /static/css/style.css HTTP/1.1" 200 -
+2019-12-30 10:46:38,052 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 10:46:38] "GET /static/img/map.jpg HTTP/1.1" 200 -
+2019-12-30 10:46:38,914 - data_handler - INFO - RandomForestClassifier model loaded successfully.
+2019-12-30 10:46:38,914 - engine - INFO - Reading /home/psaucedo/Desktop/OpenDataMadrid/out_csv/geo_out.csv file for the sake of training, testing and rendering KDE
+2019-12-30 10:46:39,739 - engine - INFO - KDE model is fitted
+2019-12-30 10:46:39,740 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 10:46:39] "POST /visualize HTTP/1.1" 200 -
+2019-12-30 10:46:39,772 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 10:46:39] "GET /static/css/leaflet-slider.css HTTP/1.1" 200 -
+2019-12-30 10:46:39,790 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 10:46:39] "GET /static/js/leafletmap.js HTTP/1.1" 200 -
+2019-12-30 10:46:39,792 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 10:46:39] "GET /static/js/SliderControl.js HTTP/1.1" 200 -
+2019-12-30 10:46:39,793 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 10:46:39] "GET /static/js/leaflet-heat.js HTTP/1.1" 200 -
+2019-12-30 10:46:39,797 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 10:46:39] "GET /static/js/leaflet-slider.js HTTP/1.1" 200 -
+2019-12-30 10:46:39,910 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 10:46:39] "GET /static/maps/map.geojson HTTP/1.1" 200 -
+2019-12-30 10:46:40,051 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 10:46:40] "POST /get_heatmap HTTP/1.1" 200 -
+2019-12-30 10:51:07,066 - data_handler - INFO - Data is updated since 2019-12-20 00:00:00
+2019-12-30 10:51:07,066 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 10:51:07] "GET / HTTP/1.1" 200 -
+2019-12-30 10:51:15,550 - data_handler - INFO - RandomForestClassifier model loaded successfully.
+2019-12-30 10:51:15,551 - engine - INFO - Reading /home/psaucedo/Desktop/OpenDataMadrid/out_csv/geo_out.csv file for the sake of training, testing and rendering KDE
+2019-12-30 10:51:16,360 - engine - INFO - KDE model is fitted
+2019-12-30 10:51:16,361 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 10:51:16] "POST /visualize HTTP/1.1" 200 -
+2019-12-30 10:51:16,386 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 10:51:16] "GET /static/css/style.css HTTP/1.1" 200 -
+2019-12-30 10:51:16,394 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 10:51:16] "GET /static/css/leaflet-slider.css HTTP/1.1" 200 -
+2019-12-30 10:51:16,405 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 10:51:16] "GET /static/js/leaflet-slider.js HTTP/1.1" 200 -
+2019-12-30 10:51:16,437 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 10:51:16] "GET /static/js/SliderControl.js HTTP/1.1" 200 -
+2019-12-30 10:51:16,438 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 10:51:16] "GET /static/js/leafletmap.js HTTP/1.1" 200 -
+2019-12-30 10:51:16,439 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 10:51:16] "GET /static/js/leaflet-heat.js HTTP/1.1" 200 -
+2019-12-30 10:51:16,583 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 10:51:16] "GET /static/img/map.jpg HTTP/1.1" 200 -
+2019-12-30 10:51:16,636 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 10:51:16] "GET /static/maps/map.geojson HTTP/1.1" 200 -
+2019-12-30 10:51:16,929 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 10:51:16] "POST /get_heatmap HTTP/1.1" 200 -
+2019-12-30 10:52:54,815 - data_handler - INFO - Data is updated since 2019-12-20 00:00:00
+2019-12-30 10:52:54,816 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 10:52:54] "GET / HTTP/1.1" 200 -
+2019-12-30 10:53:02,424 - data_handler - INFO - RandomForestClassifier model loaded successfully.
+2019-12-30 10:53:02,424 - engine - INFO - Reading /home/psaucedo/Desktop/OpenDataMadrid/out_csv/geo_out.csv file for the sake of training, testing and rendering KDE
+2019-12-30 10:53:03,249 - engine - INFO - KDE model is fitted
+2019-12-30 10:53:03,249 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 10:53:03] "POST /visualize HTTP/1.1" 200 -
+2019-12-30 10:53:03,272 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 10:53:03] "GET /static/css/style.css HTTP/1.1" 200 -
+2019-12-30 10:53:03,290 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 10:53:03] "GET /static/css/leaflet-slider.css HTTP/1.1" 200 -
+2019-12-30 10:53:03,299 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 10:53:03] "GET /static/js/leafletmap.js HTTP/1.1" 200 -
+2019-12-30 10:53:03,299 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 10:53:03] "GET /static/js/leaflet-heat.js HTTP/1.1" 200 -
+2019-12-30 10:53:03,301 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 10:53:03] "GET /static/js/leaflet-slider.js HTTP/1.1" 200 -
+2019-12-30 10:53:03,302 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 10:53:03] "GET /static/js/SliderControl.js HTTP/1.1" 200 -
+2019-12-30 10:53:03,454 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 10:53:03] "GET /static/img/map.jpg HTTP/1.1" 200 -
+2019-12-30 10:53:03,540 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 10:53:03] "GET /static/maps/map.geojson HTTP/1.1" 200 -
+2019-12-30 10:53:03,821 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 10:53:03] "POST /get_heatmap HTTP/1.1" 200 -
+2019-12-30 11:16:22,649 - data_handler - INFO - Data is updated since 2019-12-20 00:00:00
+2019-12-30 11:16:22,650 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 11:16:22] "GET / HTTP/1.1" 200 -
+2019-12-30 11:16:29,124 - data_handler - INFO - RandomForestClassifier model loaded successfully.
+2019-12-30 11:16:29,125 - engine - INFO - Reading /home/psaucedo/Desktop/OpenDataMadrid/out_csv/geo_out.csv file for the sake of training, testing and rendering KDE
+2019-12-30 11:16:30,810 - engine - INFO - KDE model is fitted
+2019-12-30 11:16:30,812 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 11:16:30] "POST /visualize HTTP/1.1" 200 -
+2019-12-30 11:16:30,845 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 11:16:30] "GET /static/css/style.css HTTP/1.1" 200 -
+2019-12-30 11:16:30,879 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 11:16:30] "GET /static/js/leafletmap.js HTTP/1.1" 200 -
+2019-12-30 11:16:30,883 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 11:16:30] "GET /static/css/leaflet-slider.css HTTP/1.1" 200 -
+2019-12-30 11:16:30,882 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 11:16:30] "GET /static/js/leaflet-slider.js HTTP/1.1" 200 -
+2019-12-30 11:16:30,882 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 11:16:30] "GET /static/js/leaflet-heat.js HTTP/1.1" 200 -
+2019-12-30 11:16:30,891 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 11:16:30] "GET /static/js/SliderControl.js HTTP/1.1" 200 -
+2019-12-30 11:16:31,187 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 11:16:31] "GET /static/img/map.jpg HTTP/1.1" 200 -
+2019-12-30 11:16:31,241 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 11:16:31] "GET /static/maps/map.geojson HTTP/1.1" 200 -
+2019-12-30 11:16:31,517 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 11:16:31] "POST /get_heatmap HTTP/1.1" 200 -
+2019-12-30 11:17:05,085 - data_handler - INFO - Data is updated since 2019-12-20 00:00:00
+2019-12-30 11:17:05,086 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 11:17:05] "GET / HTTP/1.1" 200 -
+2019-12-30 11:17:06,520 - data_handler - INFO - RandomForestClassifier model loaded successfully.
+2019-12-30 11:17:06,520 - engine - INFO - Reading /home/psaucedo/Desktop/OpenDataMadrid/out_csv/geo_out.csv file for the sake of training, testing and rendering KDE
+2019-12-30 11:17:07,390 - engine - INFO - KDE model is fitted
+2019-12-30 11:17:07,391 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 11:17:07] "POST /visualize HTTP/1.1" 200 -
+2019-12-30 11:17:07,642 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 11:17:07] "POST /get_heatmap HTTP/1.1" 200 -
+2019-12-30 11:17:16,104 - __main__ - INFO - You have clicked in 40.478292268560175, -3.5760498046875 . Predicted Harm level in case of accident: 3
+2019-12-30 11:17:16,105 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 11:17:16] "POST /get_click HTTP/1.1" 200 -
+2019-12-30 11:17:27,646 - data_handler - INFO - Data is updated since 2019-12-20 00:00:00
+2019-12-30 11:17:27,647 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 11:17:27] "GET / HTTP/1.1" 200 -
+2019-12-30 11:17:38,008 - data_handler - INFO - RandomForestClassifier model loaded successfully.
+2019-12-30 11:17:38,008 - engine - INFO - Reading /home/psaucedo/Desktop/OpenDataMadrid/out_csv/geo_out.csv file for the sake of training, testing and rendering KDE
+2019-12-30 11:17:38,867 - engine - INFO - KDE model is fitted
+2019-12-30 11:17:38,868 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 11:17:38] "POST /visualize HTTP/1.1" 200 -
+2019-12-30 11:17:38,893 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 11:17:38] "GET /static/css/style.css HTTP/1.1" 200 -
+2019-12-30 11:17:38,912 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 11:17:38] "GET /static/js/SliderControl.js HTTP/1.1" 200 -
+2019-12-30 11:17:38,913 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 11:17:38] "GET /static/css/leaflet-slider.css HTTP/1.1" 200 -
+2019-12-30 11:17:38,915 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 11:17:38] "GET /static/js/leaflet-heat.js HTTP/1.1" 200 -
+2019-12-30 11:17:38,916 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 11:17:38] "GET /static/js/leafletmap.js HTTP/1.1" 200 -
+2019-12-30 11:17:38,915 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 11:17:38] "GET /static/js/leaflet-slider.js HTTP/1.1" 200 -
+2019-12-30 11:17:39,025 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 11:17:39] "GET /static/img/map.jpg HTTP/1.1" 200 -
+2019-12-30 11:17:39,061 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 11:17:39] "GET /static/maps/map.geojson HTTP/1.1" 200 -
+2019-12-30 11:17:39,286 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 11:17:39] "POST /get_heatmap HTTP/1.1" 200 -
+2019-12-30 11:18:38,164 - data_handler - INFO - Data is updated since 2019-12-20 00:00:00
+2019-12-30 11:18:38,165 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 11:18:38] "GET / HTTP/1.1" 200 -
+2019-12-30 11:18:39,705 - data_handler - INFO - RandomForestClassifier model loaded successfully.
+2019-12-30 11:18:39,706 - engine - INFO - Reading /home/psaucedo/Desktop/OpenDataMadrid/out_csv/geo_out.csv file for the sake of training, testing and rendering KDE
+2019-12-30 11:18:40,565 - engine - INFO - KDE model is fitted
+2019-12-30 11:18:40,566 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 11:18:40] "POST /visualize HTTP/1.1" 200 -
+2019-12-30 11:18:40,864 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 11:18:40] "POST /get_heatmap HTTP/1.1" 200 -
+2019-12-30 11:18:44,305 - __main__ - INFO - You have clicked in 40.51379915504413, -3.3659362792968746 . Predicted Harm level in case of accident: 3
+2019-12-30 11:18:44,306 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 11:18:44] "POST /get_click HTTP/1.1" 200 -
+2019-12-30 11:52:26,426 - data_handler - INFO - Data is updated since 2019-12-20 00:00:00
+2019-12-30 11:52:26,427 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 11:52:26] "GET / HTTP/1.1" 200 -
+2019-12-30 11:52:34,148 - data_handler - INFO - RandomForestClassifier model loaded successfully.
+2019-12-30 11:52:34,148 - engine - INFO - Reading /home/psaucedo/Desktop/OpenDataMadrid/out_csv/geo_out.csv file for the sake of training, testing and rendering KDE
+2019-12-30 11:52:35,846 - engine - INFO - KDE model is fitted
+2019-12-30 11:52:35,849 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 11:52:35] "POST /visualize HTTP/1.1" 200 -
+2019-12-30 11:52:35,886 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 11:52:35] "GET /static/css/style.css HTTP/1.1" 200 -
+2019-12-30 11:52:35,913 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 11:52:35] "GET /static/js/leaflet-slider.js HTTP/1.1" 200 -
+2019-12-30 11:52:35,917 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 11:52:35] "GET /static/js/leafletmap.js HTTP/1.1" 200 -
+2019-12-30 11:52:35,918 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 11:52:35] "GET /static/js/leaflet-heat.js HTTP/1.1" 200 -
+2019-12-30 11:52:35,921 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 11:52:35] "GET /static/css/leaflet-slider.css HTTP/1.1" 200 -
+2019-12-30 11:52:35,922 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 11:52:35] "GET /static/js/SliderControl.js HTTP/1.1" 200 -
+2019-12-30 11:52:36,075 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 11:52:36] "GET /static/img/map.jpg HTTP/1.1" 200 -
+2019-12-30 11:52:36,138 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 11:52:36] "GET /static/maps/map.geojson HTTP/1.1" 200 -
+2019-12-30 11:52:36,366 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 11:52:36] "POST /get_heatmap HTTP/1.1" 200 -
+2019-12-30 11:56:56,109 - data_handler - INFO - Data is updated since 2019-12-20 00:00:00
+2019-12-30 11:56:56,110 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 11:56:56] "GET / HTTP/1.1" 200 -
+2019-12-30 11:57:02,820 - data_handler - INFO - RandomForestClassifier model loaded successfully.
+2019-12-30 11:57:02,821 - engine - INFO - Reading /home/psaucedo/Desktop/OpenDataMadrid/out_csv/geo_out.csv file for the sake of training, testing and rendering KDE
+2019-12-30 11:57:03,643 - engine - INFO - KDE model is fitted
+2019-12-30 11:57:03,644 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 11:57:03] "POST /visualize HTTP/1.1" 200 -
+2019-12-30 11:57:03,670 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 11:57:03] "GET /static/css/style.css HTTP/1.1" 200 -
+2019-12-30 11:57:03,684 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 11:57:03] "GET /static/js/leaflet-slider.js HTTP/1.1" 200 -
+2019-12-30 11:57:03,689 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 11:57:03] "GET /static/js/SliderControl.js HTTP/1.1" 200 -
+2019-12-30 11:57:03,691 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 11:57:03] "GET /static/css/leaflet-slider.css HTTP/1.1" 200 -
+2019-12-30 11:57:03,692 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 11:57:03] "GET /static/js/leaflet-heat.js HTTP/1.1" 200 -
+2019-12-30 11:57:03,693 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 11:57:03] "GET /static/js/leafletmap.js HTTP/1.1" 200 -
+2019-12-30 11:57:03,803 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 11:57:03] "GET /static/img/map.jpg HTTP/1.1" 200 -
+2019-12-30 11:57:03,837 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 11:57:03] "GET /static/maps/map.geojson HTTP/1.1" 200 -
+2019-12-30 11:57:04,075 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 11:57:04] "POST /get_heatmap HTTP/1.1" 200 -
+2019-12-30 11:57:49,422 - data_handler - INFO - Data is updated since 2019-12-20 00:00:00
+2019-12-30 11:57:49,423 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 11:57:49] "GET / HTTP/1.1" 200 -
+2019-12-30 11:57:55,658 - data_handler - INFO - RandomForestClassifier model loaded successfully.
+2019-12-30 11:57:55,658 - engine - INFO - Reading /home/psaucedo/Desktop/OpenDataMadrid/out_csv/geo_out.csv file for the sake of training, testing and rendering KDE
+2019-12-30 11:57:56,509 - engine - INFO - KDE model is fitted
+2019-12-30 11:57:56,510 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 11:57:56] "POST /visualize HTTP/1.1" 200 -
+2019-12-30 11:57:56,540 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 11:57:56] "GET /static/css/style.css HTTP/1.1" 200 -
+2019-12-30 11:57:56,575 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 11:57:56] "GET /static/js/leaflet-slider.js HTTP/1.1" 200 -
+2019-12-30 11:57:56,577 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 11:57:56] "GET /static/js/leaflet-heat.js HTTP/1.1" 200 -
+2019-12-30 11:57:56,584 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 11:57:56] "GET /static/js/leafletmap.js HTTP/1.1" 200 -
+2019-12-30 11:57:56,587 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 11:57:56] "GET /static/css/leaflet-slider.css HTTP/1.1" 200 -
+2019-12-30 11:57:56,588 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 11:57:56] "GET /static/js/SliderControl.js HTTP/1.1" 200 -
+2019-12-30 11:57:56,716 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 11:57:56] "GET /static/img/map.jpg HTTP/1.1" 200 -
+2019-12-30 11:57:56,874 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 11:57:56] "GET /static/maps/map.geojson HTTP/1.1" 200 -
+2019-12-30 11:57:57,074 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 11:57:57] "POST /get_heatmap HTTP/1.1" 200 -
+2019-12-30 11:58:23,710 - data_handler - INFO - Data is updated since 2019-12-20 00:00:00
+2019-12-30 11:58:23,711 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 11:58:23] "GET / HTTP/1.1" 200 -
+2019-12-30 11:58:25,056 - data_handler - INFO - RandomForestClassifier model loaded successfully.
+2019-12-30 11:58:25,057 - engine - INFO - Reading /home/psaucedo/Desktop/OpenDataMadrid/out_csv/geo_out.csv file for the sake of training, testing and rendering KDE
+2019-12-30 11:58:25,935 - engine - INFO - KDE model is fitted
+2019-12-30 11:58:25,936 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 11:58:25] "POST /visualize HTTP/1.1" 200 -
+2019-12-30 11:58:26,251 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 11:58:26] "POST /get_heatmap HTTP/1.1" 200 -
+2019-12-30 11:58:35,262 - data_handler - INFO - Data is updated since 2019-12-20 00:00:00
+2019-12-30 11:58:35,262 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 11:58:35] "GET / HTTP/1.1" 200 -
+2019-12-30 11:58:37,106 - data_handler - INFO - RandomForestClassifier model loaded successfully.
+2019-12-30 11:58:37,107 - engine - INFO - Reading /home/psaucedo/Desktop/OpenDataMadrid/out_csv/geo_out.csv file for the sake of training, testing and rendering KDE
+2019-12-30 11:58:37,962 - engine - INFO - KDE model is fitted
+2019-12-30 11:58:37,963 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 11:58:37] "POST /visualize HTTP/1.1" 200 -
+2019-12-30 11:58:38,227 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 11:58:38] "POST /get_heatmap HTTP/1.1" 200 -
+2019-12-30 11:59:27,776 - data_handler - INFO - Data is updated since 2019-12-20 00:00:00
+2019-12-30 11:59:27,777 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 11:59:27] "GET / HTTP/1.1" 200 -
+2019-12-30 11:59:29,221 - data_handler - INFO - RandomForestClassifier model loaded successfully.
+2019-12-30 11:59:29,221 - engine - INFO - Reading /home/psaucedo/Desktop/OpenDataMadrid/out_csv/geo_out.csv file for the sake of training, testing and rendering KDE
+2019-12-30 11:59:30,091 - engine - INFO - KDE model is fitted
+2019-12-30 11:59:30,092 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 11:59:30] "POST /visualize HTTP/1.1" 200 -
+2019-12-30 11:59:30,326 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 11:59:30] "POST /get_heatmap HTTP/1.1" 200 -
+2019-12-30 12:00:18,335 - data_handler - INFO - Data is updated since 2019-12-20 00:00:00
+2019-12-30 12:00:18,336 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 12:00:18] "GET / HTTP/1.1" 200 -
+2019-12-30 12:00:25,606 - data_handler - INFO - RandomForestClassifier model loaded successfully.
+2019-12-30 12:00:25,606 - engine - INFO - Reading /home/psaucedo/Desktop/OpenDataMadrid/out_csv/geo_out.csv file for the sake of training, testing and rendering KDE
+2019-12-30 12:00:26,444 - engine - INFO - KDE model is fitted
+2019-12-30 12:00:26,445 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 12:00:26] "POST /visualize HTTP/1.1" 200 -
+2019-12-30 12:00:26,478 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 12:00:26] "GET /static/css/style.css HTTP/1.1" 200 -
+2019-12-30 12:00:26,495 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 12:00:26] "GET /static/js/leaflet-slider.js HTTP/1.1" 200 -
+2019-12-30 12:00:26,496 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 12:00:26] "GET /static/css/leaflet-slider.css HTTP/1.1" 200 -
+2019-12-30 12:00:26,497 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 12:00:26] "GET /static/js/leaflet-heat.js HTTP/1.1" 200 -
+2019-12-30 12:00:26,501 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 12:00:26] "GET /static/js/leafletmap.js HTTP/1.1" 200 -
+2019-12-30 12:00:26,505 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 12:00:26] "GET /static/js/SliderControl.js HTTP/1.1" 200 -
+2019-12-30 12:00:26,675 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 12:00:26] "GET /static/img/map.jpg HTTP/1.1" 200 -
+2019-12-30 12:00:26,715 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 12:00:26] "GET /static/maps/map.geojson HTTP/1.1" 200 -
+2019-12-30 12:00:26,929 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 12:00:26] "POST /get_heatmap HTTP/1.1" 200 -
+2019-12-30 12:01:12,027 - data_handler - INFO - Data is updated since 2019-12-20 00:00:00
+2019-12-30 12:01:12,028 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 12:01:12] "GET / HTTP/1.1" 200 -
+2019-12-30 12:01:18,098 - data_handler - INFO - RandomForestClassifier model loaded successfully.
+2019-12-30 12:01:18,099 - engine - INFO - Reading /home/psaucedo/Desktop/OpenDataMadrid/out_csv/geo_out.csv file for the sake of training, testing and rendering KDE
+2019-12-30 12:01:18,951 - engine - INFO - KDE model is fitted
+2019-12-30 12:01:18,952 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 12:01:18] "POST /visualize HTTP/1.1" 200 -
+2019-12-30 12:01:18,987 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 12:01:18] "GET /static/css/style.css HTTP/1.1" 200 -
+2019-12-30 12:01:18,995 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 12:01:18] "GET /static/css/leaflet-slider.css HTTP/1.1" 200 -
+2019-12-30 12:01:18,996 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 12:01:18] "GET /static/js/leaflet-heat.js HTTP/1.1" 200 -
+2019-12-30 12:01:18,997 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 12:01:18] "GET /static/js/SliderControl.js HTTP/1.1" 200 -
+2019-12-30 12:01:19,001 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 12:01:19] "GET /static/js/leafletmap.js HTTP/1.1" 200 -
+2019-12-30 12:01:19,004 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 12:01:19] "GET /static/js/leaflet-slider.js HTTP/1.1" 200 -
+2019-12-30 12:01:19,223 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 12:01:19] "GET /static/img/map.jpg HTTP/1.1" 200 -
+2019-12-30 12:01:19,256 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 12:01:19] "GET /static/maps/map.geojson HTTP/1.1" 200 -
+2019-12-30 12:01:19,481 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 12:01:19] "POST /get_heatmap HTTP/1.1" 200 -
+2019-12-30 12:06:57,600 - data_handler - INFO - Data is updated since 2019-12-20 00:00:00
+2019-12-30 12:06:57,600 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 12:06:57] "GET / HTTP/1.1" 200 -
+2019-12-30 12:07:07,407 - data_handler - INFO - RandomForestClassifier model loaded successfully.
+2019-12-30 12:07:07,408 - engine - INFO - Reading /home/psaucedo/Desktop/OpenDataMadrid/out_csv/geo_out.csv file for the sake of training, testing and rendering KDE
+2019-12-30 12:07:09,092 - engine - INFO - KDE model is fitted
+2019-12-30 12:07:09,093 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 12:07:09] "POST /visualize HTTP/1.1" 200 -
+2019-12-30 12:07:09,129 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 12:07:09] "GET /static/css/style.css HTTP/1.1" 200 -
+2019-12-30 12:07:09,151 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 12:07:09] "GET /static/css/leaflet-slider.css HTTP/1.1" 200 -
+2019-12-30 12:07:09,154 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 12:07:09] "GET /static/js/leaflet-heat.js HTTP/1.1" 200 -
+2019-12-30 12:07:09,157 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 12:07:09] "GET /static/js/leaflet-slider.js HTTP/1.1" 200 -
+2019-12-30 12:07:09,159 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 12:07:09] "GET /static/js/SliderControl.js HTTP/1.1" 200 -
+2019-12-30 12:07:09,164 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 12:07:09] "GET /static/js/leafletmap.js HTTP/1.1" 200 -
+2019-12-30 12:07:09,319 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 12:07:09] "GET /static/img/map.jpg HTTP/1.1" 200 -
+2019-12-30 12:07:09,381 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 12:07:09] "GET /static/maps/map.geojson HTTP/1.1" 200 -
+2019-12-30 12:07:09,670 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 12:07:09] "POST /get_heatmap HTTP/1.1" 200 -
+2019-12-30 12:21:46,698 - data_handler - INFO - Data is updated since 2019-12-20 00:00:00
+2019-12-30 12:21:46,700 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 12:21:46] "GET / HTTP/1.1" 200 -
+2019-12-30 12:21:53,083 - data_handler - INFO - RandomForestClassifier model loaded successfully.
+2019-12-30 12:21:53,084 - engine - INFO - Reading /home/psaucedo/Desktop/OpenDataMadrid/out_csv/geo_out.csv file for the sake of training, testing and rendering KDE
+2019-12-30 12:21:54,718 - engine - INFO - KDE model is fitted
+2019-12-30 12:21:54,719 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 12:21:54] "POST /visualize HTTP/1.1" 200 -
+2019-12-30 12:21:54,756 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 12:21:54] "GET /static/css/style.css HTTP/1.1" 200 -
+2019-12-30 12:21:54,784 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 12:21:54] "GET /static/js/leaflet-heat.js HTTP/1.1" 200 -
+2019-12-30 12:21:54,785 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 12:21:54] "GET /static/js/leafletmap.js HTTP/1.1" 200 -
+2019-12-30 12:21:54,787 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 12:21:54] "GET /static/css/leaflet-slider.css HTTP/1.1" 200 -
+2019-12-30 12:21:54,788 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 12:21:54] "GET /static/js/leaflet-slider.js HTTP/1.1" 200 -
+2019-12-30 12:21:54,789 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 12:21:54] "GET /static/js/SliderControl.js HTTP/1.1" 200 -
+2019-12-30 12:21:54,965 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 12:21:54] "GET /static/img/map.jpg HTTP/1.1" 200 -
+2019-12-30 12:21:55,036 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 12:21:55] "GET /static/maps/map.geojson HTTP/1.1" 200 -
+2019-12-30 12:21:55,330 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 12:21:55] "POST /get_heatmap HTTP/1.1" 200 -
+2019-12-30 12:24:11,297 - data_handler - INFO - Data is updated since 2019-12-20 00:00:00
+2019-12-30 12:24:11,298 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 12:24:11] "GET / HTTP/1.1" 200 -
+2019-12-30 12:24:18,086 - data_handler - INFO - RandomForestClassifier model loaded successfully.
+2019-12-30 12:24:18,086 - engine - INFO - Reading /home/psaucedo/Desktop/OpenDataMadrid/out_csv/geo_out.csv file for the sake of training, testing and rendering KDE
+2019-12-30 12:24:18,907 - engine - INFO - KDE model is fitted
+2019-12-30 12:24:18,908 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 12:24:18] "POST /visualize HTTP/1.1" 200 -
+2019-12-30 12:24:18,940 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 12:24:18] "GET /static/css/style.css HTTP/1.1" 200 -
+2019-12-30 12:24:18,957 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 12:24:18] "GET /static/css/leaflet-slider.css HTTP/1.1" 200 -
+2019-12-30 12:24:18,962 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 12:24:18] "GET /static/js/leaflet-slider.js HTTP/1.1" 200 -
+2019-12-30 12:24:18,964 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 12:24:18] "GET /static/js/leaflet-heat.js HTTP/1.1" 200 -
+2019-12-30 12:24:18,967 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 12:24:18] "GET /static/js/SliderControl.js HTTP/1.1" 200 -
+2019-12-30 12:24:18,967 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 12:24:18] "GET /static/js/leafletmap.js HTTP/1.1" 200 -
+2019-12-30 12:24:19,303 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 12:24:19] "GET /static/img/map.jpg HTTP/1.1" 200 -
+2019-12-30 12:24:19,385 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 12:24:19] "GET /static/maps/map.geojson HTTP/1.1" 200 -
+2019-12-30 12:24:19,656 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 12:24:19] "POST /get_heatmap HTTP/1.1" 200 -
+2019-12-30 12:24:37,766 - data_handler - INFO - Data is updated since 2019-12-20 00:00:00
+2019-12-30 12:24:37,767 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 12:24:37] "GET / HTTP/1.1" 200 -
+2019-12-30 12:25:42,759 - data_handler - INFO - Data is updated since 2019-12-20 00:00:00
+2019-12-30 12:25:42,760 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 12:25:42] "GET / HTTP/1.1" 200 -
+2019-12-30 12:25:42,813 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 12:25:42] "GET /static/css/style.css HTTP/1.1" 200 -
+2019-12-30 12:25:43,831 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 12:25:43] "GET /static/img/map.jpg HTTP/1.1" 200 -
+2019-12-30 12:25:45,238 - data_handler - INFO - RandomForestClassifier model loaded successfully.
+2019-12-30 12:25:45,238 - engine - INFO - Reading /home/psaucedo/Desktop/OpenDataMadrid/out_csv/geo_out.csv file for the sake of training, testing and rendering KDE
+2019-12-30 12:25:46,084 - engine - INFO - KDE model is fitted
+2019-12-30 12:25:46,085 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 12:25:46] "POST /visualize HTTP/1.1" 200 -
+2019-12-30 12:25:46,113 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 12:25:46] "GET /static/css/leaflet-slider.css HTTP/1.1" 200 -
+2019-12-30 12:25:46,136 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 12:25:46] "GET /static/js/leaflet-heat.js HTTP/1.1" 200 -
+2019-12-30 12:25:46,137 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 12:25:46] "GET /static/js/SliderControl.js HTTP/1.1" 200 -
+2019-12-30 12:25:46,138 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 12:25:46] "GET /static/js/leafletmap.js HTTP/1.1" 200 -
+2019-12-30 12:25:46,142 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 12:25:46] "GET /static/js/leaflet-slider.js HTTP/1.1" 200 -
+2019-12-30 12:25:46,603 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 12:25:46] "GET /static/maps/map.geojson HTTP/1.1" 200 -
+2019-12-30 12:25:46,771 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 12:25:46] "POST /get_heatmap HTTP/1.1" 200 -
+2019-12-30 12:26:34,408 - data_handler - INFO - Data is updated since 2019-12-20 00:00:00
+2019-12-30 12:26:34,408 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 12:26:34] "GET / HTTP/1.1" 200 -
+2019-12-30 12:26:35,787 - data_handler - INFO - RandomForestClassifier model loaded successfully.
+2019-12-30 12:26:35,787 - engine - INFO - Reading /home/psaucedo/Desktop/OpenDataMadrid/out_csv/geo_out.csv file for the sake of training, testing and rendering KDE
+2019-12-30 12:26:36,708 - engine - INFO - KDE model is fitted
+2019-12-30 12:26:36,709 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 12:26:36] "POST /visualize HTTP/1.1" 200 -
+2019-12-30 12:26:37,129 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 12:26:37] "POST /get_heatmap HTTP/1.1" 200 -
+2019-12-30 12:27:22,950 - data_handler - INFO - Data is updated since 2019-12-20 00:00:00
+2019-12-30 12:27:22,951 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 12:27:22] "GET / HTTP/1.1" 200 -
+2019-12-30 12:27:24,345 - data_handler - INFO - RandomForestClassifier model loaded successfully.
+2019-12-30 12:27:24,345 - engine - INFO - Reading /home/psaucedo/Desktop/OpenDataMadrid/out_csv/geo_out.csv file for the sake of training, testing and rendering KDE
+2019-12-30 12:27:25,219 - engine - INFO - KDE model is fitted
+2019-12-30 12:27:25,221 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 12:27:25] "POST /visualize HTTP/1.1" 200 -
+2019-12-30 12:27:25,629 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 12:27:25] "POST /get_heatmap HTTP/1.1" 200 -
+2019-12-30 12:28:05,122 - data_handler - INFO - RandomForestClassifier model loaded successfully.
+2019-12-30 12:28:05,122 - engine - INFO - Reading /home/psaucedo/Desktop/OpenDataMadrid/out_csv/geo_out.csv file for the sake of training, testing and rendering KDE
+2019-12-30 12:28:06,057 - engine - INFO - KDE model is fitted
+2019-12-30 12:28:06,057 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 12:28:06] "POST /visualize HTTP/1.1" 200 -
+2019-12-30 12:28:06,429 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 12:28:06] "POST /get_heatmap HTTP/1.1" 200 -
+2019-12-30 12:28:14,341 - data_handler - INFO - RandomForestClassifier model loaded successfully.
+2019-12-30 12:28:14,341 - engine - INFO - Reading /home/psaucedo/Desktop/OpenDataMadrid/out_csv/geo_out.csv file for the sake of training, testing and rendering KDE
+2019-12-30 12:28:15,424 - engine - INFO - KDE model is fitted
+2019-12-30 12:28:15,426 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 12:28:15] "POST /visualize HTTP/1.1" 200 -
+2019-12-30 12:28:15,858 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 12:28:15] "POST /get_heatmap HTTP/1.1" 200 -
+2019-12-30 12:28:17,351 - data_handler - INFO - Data is updated since 2019-12-20 00:00:00
+2019-12-30 12:28:17,352 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 12:28:17] "GET / HTTP/1.1" 200 -
+2019-12-30 12:28:18,675 - data_handler - INFO - RandomForestClassifier model loaded successfully.
+2019-12-30 12:28:18,675 - engine - INFO - Reading /home/psaucedo/Desktop/OpenDataMadrid/out_csv/geo_out.csv file for the sake of training, testing and rendering KDE
+2019-12-30 12:28:19,555 - engine - INFO - KDE model is fitted
+2019-12-30 12:28:19,556 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 12:28:19] "POST /visualize HTTP/1.1" 200 -
+2019-12-30 12:28:19,952 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 12:28:19] "POST /get_heatmap HTTP/1.1" 200 -
+2019-12-30 12:30:08,666 - data_handler - INFO - Data is updated since 2019-12-20 00:00:00
+2019-12-30 12:30:08,666 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 12:30:08] "GET / HTTP/1.1" 200 -
+2019-12-30 12:30:09,889 - data_handler - INFO - RandomForestClassifier model loaded successfully.
+2019-12-30 12:30:09,889 - engine - INFO - Reading /home/psaucedo/Desktop/OpenDataMadrid/out_csv/geo_out.csv file for the sake of training, testing and rendering KDE
+2019-12-30 12:30:10,780 - engine - INFO - KDE model is fitted
+2019-12-30 12:30:10,781 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 12:30:10] "POST /visualize HTTP/1.1" 200 -
+2019-12-30 12:30:11,189 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 12:30:11] "POST /get_heatmap HTTP/1.1" 200 -
+2019-12-30 12:30:38,463 - data_handler - INFO - Data is updated since 2019-12-20 00:00:00
+2019-12-30 12:30:38,464 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 12:30:38] "GET / HTTP/1.1" 200 -
+2019-12-30 12:30:40,880 - data_handler - INFO - RandomForestClassifier model loaded successfully.
+2019-12-30 12:30:40,880 - engine - INFO - Reading /home/psaucedo/Desktop/OpenDataMadrid/out_csv/geo_out.csv file for the sake of training, testing and rendering KDE
+2019-12-30 12:30:41,751 - engine - INFO - KDE model is fitted
+2019-12-30 12:30:41,752 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 12:30:41] "POST /visualize HTTP/1.1" 200 -
+2019-12-30 12:30:42,206 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 12:30:42] "POST /get_heatmap HTTP/1.1" 200 -
+2019-12-30 12:31:02,147 - data_handler - INFO - Data is updated since 2019-12-20 00:00:00
+2019-12-30 12:31:02,148 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 12:31:02] "GET / HTTP/1.1" 200 -
+2019-12-30 12:31:03,452 - data_handler - INFO - RandomForestClassifier model loaded successfully.
+2019-12-30 12:31:03,452 - engine - INFO - Reading /home/psaucedo/Desktop/OpenDataMadrid/out_csv/geo_out.csv file for the sake of training, testing and rendering KDE
+2019-12-30 12:31:04,328 - engine - INFO - KDE model is fitted
+2019-12-30 12:31:04,328 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 12:31:04] "POST /visualize HTTP/1.1" 200 -
+2019-12-30 12:31:04,748 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 12:31:04] "POST /get_heatmap HTTP/1.1" 200 -
+2019-12-30 12:31:14,753 - data_handler - INFO - RandomForestClassifier model loaded successfully.
+2019-12-30 12:31:14,753 - engine - INFO - Reading /home/psaucedo/Desktop/OpenDataMadrid/out_csv/geo_out.csv file for the sake of training, testing and rendering KDE
+2019-12-30 12:31:15,606 - engine - INFO - KDE model is fitted
+2019-12-30 12:31:15,607 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 12:31:15] "POST /visualize HTTP/1.1" 200 -
+2019-12-30 12:31:15,646 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 12:31:15] "GET /static/css/style.css HTTP/1.1" 200 -
+2019-12-30 12:31:15,674 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 12:31:15] "GET /static/js/leaflet-slider.js HTTP/1.1" 200 -
+2019-12-30 12:31:15,677 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 12:31:15] "GET /static/js/leaflet-heat.js HTTP/1.1" 200 -
+2019-12-30 12:31:15,679 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 12:31:15] "GET /static/js/leafletmap.js HTTP/1.1" 200 -
+2019-12-30 12:31:15,683 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 12:31:15] "GET /static/css/leaflet-slider.css HTTP/1.1" 200 -
+2019-12-30 12:31:15,685 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 12:31:15] "GET /static/js/SliderControl.js HTTP/1.1" 200 -
+2019-12-30 12:31:15,844 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 12:31:15] "GET /static/img/map.jpg HTTP/1.1" 200 -
+2019-12-30 12:31:15,933 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 12:31:15] "GET /static/maps/map.geojson HTTP/1.1" 200 -
+2019-12-30 12:31:16,190 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 12:31:16] "POST /get_heatmap HTTP/1.1" 200 -
+2019-12-30 12:31:24,969 - data_handler - INFO - Data is updated since 2019-12-20 00:00:00
+2019-12-30 12:31:24,970 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 12:31:24] "GET / HTTP/1.1" 200 -
+2019-12-30 12:31:31,458 - data_handler - INFO - RandomForestClassifier model loaded successfully.
+2019-12-30 12:31:31,459 - engine - INFO - Reading /home/psaucedo/Desktop/OpenDataMadrid/out_csv/geo_out.csv file for the sake of training, testing and rendering KDE
+2019-12-30 12:31:32,285 - engine - INFO - KDE model is fitted
+2019-12-30 12:31:32,286 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 12:31:32] "POST /visualize HTTP/1.1" 200 -
+2019-12-30 12:31:32,320 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 12:31:32] "GET /static/css/style.css HTTP/1.1" 200 -
+2019-12-30 12:31:32,328 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 12:31:32] "GET /static/css/leaflet-slider.css HTTP/1.1" 200 -
+2019-12-30 12:31:32,331 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 12:31:32] "GET /static/js/leaflet-slider.js HTTP/1.1" 200 -
+2019-12-30 12:31:32,354 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 12:31:32] "GET /static/js/leaflet-heat.js HTTP/1.1" 200 -
+2019-12-30 12:31:32,360 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 12:31:32] "GET /static/js/SliderControl.js HTTP/1.1" 200 -
+2019-12-30 12:31:32,361 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 12:31:32] "GET /static/js/leafletmap.js HTTP/1.1" 200 -
+2019-12-30 12:31:32,500 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 12:31:32] "GET /static/img/map.jpg HTTP/1.1" 200 -
+2019-12-30 12:31:32,588 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 12:31:32] "GET /static/maps/map.geojson HTTP/1.1" 200 -
+2019-12-30 12:31:32,823 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 12:31:32] "POST /get_heatmap HTTP/1.1" 200 -
+2019-12-30 12:34:49,774 - data_handler - INFO - Data is updated since 2019-12-20 00:00:00
+2019-12-30 12:34:49,775 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 12:34:49] "GET / HTTP/1.1" 200 -
+2019-12-30 12:34:57,444 - data_handler - INFO - RandomForestClassifier model loaded successfully.
+2019-12-30 12:34:57,444 - engine - INFO - Reading /home/psaucedo/Desktop/OpenDataMadrid/out_csv/geo_out.csv file for the sake of training, testing and rendering KDE
+2019-12-30 12:34:58,297 - engine - INFO - KDE model is fitted
+2019-12-30 12:34:58,297 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 12:34:58] "POST /visualize HTTP/1.1" 200 -
+2019-12-30 12:34:58,334 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 12:34:58] "GET /static/css/style.css HTTP/1.1" 200 -
+2019-12-30 12:34:58,361 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 12:34:58] "GET /static/css/leaflet-slider.css HTTP/1.1" 200 -
+2019-12-30 12:34:58,366 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 12:34:58] "GET /static/js/leaflet-heat.js HTTP/1.1" 200 -
+2019-12-30 12:34:58,368 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 12:34:58] "GET /static/js/leafletmap.js HTTP/1.1" 200 -
+2019-12-30 12:34:58,369 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 12:34:58] "GET /static/js/leaflet-slider.js HTTP/1.1" 200 -
+2019-12-30 12:34:58,371 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 12:34:58] "GET /static/js/SliderControl.js HTTP/1.1" 200 -
+2019-12-30 12:34:58,513 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 12:34:58] "GET /static/img/map.jpg HTTP/1.1" 200 -
+2019-12-30 12:34:58,643 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 12:34:58] "GET /static/maps/map.geojson HTTP/1.1" 200 -
+2019-12-30 12:34:58,845 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 12:34:58] "POST /get_heatmap HTTP/1.1" 200 -
+2019-12-30 12:35:04,110 - __main__ - INFO - You have clicked in 40.41297324565437, -3.681106567382813 . Predicted Harm level in case of accident: 2
+2019-12-30 12:35:04,111 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 12:35:04] "POST /get_click HTTP/1.1" 200 -
+2019-12-30 12:37:02,568 - data_handler - INFO - Data is updated since 2019-12-20 00:00:00
+2019-12-30 12:37:02,569 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 12:37:02] "GET / HTTP/1.1" 200 -
+2019-12-30 12:37:09,034 - data_handler - INFO - RandomForestClassifier model loaded successfully.
+2019-12-30 12:37:09,034 - engine - INFO - Reading /home/psaucedo/Desktop/OpenDataMadrid/out_csv/geo_out.csv file for the sake of training, testing and rendering KDE
+2019-12-30 12:37:09,876 - engine - INFO - KDE model is fitted
+2019-12-30 12:37:09,877 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 12:37:09] "POST /visualize HTTP/1.1" 200 -
+2019-12-30 12:37:09,897 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 12:37:09] "GET /static/css/style.css HTTP/1.1" 200 -
+2019-12-30 12:37:09,909 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 12:37:09] "GET /static/js/leaflet-slider.js HTTP/1.1" 200 -
+2019-12-30 12:37:09,914 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 12:37:09] "GET /static/js/leafletmap.js HTTP/1.1" 200 -
+2019-12-30 12:37:09,918 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 12:37:09] "GET /static/css/leaflet-slider.css HTTP/1.1" 200 -
+2019-12-30 12:37:09,921 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 12:37:09] "GET /static/js/leaflet-heat.js HTTP/1.1" 200 -
+2019-12-30 12:37:09,924 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 12:37:09] "GET /static/js/SliderControl.js HTTP/1.1" 200 -
+2019-12-30 12:37:10,015 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 12:37:10] "GET /static/img/map.jpg HTTP/1.1" 200 -
+2019-12-30 12:37:10,056 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 12:37:10] "GET /static/maps/map.geojson HTTP/1.1" 200 -
+2019-12-30 12:37:10,283 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 12:37:10] "POST /get_heatmap HTTP/1.1" 200 -
+2019-12-30 12:41:22,702 - data_handler - INFO - Data is updated since 2019-12-20 00:00:00
+2019-12-30 12:41:22,703 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 12:41:22] "GET / HTTP/1.1" 200 -
+2019-12-30 12:41:30,074 - data_handler - INFO - RandomForestClassifier model loaded successfully.
+2019-12-30 12:41:30,074 - engine - INFO - Reading /home/psaucedo/Desktop/OpenDataMadrid/out_csv/geo_out.csv file for the sake of training, testing and rendering KDE
+2019-12-30 12:41:30,940 - engine - INFO - KDE model is fitted
+2019-12-30 12:41:30,941 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 12:41:30] "POST /visualize HTTP/1.1" 200 -
+2019-12-30 12:41:30,965 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 12:41:30] "GET /static/css/style.css HTTP/1.1" 200 -
+2019-12-30 12:41:30,985 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 12:41:30] "GET /static/js/SliderControl.js HTTP/1.1" 200 -
+2019-12-30 12:41:30,989 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 12:41:30] "GET /static/css/leaflet-slider.css HTTP/1.1" 200 -
+2019-12-30 12:41:30,991 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 12:41:30] "GET /static/js/leaflet-heat.js HTTP/1.1" 200 -
+2019-12-30 12:41:30,992 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 12:41:30] "GET /static/js/leaflet-slider.js HTTP/1.1" 200 -
+2019-12-30 12:41:30,994 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 12:41:30] "GET /static/js/leafletmap.js HTTP/1.1" 200 -
+2019-12-30 12:41:31,089 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 12:41:31] "GET /static/img/map.jpg HTTP/1.1" 200 -
+2019-12-30 12:41:31,121 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 12:41:31] "GET /static/maps/map.geojson HTTP/1.1" 200 -
+2019-12-30 12:41:31,344 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 12:41:31] "POST /get_heatmap HTTP/1.1" 200 -
+2019-12-30 12:42:08,599 - data_handler - INFO - Data is updated since 2019-12-20 00:00:00
+2019-12-30 12:42:08,600 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 12:42:08] "GET / HTTP/1.1" 200 -
+2019-12-30 12:42:16,017 - data_handler - INFO - RandomForestClassifier model loaded successfully.
+2019-12-30 12:42:16,017 - engine - INFO - Reading /home/psaucedo/Desktop/OpenDataMadrid/out_csv/geo_out.csv file for the sake of training, testing and rendering KDE
+2019-12-30 12:42:16,866 - engine - INFO - KDE model is fitted
+2019-12-30 12:42:16,867 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 12:42:16] "POST /visualize HTTP/1.1" 200 -
+2019-12-30 12:42:16,899 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 12:42:16] "GET /static/css/style.css HTTP/1.1" 200 -
+2019-12-30 12:42:16,919 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 12:42:16] "GET /static/js/leaflet-slider.js HTTP/1.1" 200 -
+2019-12-30 12:42:16,920 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 12:42:16] "GET /static/js/leaflet-heat.js HTTP/1.1" 200 -
+2019-12-30 12:42:16,921 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 12:42:16] "GET /static/css/leaflet-slider.css HTTP/1.1" 200 -
+2019-12-30 12:42:16,927 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 12:42:16] "GET /static/js/SliderControl.js HTTP/1.1" 200 -
+2019-12-30 12:42:16,927 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 12:42:16] "GET /static/js/leafletmap.js HTTP/1.1" 200 -
+2019-12-30 12:42:17,020 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 12:42:17] "GET /static/img/map.jpg HTTP/1.1" 200 -
+2019-12-30 12:42:17,057 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 12:42:17] "GET /static/maps/map.geojson HTTP/1.1" 200 -
+2019-12-30 12:42:17,320 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 12:42:17] "POST /get_heatmap HTTP/1.1" 200 -
+2019-12-30 12:43:24,005 - data_handler - INFO - Data is updated since 2019-12-20 00:00:00
+2019-12-30 12:43:24,006 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 12:43:24] "GET / HTTP/1.1" 200 -
+2019-12-30 12:43:35,798 - data_handler - INFO - RandomForestClassifier model loaded successfully.
+2019-12-30 12:43:35,799 - engine - INFO - Reading /home/psaucedo/Desktop/OpenDataMadrid/out_csv/geo_out.csv file for the sake of training, testing and rendering KDE
+2019-12-30 12:43:36,699 - engine - INFO - KDE model is fitted
+2019-12-30 12:43:36,699 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 12:43:36] "POST /visualize HTTP/1.1" 200 -
+2019-12-30 12:43:36,730 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 12:43:36] "GET /static/css/style.css HTTP/1.1" 200 -
+2019-12-30 12:43:36,749 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 12:43:36] "GET /static/css/leaflet-slider.css HTTP/1.1" 200 -
+2019-12-30 12:43:36,750 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 12:43:36] "GET /static/js/leaflet-slider.js HTTP/1.1" 200 -
+2019-12-30 12:43:36,753 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 12:43:36] "GET /static/js/SliderControl.js HTTP/1.1" 200 -
+2019-12-30 12:43:36,755 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 12:43:36] "GET /static/js/leafletmap.js HTTP/1.1" 200 -
+2019-12-30 12:43:36,756 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 12:43:36] "GET /static/js/leaflet-heat.js HTTP/1.1" 200 -
+2019-12-30 12:43:36,914 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 12:43:36] "GET /static/img/map.jpg HTTP/1.1" 200 -
+2019-12-30 12:43:36,978 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 12:43:36] "GET /static/maps/map.geojson HTTP/1.1" 200 -
+2019-12-30 12:43:37,228 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 12:43:37] "POST /get_heatmap HTTP/1.1" 200 -
+2019-12-30 12:47:31,227 - data_handler - INFO - Data is updated since 2019-12-20 00:00:00
+2019-12-30 12:47:31,228 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 12:47:31] "GET / HTTP/1.1" 200 -
+2019-12-30 12:47:46,325 - data_handler - INFO - RandomForestClassifier model loaded successfully.
+2019-12-30 12:47:46,326 - engine - INFO - Reading /home/psaucedo/Desktop/OpenDataMadrid/out_csv/geo_out.csv file for the sake of training, testing and rendering KDE
+2019-12-30 12:47:47,160 - engine - INFO - KDE model is fitted
+2019-12-30 12:47:47,161 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 12:47:47] "POST /visualize HTTP/1.1" 200 -
+2019-12-30 12:47:47,182 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 12:47:47] "GET /static/css/style.css HTTP/1.1" 200 -
+2019-12-30 12:47:47,198 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 12:47:47] "GET /static/js/SliderControl.js HTTP/1.1" 200 -
+2019-12-30 12:47:47,198 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 12:47:47] "GET /static/js/leaflet-slider.js HTTP/1.1" 200 -
+2019-12-30 12:47:47,199 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 12:47:47] "GET /static/css/leaflet-slider.css HTTP/1.1" 200 -
+2019-12-30 12:47:47,199 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 12:47:47] "GET /static/js/leafletmap.js HTTP/1.1" 200 -
+2019-12-30 12:47:47,200 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 12:47:47] "GET /static/js/leaflet-heat.js HTTP/1.1" 200 -
+2019-12-30 12:47:47,309 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 12:47:47] "GET /static/img/map.jpg HTTP/1.1" 200 -
+2019-12-30 12:47:47,345 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 12:47:47] "GET /static/maps/map.geojson HTTP/1.1" 200 -
+2019-12-30 12:47:47,571 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 12:47:47] "POST /get_heatmap HTTP/1.1" 200 -
+2019-12-30 12:56:32,073 - data_handler - INFO - Data is updated since 2019-12-20 00:00:00
+2019-12-30 12:56:32,074 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 12:56:32] "GET / HTTP/1.1" 200 -
+2019-12-30 12:56:33,686 - data_handler - INFO - RandomForestClassifier model loaded successfully.
+2019-12-30 12:56:33,686 - engine - INFO - Reading /home/psaucedo/Desktop/OpenDataMadrid/out_csv/geo_out.csv file for the sake of training, testing and rendering KDE
+2019-12-30 12:56:35,374 - engine - INFO - KDE model is fitted
+2019-12-30 12:56:35,375 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 12:56:35] "POST /visualize HTTP/1.1" 200 -
+2019-12-30 12:56:35,666 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 12:56:35] "POST /get_heatmap HTTP/1.1" 200 -
+2019-12-30 12:56:37,654 - data_handler - INFO - Data is updated since 2019-12-20 00:00:00
+2019-12-30 12:56:37,655 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 12:56:37] "GET / HTTP/1.1" 200 -
+2019-12-30 12:56:44,737 - data_handler - INFO - RandomForestClassifier model loaded successfully.
+2019-12-30 12:56:44,737 - engine - INFO - Reading /home/psaucedo/Desktop/OpenDataMadrid/out_csv/geo_out.csv file for the sake of training, testing and rendering KDE
+2019-12-30 12:56:45,536 - engine - INFO - KDE model is fitted
+2019-12-30 12:56:45,537 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 12:56:45] "POST /visualize HTTP/1.1" 200 -
+2019-12-30 12:56:45,564 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 12:56:45] "GET /static/css/style.css HTTP/1.1" 200 -
+2019-12-30 12:56:45,584 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 12:56:45] "GET /static/js/leaflet-heat.js HTTP/1.1" 200 -
+2019-12-30 12:56:45,589 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 12:56:45] "GET /static/css/leaflet-slider.css HTTP/1.1" 200 -
+2019-12-30 12:56:45,589 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 12:56:45] "GET /static/js/leaflet-slider.js HTTP/1.1" 200 -
+2019-12-30 12:56:45,595 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 12:56:45] "GET /static/js/SliderControl.js HTTP/1.1" 200 -
+2019-12-30 12:56:45,597 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 12:56:45] "GET /static/js/leafletmap.js HTTP/1.1" 200 -
+2019-12-30 12:56:45,700 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 12:56:45] "GET /static/img/map.jpg HTTP/1.1" 200 -
+2019-12-30 12:56:45,731 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 12:56:45] "GET /static/maps/map.geojson HTTP/1.1" 200 -
+2019-12-30 12:56:46,013 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 12:56:46] "POST /get_heatmap HTTP/1.1" 200 -
+2019-12-30 12:57:54,767 - data_handler - INFO - Data is updated since 2019-12-20 00:00:00
+2019-12-30 12:57:54,768 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 12:57:54] "GET / HTTP/1.1" 200 -
+2019-12-30 12:58:02,517 - data_handler - INFO - RandomForestClassifier model loaded successfully.
+2019-12-30 12:58:02,517 - engine - INFO - Reading /home/psaucedo/Desktop/OpenDataMadrid/out_csv/geo_out.csv file for the sake of training, testing and rendering KDE
+2019-12-30 12:58:03,357 - engine - INFO - KDE model is fitted
+2019-12-30 12:58:03,358 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 12:58:03] "POST /visualize HTTP/1.1" 200 -
+2019-12-30 12:58:03,386 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 12:58:03] "GET /static/css/style.css HTTP/1.1" 200 -
+2019-12-30 12:58:03,406 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 12:58:03] "GET /static/css/leaflet-slider.css HTTP/1.1" 200 -
+2019-12-30 12:58:03,412 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 12:58:03] "GET /static/js/leaflet-heat.js HTTP/1.1" 200 -
+2019-12-30 12:58:03,418 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 12:58:03] "GET /static/js/leaflet-slider.js HTTP/1.1" 200 -
+2019-12-30 12:58:03,418 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 12:58:03] "GET /static/js/SliderControl.js HTTP/1.1" 200 -
+2019-12-30 12:58:03,419 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 12:58:03] "GET /static/js/leafletmap.js HTTP/1.1" 200 -
+2019-12-30 12:58:03,507 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 12:58:03] "GET /static/img/map.jpg HTTP/1.1" 200 -
+2019-12-30 12:58:03,558 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 12:58:03] "GET /static/maps/map.geojson HTTP/1.1" 200 -
+2019-12-30 12:58:03,723 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 12:58:03] "POST /get_heatmap HTTP/1.1" 200 -
+2019-12-30 13:00:22,108 - data_handler - INFO - Data is updated since 2019-12-20 00:00:00
+2019-12-30 13:00:22,109 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 13:00:22] "GET / HTTP/1.1" 200 -
+2019-12-30 13:00:23,646 - data_handler - INFO - RandomForestClassifier model loaded successfully.
+2019-12-30 13:00:23,646 - engine - INFO - Reading /home/psaucedo/Desktop/OpenDataMadrid/out_csv/geo_out.csv file for the sake of training, testing and rendering KDE
+2019-12-30 13:00:24,497 - engine - INFO - KDE model is fitted
+2019-12-30 13:00:24,499 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 13:00:24] "POST /visualize HTTP/1.1" 200 -
+2019-12-30 13:00:24,752 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 13:00:24] "POST /get_heatmap HTTP/1.1" 200 -
+2019-12-30 13:06:13,300 - data_handler - INFO - Data is updated since 2019-12-20 00:00:00
+2019-12-30 13:06:13,301 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 13:06:13] "GET / HTTP/1.1" 200 -
+2019-12-30 13:06:22,072 - data_handler - INFO - RandomForestClassifier model loaded successfully.
+2019-12-30 13:06:22,072 - engine - INFO - Reading /home/psaucedo/Desktop/OpenDataMadrid/out_csv/geo_out.csv file for the sake of training, testing and rendering KDE
+2019-12-30 13:06:23,702 - engine - INFO - KDE model is fitted
+2019-12-30 13:06:23,703 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 13:06:23] "POST /visualize HTTP/1.1" 200 -
+2019-12-30 13:06:23,730 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 13:06:23] "GET /static/css/style.css HTTP/1.1" 200 -
+2019-12-30 13:06:23,746 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 13:06:23] "GET /static/js/leaflet-heat.js HTTP/1.1" 200 -
+2019-12-30 13:06:23,747 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 13:06:23] "GET /static/js/leaflet-slider.js HTTP/1.1" 200 -
+2019-12-30 13:06:23,747 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 13:06:23] "GET /static/css/leaflet-slider.css HTTP/1.1" 200 -
+2019-12-30 13:06:23,751 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 13:06:23] "GET /static/js/SliderControl.js HTTP/1.1" 200 -
+2019-12-30 13:06:23,754 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 13:06:23] "GET /static/js/leafletmap.js HTTP/1.1" 200 -
+2019-12-30 13:06:23,895 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 13:06:23] "GET /static/img/map.jpg HTTP/1.1" 200 -
+2019-12-30 13:06:23,932 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 13:06:23] "GET /static/maps/map.geojson HTTP/1.1" 200 -
+2019-12-30 13:06:24,158 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 13:06:24] "POST /get_heatmap HTTP/1.1" 200 -
+2019-12-30 13:13:06,790 - data_handler - INFO - Data is updated since 2019-12-20 00:00:00
+2019-12-30 13:13:06,791 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 13:13:06] "GET / HTTP/1.1" 200 -
+2019-12-30 13:13:13,406 - data_handler - INFO - RandomForestClassifier model loaded successfully.
+2019-12-30 13:13:13,406 - engine - INFO - Reading /home/psaucedo/Desktop/OpenDataMadrid/out_csv/geo_out.csv file for the sake of training, testing and rendering KDE
+2019-12-30 13:13:15,127 - engine - INFO - KDE model is fitted
+2019-12-30 13:13:15,128 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 13:13:15] "POST /visualize HTTP/1.1" 200 -
+2019-12-30 13:13:15,160 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 13:13:15] "GET /static/css/style.css HTTP/1.1" 200 -
+2019-12-30 13:13:15,170 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 13:13:15] "GET /static/js/leaflet-heat.js HTTP/1.1" 200 -
+2019-12-30 13:13:15,178 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 13:13:15] "GET /static/js/leafletmap.js HTTP/1.1" 200 -
+2019-12-30 13:13:15,179 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 13:13:15] "GET /static/js/SliderControl.js HTTP/1.1" 200 -
+2019-12-30 13:13:15,180 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 13:13:15] "GET /static/js/leaflet-slider.js HTTP/1.1" 200 -
+2019-12-30 13:13:15,181 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 13:13:15] "GET /static/css/leaflet-slider.css HTTP/1.1" 200 -
+2019-12-30 13:13:15,279 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 13:13:15] "GET /static/img/map.jpg HTTP/1.1" 200 -
+2019-12-30 13:13:15,312 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 13:13:15] "GET /static/maps/map.geojson HTTP/1.1" 200 -
+2019-12-30 13:13:15,549 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 13:13:15] "POST /get_heatmap HTTP/1.1" 200 -
+2019-12-30 13:13:39,266 - data_handler - INFO - Data is updated since 2019-12-20 00:00:00
+2019-12-30 13:13:39,267 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 13:13:39] "GET / HTTP/1.1" 200 -
+2019-12-30 13:13:46,691 - data_handler - INFO - RandomForestClassifier model loaded successfully.
+2019-12-30 13:13:46,692 - engine - INFO - Reading /home/psaucedo/Desktop/OpenDataMadrid/out_csv/geo_out.csv file for the sake of training, testing and rendering KDE
+2019-12-30 13:13:47,570 - engine - INFO - KDE model is fitted
+2019-12-30 13:13:47,571 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 13:13:47] "POST /visualize HTTP/1.1" 200 -
+2019-12-30 13:13:47,591 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 13:13:47] "GET /static/css/style.css HTTP/1.1" 200 -
+2019-12-30 13:13:47,601 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 13:13:47] "GET /static/css/leaflet-slider.css HTTP/1.1" 200 -
+2019-12-30 13:13:47,623 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 13:13:47] "GET /static/js/leaflet-heat.js HTTP/1.1" 200 -
+2019-12-30 13:13:47,625 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 13:13:47] "GET /static/js/leafletmap.js HTTP/1.1" 200 -
+2019-12-30 13:13:47,625 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 13:13:47] "GET /static/js/SliderControl.js HTTP/1.1" 200 -
+2019-12-30 13:13:47,626 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 13:13:47] "GET /static/js/leaflet-slider.js HTTP/1.1" 200 -
+2019-12-30 13:13:47,716 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 13:13:47] "GET /static/img/map.jpg HTTP/1.1" 200 -
+2019-12-30 13:13:47,752 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 13:13:47] "GET /static/maps/map.geojson HTTP/1.1" 200 -
+2019-12-30 13:13:47,973 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 13:13:47] "POST /get_heatmap HTTP/1.1" 200 -
+2019-12-30 13:15:40,445 - data_handler - INFO - Data is updated since 2019-12-20 00:00:00
+2019-12-30 13:15:40,447 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 13:15:40] "GET / HTTP/1.1" 200 -
+2019-12-30 13:15:52,203 - data_handler - INFO - RandomForestClassifier model loaded successfully.
+2019-12-30 13:15:52,203 - engine - INFO - Reading /home/psaucedo/Desktop/OpenDataMadrid/out_csv/geo_out.csv file for the sake of training, testing and rendering KDE
+2019-12-30 13:15:53,099 - engine - INFO - KDE model is fitted
+2019-12-30 13:15:53,100 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 13:15:53] "POST /visualize HTTP/1.1" 200 -
+2019-12-30 13:15:53,132 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 13:15:53] "GET /static/css/style.css HTTP/1.1" 200 -
+2019-12-30 13:15:53,145 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 13:15:53] "GET /static/css/leaflet-slider.css HTTP/1.1" 200 -
+2019-12-30 13:15:53,155 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 13:15:53] "GET /static/js/leaflet-slider.js HTTP/1.1" 200 -
+2019-12-30 13:15:53,156 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 13:15:53] "GET /static/js/leafletmap.js HTTP/1.1" 200 -
+2019-12-30 13:15:53,156 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 13:15:53] "GET /static/js/SliderControl.js HTTP/1.1" 200 -
+2019-12-30 13:15:53,160 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 13:15:53] "GET /static/js/leaflet-heat.js HTTP/1.1" 200 -
+2019-12-30 13:15:53,311 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 13:15:53] "GET /static/img/map.jpg HTTP/1.1" 200 -
+2019-12-30 13:15:53,410 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 13:15:53] "GET /static/maps/map.geojson HTTP/1.1" 200 -
+2019-12-30 13:15:53,640 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 13:15:53] "POST /get_heatmap HTTP/1.1" 200 -
+2019-12-30 13:17:13,447 - data_handler - INFO - Data is updated since 2019-12-20 00:00:00
+2019-12-30 13:17:13,448 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 13:17:13] "GET / HTTP/1.1" 200 -
+2019-12-30 13:17:21,197 - data_handler - INFO - RandomForestClassifier model loaded successfully.
+2019-12-30 13:17:21,197 - engine - INFO - Reading /home/psaucedo/Desktop/OpenDataMadrid/out_csv/geo_out.csv file for the sake of training, testing and rendering KDE
+2019-12-30 13:17:22,094 - engine - INFO - KDE model is fitted
+2019-12-30 13:17:22,095 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 13:17:22] "POST /visualize HTTP/1.1" 200 -
+2019-12-30 13:17:22,126 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 13:17:22] "GET /static/css/style.css HTTP/1.1" 200 -
+2019-12-30 13:17:22,133 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 13:17:22] "GET /static/css/leaflet-slider.css HTTP/1.1" 200 -
+2019-12-30 13:17:22,170 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 13:17:22] "GET /static/js/leafletmap.js HTTP/1.1" 200 -
+2019-12-30 13:17:22,178 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 13:17:22] "GET /static/js/leaflet-heat.js HTTP/1.1" 200 -
+2019-12-30 13:17:22,179 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 13:17:22] "GET /static/js/SliderControl.js HTTP/1.1" 200 -
+2019-12-30 13:17:22,182 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 13:17:22] "GET /static/js/leaflet-slider.js HTTP/1.1" 200 -
+2019-12-30 13:17:22,309 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 13:17:22] "GET /static/img/map.jpg HTTP/1.1" 200 -
+2019-12-30 13:17:22,380 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 13:17:22] "GET /static/maps/map.geojson HTTP/1.1" 200 -
+2019-12-30 13:17:22,664 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 13:17:22] "POST /get_heatmap HTTP/1.1" 200 -
+2019-12-30 13:19:18,114 - data_handler - INFO - Data is updated since 2019-12-20 00:00:00
+2019-12-30 13:19:18,115 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 13:19:18] "GET / HTTP/1.1" 200 -
+2019-12-30 13:19:25,740 - data_handler - INFO - RandomForestClassifier model loaded successfully.
+2019-12-30 13:19:25,740 - engine - INFO - Reading /home/psaucedo/Desktop/OpenDataMadrid/out_csv/geo_out.csv file for the sake of training, testing and rendering KDE
+2019-12-30 13:19:26,648 - engine - INFO - KDE model is fitted
+2019-12-30 13:19:26,649 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 13:19:26] "POST /visualize HTTP/1.1" 200 -
+2019-12-30 13:19:26,677 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 13:19:26] "GET /static/css/style.css HTTP/1.1" 200 -
+2019-12-30 13:19:26,692 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 13:19:26] "GET /static/css/leaflet-slider.css HTTP/1.1" 200 -
+2019-12-30 13:19:26,698 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 13:19:26] "GET /static/js/leaflet-slider.js HTTP/1.1" 200 -
+2019-12-30 13:19:26,703 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 13:19:26] "GET /static/js/leafletmap.js HTTP/1.1" 200 -
+2019-12-30 13:19:26,704 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 13:19:26] "GET /static/js/SliderControl.js HTTP/1.1" 200 -
+2019-12-30 13:19:26,706 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 13:19:26] "GET /static/js/leaflet-heat.js HTTP/1.1" 200 -
+2019-12-30 13:19:27,049 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 13:19:27] "GET /static/img/map.jpg HTTP/1.1" 200 -
+2019-12-30 13:19:27,107 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 13:19:27] "GET /static/maps/map.geojson HTTP/1.1" 200 -
+2019-12-30 13:19:27,341 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 13:19:27] "POST /get_heatmap HTTP/1.1" 200 -
+2019-12-30 13:19:47,056 - data_handler - INFO - Data is updated since 2019-12-20 00:00:00
+2019-12-30 13:19:47,057 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 13:19:47] "GET / HTTP/1.1" 200 -
+2019-12-30 13:19:58,446 - data_handler - INFO - RandomForestClassifier model loaded successfully.
+2019-12-30 13:19:58,446 - engine - INFO - Reading /home/psaucedo/Desktop/OpenDataMadrid/out_csv/geo_out.csv file for the sake of training, testing and rendering KDE
+2019-12-30 13:19:59,323 - engine - INFO - KDE model is fitted
+2019-12-30 13:19:59,324 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 13:19:59] "POST /visualize HTTP/1.1" 200 -
+2019-12-30 13:19:59,343 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 13:19:59] "GET /static/css/style.css HTTP/1.1" 200 -
+2019-12-30 13:19:59,365 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 13:19:59] "GET /static/css/leaflet-slider.css HTTP/1.1" 200 -
+2019-12-30 13:19:59,368 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 13:19:59] "GET /static/js/SliderControl.js HTTP/1.1" 200 -
+2019-12-30 13:19:59,368 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 13:19:59] "GET /static/js/leafletmap.js HTTP/1.1" 200 -
+2019-12-30 13:19:59,369 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 13:19:59] "GET /static/js/leaflet-heat.js HTTP/1.1" 200 -
+2019-12-30 13:19:59,373 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 13:19:59] "GET /static/js/leaflet-slider.js HTTP/1.1" 200 -
+2019-12-30 13:19:59,473 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 13:19:59] "GET /static/img/map.jpg HTTP/1.1" 200 -
+2019-12-30 13:19:59,513 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 13:19:59] "GET /static/maps/map.geojson HTTP/1.1" 200 -
+2019-12-30 13:19:59,773 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2019 13:19:59] "POST /get_heatmap HTTP/1.1" 200 -

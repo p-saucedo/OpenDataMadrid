@@ -13,7 +13,7 @@ window.onload = function () {
       opacity: 1,
       fillOpacity: 0.8
   };
-  
+
     $.getJSON("/static/maps/map.geojson", function(data) {
     coords = []
     var geojson = L.geoJson(data, {
@@ -29,6 +29,14 @@ window.onload = function () {
       }
     });
 
+    /*var sliderControl = L.control.sliderControl({
+      position: "topright",
+      layer: geojson,
+      range: true,
+      timeAttribute: "HORA"
+    });*/
+
+
     // Para el mapa de calor del mapa en JS
     var heat = L.heatLayer(coords, {
       radius: 30,
@@ -42,7 +50,7 @@ window.onload = function () {
     }
     });
 
-    // Para el mapa de calor del html
+    // Para el mapa en html
     $.ajax({
       url: '/get_heatmap',
       type: 'POST',
@@ -54,6 +62,45 @@ window.onload = function () {
       }
     });
 
+    function changeOp(value){
+
+      valueSum = parseInt(value) * 100;
+
+      geojson.eachLayer(function(layer){
+       
+        horaTime = layer.feature.properties.HORA.split(':')
+        horaSum = parseInt(horaTime[0]) * 100 + parseInt(horaTime[1])
+        if( horaSum <(valueSum + 100)){
+          layer._radius = 10;
+        }else{
+          layer._radius = 4;
+        }
+      });
+      layers = []
+      geojson.eachLayer(function(layer){
+        layers.push(layer);
+        geojson.removeLayer(layer);
+      });
+      var i;
+      for(i=0; i<layers.length; i++){
+        geojson.addLayer(layers[i]);
+      }
+    }
+
+    console.log(geojson);
+    var slider = L.control.slider(function(value) {
+      changeOp(value);
+    }, {
+    min: 0,
+    max: 23,
+    value: 2,
+    step:1,
+    size: '250px',
+    orientation:'horizontal',
+    id: 'slider',
+    logo: 'H',
+    syncSlider: 'true'
+    });
 
     var map = L.map('my-map')
     .fitBounds(geojson.getBounds());
@@ -65,7 +112,6 @@ window.onload = function () {
         .setContent("Has clickado en " + e.latlng.toString())
         .openOn(map);*/
         var pos_dict = '{ "latitude": ' + e.latlng.lat + ',' +  '"longitude": ' + e.latlng.lng + '}';
-        console.log(pos_dict)
         $.ajax({
           url: '/get_click',
 			    data: JSON.parse(pos_dict),
@@ -92,6 +138,9 @@ window.onload = function () {
     heat.addTo(map);
     basemap.addTo(map);
     geojson.addTo(map);
+    slider.addTo(map);
+    /*map.addControl(sliderControl);
+    sliderControl.startSlider();*/
   });
 
   

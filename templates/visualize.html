@@ -2,11 +2,12 @@
 {% block head %}
 
 <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.6.4/leaflet.css" />
+<link rel="stylesheet" href="{{ url_for('static', filename='css/leaflet-slider.css') }}"/>
 <script src="http://cdn.leafletjs.com/leaflet-0.6.4/leaflet.js"></script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/iso8601-js-period@0.2.1/iso8601.min.js"></script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/leaflet-timedimension@1.1.1/dist/leaflet.timedimension.min.js"></script>
 <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-<script type="text/javascript" src="https://github.com/dwilhelm89/LeafletSlider/blob/master/SliderControl.js"></script>
+<script src="{{ url_for('static', filename='js/leaflet-slider.js') }}"></script>
 <script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
 
 
