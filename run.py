@@ -9,7 +9,7 @@ from folium.plugins import HeatMap, HeatMapWithTime
 import pandas as pd
 from watcher import get_logger
 from datetime import datetime, date
-from data_handler import check_updates, load_model
+from data_handler import check_updates, load_model, load_KDEmodel
 from engine import Engine as eng
 # Vamos a loguearlo un poco, que nunca viene mal
 logger = get_logger(__name__)
@@ -27,7 +27,6 @@ basedir = os.path.dirname(os.path.abspath(__file__))
 data_dir = os.path.join(basedir, 'out_csv')
 fpath_val = os.path.join(data_dir, 'geo_out.csv')
 model = None
-
 kde_model = None
 
 @app.route("/")
@@ -43,7 +42,7 @@ def visualize_map():
     model = load_model()
 
     global kde_model
-    kde_model = eng.KDE()
+    kde_model = load_KDEmodel()
 
     
     return render_template("visualize.html", prob = '0.0%', les = '0')

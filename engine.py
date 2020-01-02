@@ -30,8 +30,8 @@ from sklearn.model_selection import GridSearchCV
 logger = get_logger(__name__)
 
 basedir = os.path.dirname(os.path.abspath(__file__))
-data_dir = os.path.join(basedir, 'out_csv')
-filepath = os.path.join(data_dir, 'geo_out.csv')
+"""data_dir = os.path.join(basedir, 'out_csv')
+filepath = os.path.join(data_dir, 'geo_out.csv')"""
 
 class Particion:
     def __init__(self):
@@ -107,7 +107,7 @@ class Engine:
 
         def setData(self, folds, file):
             particiones = []
-            logger.info("Reading {} file for the sake of training, testing and rendering Random Forest".format(filepath))
+            logger.info("Reading {} file for the sake of training, testing and rendering Random Forest".format(file))
             df = pd.read_csv(file, delimiter=';')
             X = np.array(df[["latitude","longitude"]])
             y = np.array(df[["LESIVIDAD*"]].fillna(14)) # 14 significa lo mismo que Nan: sin asistencia sanitaria
@@ -324,8 +324,7 @@ class Engine:
     class KDE():
         model = None
         def __init__(self):
-            X = self.setData(file = filepath)
-            self.fit(X)
+            pass
 
 
         def setData(self, file):
@@ -349,10 +348,10 @@ class Engine:
                                 param_grid = parameter_candidates,
                                 n_jobs= -1).fit(X)
             
-            self.model = KernelDensity(bandwidth = grid.best_params_.get('bandwidth'),
+            model = KernelDensity(bandwidth = grid.best_params_.get('bandwidth'),
                                         kernel = grid.best_params_.get('kernel'))
             
-            self.model.fit(X)
+            self.model = model.fit(X)
             logger.info("KDE model is fitted")
 
         def predict_proba(self, X):
@@ -365,14 +364,8 @@ class Engine:
             print('Probabilidad de accidente es de {}%'.format(np.around(prob*100,4)[0]))
             return np.around(prob*100,4)
 
-        def validate(self):
-            X = self.setData(filepath)
+        def validate(self, f):
+            X = self.setData(f)
 
             self.fit(X)
-            probas = self.predict_proba(X)
-
-            new_value = np.array([40.42551, -3.69191])
-            y = self.predict(new_value.reshape(1,-1))
-
-            print('Punto a predecir: {}'.format(new_value))
-            print('Probabilidad de accidente es de {}%'.format(np.around(y*100,4)[0]))
+            

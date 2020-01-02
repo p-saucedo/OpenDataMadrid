@@ -20,7 +20,7 @@ datasets_dir = os.path.join(basedir, 'datasets')
 
 
 # Esta linea indica que dataset cargará toda la APP
-fpath_dataset = os.path.join(datasets_dir, 'A2.csv')
+fpath_dataset = os.path.join(datasets_dir, 'AccidentesBicicletas_2019.csv')
 
 
 def save_model():
@@ -39,6 +39,22 @@ def load_model():
     logger.info("RandomForestClassifier model loaded successfully.")
     return model
 
+def save_KDEmodel():
+    eKDE = eng.KDE()
+    eKDE.validate(fpath_val)
+
+    filename = basedir + '/KDEmodel.pkl'
+    pickle.dump(eKDE, open(filename, 'wb+'))
+
+    logger.info("KernelDensity model trained and saved in {}".format(filename))
+
+def load_KDEmodel():
+    filename = basedir + '/KDEmodel.pkl'
+    model = pickle.load(open(filename, 'rb'))
+
+    logger.info("KernelDensity model loaded successfully.")
+    return model
+
 def transform_directions():
     Get_Coordinates(fpath_dataset)
 
@@ -55,6 +71,7 @@ def check_updates():
                 logger.info("Data needs to be updated")
                 transform_directions()
                 save_model()
+                save_KDEmodel()
 
                 update = 1
             else:
@@ -76,5 +93,6 @@ def check_updates():
             config.write(f)
             transform_directions()
             save_model()
+            save_KDEmodel()
     finally:
         f.close()

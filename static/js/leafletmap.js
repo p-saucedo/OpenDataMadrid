@@ -10,8 +10,8 @@ window.onload = function () {
       fillColor: "#ff7800",
       color: "#000",
       weight: 1,
-      opacity: 1,
-      fillOpacity: 0.8
+      opacity: 0,
+      fillOpacity: 0
   };
 
     $.getJSON("/static/maps/map.geojson", function(data) {
@@ -22,26 +22,19 @@ window.onload = function () {
           return L.circleMarker(latlng, geojsonMarkerOptions);
       },
       onEachFeature: function (feature, layer) {
-        c = []
+        /*c = []
         c.push(feature.geometry.coordinates[1], feature.geometry.coordinates[0])
-        coords.push(c)
+        coords.push(c)*/
         //layer.bindPopup(feature.properties.CALLE);
       }
     });
-
-    /*var sliderControl = L.control.sliderControl({
-      position: "topright",
-      layer: geojson,
-      range: true,
-      timeAttribute: "HORA"
-    });*/
 
 
     // Para el mapa de calor del mapa en JS
     var heat = L.heatLayer(coords, {
       radius: 30,
       blur : 15,
-      maxZoom: 10,
+      maxZoom: 12,
       max: 4.0,
       gradient: {
         0.4: 'yellow',
@@ -63,19 +56,24 @@ window.onload = function () {
     });
 
     function changeOp(value){
-
+      coords = []
       valueSum = parseInt(value) * 100;
 
       geojson.eachLayer(function(layer){
        
         horaTime = layer.feature.properties.HORA.split(':')
         horaSum = parseInt(horaTime[0]) * 100 + parseInt(horaTime[1])
-        if( horaSum <(valueSum + 100)){
-          layer._radius = 10;
-        }else{
-          layer._radius = 4;
+
+        if( horaSum <(valueSum + 100)){ // Cumplen la condicion
+          layer.setStyle({opacity : 1, fillOpacity: 0.8})
+          c = []
+          c.push(layer.feature.geometry.coordinates[1], layer.feature.geometry.coordinates[0])
+          coords.push(c)
+        }else{ // No la cumplen
+          layer.setStyle({opacity : 0, fillOpacity: 0}) 
         }
       });
+
       layers = []
       geojson.eachLayer(function(layer){
         layers.push(layer);
@@ -85,15 +83,18 @@ window.onload = function () {
       for(i=0; i<layers.length; i++){
         geojson.addLayer(layers[i]);
       }
+      heat.setLatLngs(coords);
+      heat.redraw();
     }
 
     console.log(geojson);
+
     var slider = L.control.slider(function(value) {
       changeOp(value);
     }, {
     min: 0,
     max: 23,
-    value: 2,
+    value: 0,
     step:1,
     size: '250px',
     orientation:'horizontal',
@@ -139,8 +140,6 @@ window.onload = function () {
     basemap.addTo(map);
     geojson.addTo(map);
     slider.addTo(map);
-    /*map.addControl(sliderControl);
-    sliderControl.startSlider();*/
   });
 
   
