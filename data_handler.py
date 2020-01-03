@@ -20,7 +20,7 @@ datasets_dir = os.path.join(basedir, 'datasets')
 
 
 # Esta linea indica que dataset cargará toda la APP
-fpath_dataset = os.path.join(datasets_dir, 'AccidentesBicicletas_2019.csv')
+fpath_dataset = os.path.join(datasets_dir, 'A2.csv')
 
 
 def save_model():

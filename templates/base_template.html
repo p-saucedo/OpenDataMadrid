@@ -22,15 +22,14 @@
 <body>
   <header>
       <div class="container">
-          <h1 id="titulo"><a href="/">OpenDataMadrid</a></h1>
+          <h1 id="titulo" class="h1"><a href="/">OpenDataMadrid</a></h1>
+          <img id="madrid" src="{{ url_for('static', filename='img/madrid.png') }}"}}>
           <nav>
             <span>About us</span>
           </nav>
       </div>
   </header>
-    <div class="header">
-        <h1></h1>
-    </div>
+
     <div class="container p-3 my-3 bg-dark text-white">
             {% block content %}{% endblock %}
     </div>

@@ -52,6 +52,10 @@ header > div.container > nav > span {
 	 color: #ffffff;
  	font-size: 32px;
  }
+header > div.container > #madrid {
+	height: 100px;
+	width: 90px;
+}
 
 body {
 	background-image: url('/static/img/map.jpg');

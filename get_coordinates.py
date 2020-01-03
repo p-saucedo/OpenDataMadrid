@@ -55,7 +55,8 @@ class Get_Coordinates:
 
         logger.info("Fixing addresses...")
         io['FixedAddress'] = io['CALLE'].apply(AddresFixer.fixAddress)
-        io['FullAddress'] = io['FixedAddress'].map(str) + " " + io['City'].map(str) + " " + io['Country'].map(str)
+        io['NUMERO'] = io['NUMERO'].str.replace('-', '1')
+        io['FullAddress'] = io['FixedAddress'].map(str) + " " + io['NUMERO'].map(str) + ", " + io['City'].map(str) + ", " + io['Country'].map(str)
 
         try:
             # Geolocalizamos las direcciones
@@ -71,10 +72,16 @@ class Get_Coordinates:
         io['latitude']= geolocate_column.apply(get_latitude)
         io['longitude'] = geolocate_column.apply(get_longitude)
 
+        for column in ['latitude', 'longitude']:
+            outliers = []
+            outliers = io[column].between(io[column].quantile(.05), io[column].quantile(.95))
+            index_names = io[~outliers].index # Para borrar los falses
+            io.drop(index=index_names, inplace=True)
+        
         logger.info("Complete CSV saved in {}.".format(fpath_val))
         io.to_csv(fpath_val, sep=';')
-
-
+        
+        
         geo = GeoJSONMaker()
         geo.CSVtoGeoJSON(csv_file = fpath_val)
 

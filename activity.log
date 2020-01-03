@@ -7323,3 +7323,707 @@
 2020-01-02 12:03:20,346 - werkzeug - INFO - 127.0.0.1 - - [02/Jan/2020 12:03:20] "POST /get_click HTTP/1.1" 200 -
 2020-01-02 12:03:23,228 - __main__ - INFO - You have clicked in 40.415105280416824, -3.7236571311950684 . Predicted Harm level in case of accident: 2
 2020-01-02 12:03:23,228 - werkzeug - INFO - 127.0.0.1 - - [02/Jan/2020 12:03:23] "POST /get_click HTTP/1.1" 200 -
+2020-01-03 09:07:04,142 - __main__ - INFO - Starting app at 2020-01-03 09:07:04.142355
+2020-01-03 09:07:04,150 - werkzeug - INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2020-01-03 09:07:04,152 - werkzeug - INFO -  * Restarting with stat
+2020-01-03 09:07:05,701 - __main__ - INFO - Starting app at 2020-01-03 09:07:05.701321
+2020-01-03 09:07:05,708 - werkzeug - WARNING -  * Debugger is active!
+2020-01-03 09:07:05,714 - werkzeug - INFO -  * Debugger PIN: 604-780-389
+2020-01-03 09:07:14,318 - data_handler - INFO - Data is updated since 2020-01-02 00:00:00
+2020-01-03 09:07:14,326 - werkzeug - INFO - 127.0.0.1 - - [03/Jan/2020 09:07:14] "GET / HTTP/1.1" 200 -
+2020-01-03 09:07:14,356 - werkzeug - INFO - 127.0.0.1 - - [03/Jan/2020 09:07:14] "GET /static/css/style.css HTTP/1.1" 304 -
+2020-01-03 09:07:15,317 - werkzeug - INFO - 127.0.0.1 - - [03/Jan/2020 09:07:15] "GET /static/img/map.jpg HTTP/1.1" 200 -
+2020-01-03 09:07:16,684 - data_handler - INFO - RandomForestClassifier model loaded successfully.
+2020-01-03 09:07:16,686 - data_handler - INFO - KernelDensity model loaded successfully.
+2020-01-03 09:07:16,694 - werkzeug - INFO - 127.0.0.1 - - [03/Jan/2020 09:07:16] "POST /visualize HTTP/1.1" 200 -
+2020-01-03 09:07:16,725 - werkzeug - INFO - 127.0.0.1 - - [03/Jan/2020 09:07:16] "GET /static/css/leaflet-slider.css HTTP/1.1" 304 -
+2020-01-03 09:07:16,729 - werkzeug - INFO - 127.0.0.1 - - [03/Jan/2020 09:07:16] "GET /static/js/leaflet-slider.js HTTP/1.1" 304 -
+2020-01-03 09:07:16,732 - werkzeug - INFO - 127.0.0.1 - - [03/Jan/2020 09:07:16] "GET /static/js/leaflet-heat.js HTTP/1.1" 304 -
+2020-01-03 09:07:16,735 - werkzeug - INFO - 127.0.0.1 - - [03/Jan/2020 09:07:16] "GET /static/js/leafletmap.js HTTP/1.1" 304 -
+2020-01-03 09:07:16,827 - werkzeug - INFO - 127.0.0.1 - - [03/Jan/2020 09:07:16] "GET /static/maps/map.geojson HTTP/1.1" 304 -
+2020-01-03 09:07:18,124 - werkzeug - INFO - 127.0.0.1 - - [03/Jan/2020 09:07:18] "POST /get_heatmap HTTP/1.1" 200 -
+2020-01-03 09:08:31,789 - data_handler - INFO - Data is updated since 2020-01-02 00:00:00
+2020-01-03 09:08:31,790 - werkzeug - INFO - 127.0.0.1 - - [03/Jan/2020 09:08:31] "GET / HTTP/1.1" 200 -
+2020-01-03 09:08:34,565 - data_handler - INFO - RandomForestClassifier model loaded successfully.
+2020-01-03 09:08:34,566 - data_handler - INFO - KernelDensity model loaded successfully.
+2020-01-03 09:08:34,567 - werkzeug - INFO - 127.0.0.1 - - [03/Jan/2020 09:08:34] "POST /visualize HTTP/1.1" 200 -
+2020-01-03 09:08:35,976 - werkzeug - INFO - 127.0.0.1 - - [03/Jan/2020 09:08:35] "POST /get_heatmap HTTP/1.1" 200 -
+2020-01-03 09:09:06,061 - __main__ - INFO - You have clicked in 40.42630348002172, -3.6968994140625 . Predicted Harm level in case of accident: 14
+2020-01-03 09:09:06,062 - werkzeug - INFO - 127.0.0.1 - - [03/Jan/2020 09:09:06] "POST /get_click HTTP/1.1" 200 -
+2020-01-03 09:09:15,542 - __main__ - INFO - You have clicked in 40.4300276322111, -3.6967277526855473 . Predicted Harm level in case of accident: 7
+2020-01-03 09:09:15,543 - werkzeug - INFO - 127.0.0.1 - - [03/Jan/2020 09:09:15] "POST /get_click HTTP/1.1" 200 -
+2020-01-03 09:09:18,119 - __main__ - INFO - You have clicked in 40.42924361730855, -3.7023925781249996 . Predicted Harm level in case of accident: 7
+2020-01-03 09:09:18,119 - werkzeug - INFO - 127.0.0.1 - - [03/Jan/2020 09:09:18] "POST /get_click HTTP/1.1" 200 -
+2020-01-03 09:09:19,652 - __main__ - INFO - You have clicked in 40.42780623291546, -3.695955276489258 . Predicted Harm level in case of accident: 2
+2020-01-03 09:09:19,653 - werkzeug - INFO - 127.0.0.1 - - [03/Jan/2020 09:09:19] "POST /get_click HTTP/1.1" 200 -
+2020-01-03 09:13:21,165 - data_handler - INFO - RandomForestClassifier model loaded successfully.
+2020-01-03 09:13:21,165 - data_handler - INFO - KernelDensity model loaded successfully.
+2020-01-03 09:13:21,169 - werkzeug - INFO - 127.0.0.1 - - [03/Jan/2020 09:13:21] "POST /visualize HTTP/1.1" 200 -
+2020-01-03 09:13:21,207 - werkzeug - INFO - 127.0.0.1 - - [03/Jan/2020 09:13:21] "GET /static/css/style.css HTTP/1.1" 200 -
+2020-01-03 09:13:21,209 - werkzeug - INFO - 127.0.0.1 - - [03/Jan/2020 09:13:21] "GET /static/css/leaflet-slider.css HTTP/1.1" 200 -
+2020-01-03 09:13:21,230 - werkzeug - INFO - 127.0.0.1 - - [03/Jan/2020 09:13:21] "GET /static/js/leaflet-slider.js HTTP/1.1" 200 -
+2020-01-03 09:13:21,231 - werkzeug - INFO - 127.0.0.1 - - [03/Jan/2020 09:13:21] "GET /static/js/leaflet-heat.js HTTP/1.1" 200 -
+2020-01-03 09:13:21,232 - werkzeug - INFO - 127.0.0.1 - - [03/Jan/2020 09:13:21] "GET /static/js/leafletmap.js HTTP/1.1" 200 -
+2020-01-03 09:13:21,354 - werkzeug - INFO - 127.0.0.1 - - [03/Jan/2020 09:13:21] "GET /static/img/map.jpg HTTP/1.1" 200 -
+2020-01-03 09:13:21,396 - werkzeug - INFO - 127.0.0.1 - - [03/Jan/2020 09:13:21] "GET /static/maps/map.geojson HTTP/1.1" 200 -
+2020-01-03 09:13:21,401 - werkzeug - INFO - 127.0.0.1 - - [03/Jan/2020 09:13:21] "GET /static/img/favicon.ico HTTP/1.1" 200 -
+2020-01-03 09:13:22,740 - werkzeug - INFO - 127.0.0.1 - - [03/Jan/2020 09:13:22] "POST /get_heatmap HTTP/1.1" 200 -
+2020-01-03 09:17:19,866 - werkzeug - INFO -  * Detected change in '/home/psaucedo/Desktop/OpenDataMadrid/get_coordinates.py', reloading
+2020-01-03 09:17:20,133 - werkzeug - INFO -  * Restarting with stat
+2020-01-03 09:17:22,390 - __main__ - INFO - Starting app at 2020-01-03 09:17:22.390226
+2020-01-03 09:17:22,397 - werkzeug - WARNING -  * Debugger is active!
+2020-01-03 09:17:22,401 - werkzeug - INFO -  * Debugger PIN: 604-780-389
+2020-01-03 09:17:27,525 - werkzeug - INFO -  * Detected change in '/home/psaucedo/Desktop/OpenDataMadrid/get_coordinates.py', reloading
+2020-01-03 09:17:27,743 - werkzeug - INFO -  * Restarting with stat
+2020-01-03 09:17:29,834 - __main__ - INFO - Starting app at 2020-01-03 09:17:29.833977
+2020-01-03 09:17:29,842 - werkzeug - WARNING -  * Debugger is active!
+2020-01-03 09:17:29,843 - werkzeug - INFO -  * Debugger PIN: 604-780-389
+2020-01-03 09:17:35,982 - werkzeug - INFO -  * Detected change in '/home/psaucedo/Desktop/OpenDataMadrid/get_coordinates.py', reloading
+2020-01-03 09:17:36,207 - werkzeug - INFO -  * Restarting with stat
+2020-01-03 09:17:38,040 - __main__ - INFO - Starting app at 2020-01-03 09:17:38.040676
+2020-01-03 09:17:38,047 - werkzeug - WARNING -  * Debugger is active!
+2020-01-03 09:17:38,048 - werkzeug - INFO -  * Debugger PIN: 604-780-389
+2020-01-03 09:17:54,440 - werkzeug - INFO -  * Detected change in '/home/psaucedo/Desktop/OpenDataMadrid/data_handler.py', reloading
+2020-01-03 09:17:54,686 - werkzeug - INFO -  * Restarting with stat
+2020-01-03 09:17:56,643 - __main__ - INFO - Starting app at 2020-01-03 09:17:56.643427
+2020-01-03 09:17:56,649 - werkzeug - WARNING -  * Debugger is active!
+2020-01-03 09:17:56,650 - werkzeug - INFO -  * Debugger PIN: 604-780-389
+2020-01-03 09:18:13,992 - data_handler - INFO - Setting all data
+2020-01-03 09:18:14,008 - get_coordinates - INFO - Fixing addresses...
+2020-01-03 09:18:14,030 - werkzeug - INFO - 127.0.0.1 - - [03/Jan/2020 09:18:14] "GET / HTTP/1.1" 500 -
+2020-01-03 09:18:14,063 - werkzeug - INFO - 127.0.0.1 - - [03/Jan/2020 09:18:14] "GET /?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+2020-01-03 09:18:14,063 - werkzeug - INFO - 127.0.0.1 - - [03/Jan/2020 09:18:14] "GET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2020-01-03 09:18:14,065 - werkzeug - INFO - 127.0.0.1 - - [03/Jan/2020 09:18:14] "GET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2020-01-03 09:18:14,265 - werkzeug - INFO - 127.0.0.1 - - [03/Jan/2020 09:18:14] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2020-01-03 09:18:14,273 - werkzeug - INFO - 127.0.0.1 - - [03/Jan/2020 09:18:14] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2020-01-03 09:23:46,472 - werkzeug - INFO -  * Detected change in '/home/psaucedo/Desktop/OpenDataMadrid/get_coordinates.py', reloading
+2020-01-03 09:23:46,717 - werkzeug - INFO -  * Restarting with stat
+2020-01-03 09:23:49,240 - __main__ - INFO - Starting app at 2020-01-03 09:23:49.240201
+2020-01-03 09:23:49,248 - werkzeug - WARNING -  * Debugger is active!
+2020-01-03 09:23:49,249 - werkzeug - INFO -  * Debugger PIN: 604-780-389
+2020-01-03 09:24:24,994 - werkzeug - INFO -  * Detected change in '/home/psaucedo/Desktop/OpenDataMadrid/get_coordinates.py', reloading
+2020-01-03 09:24:25,159 - werkzeug - INFO -  * Restarting with stat
+2020-01-03 09:24:35,980 - __main__ - INFO - Starting app at 2020-01-03 09:24:35.980777
+2020-01-03 09:24:35,986 - werkzeug - INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2020-01-03 09:24:35,987 - werkzeug - INFO -  * Restarting with stat
+2020-01-03 09:24:37,364 - __main__ - INFO - Starting app at 2020-01-03 09:24:37.364108
+2020-01-03 09:24:37,369 - werkzeug - WARNING -  * Debugger is active!
+2020-01-03 09:24:37,370 - werkzeug - INFO -  * Debugger PIN: 604-780-389
+2020-01-03 09:24:44,780 - data_handler - INFO - Data is updated since 2020-01-03 00:00:00
+2020-01-03 09:24:44,787 - werkzeug - INFO - 127.0.0.1 - - [03/Jan/2020 09:24:44] "GET / HTTP/1.1" 200 -
+2020-01-03 09:24:51,306 - data_handler - INFO - Setting all data
+2020-01-03 09:24:51,317 - get_coordinates - INFO - Fixing addresses...
+2020-01-03 09:24:51,330 - get_coordinates - INFO - Geocoding directions
+2020-01-03 09:24:51,331 - geopy - DEBUG - Bing.geocode: https://dev.virtualearth.net/REST/v1/Locations?query=CALLE+CASTELLO+Madrid+Spain&key=Ah274jwZ6fNiPYZQBTIoyfaV50oTOmCNlMz5RpJGulTHkvdifuvqA1xLCNmiFfDe&maxResults=1
+2020-01-03 09:24:51,774 - geopy - DEBUG - Bing.geocode: https://dev.virtualearth.net/REST/v1/Locations?query=AVENIDA+GRAN+VIA+DE+HORTALEZA+Madrid+Spain&key=Ah274jwZ6fNiPYZQBTIoyfaV50oTOmCNlMz5RpJGulTHkvdifuvqA1xLCNmiFfDe&maxResults=1
+2020-01-03 09:24:52,196 - geopy - DEBUG - Bing.geocode: https://dev.virtualearth.net/REST/v1/Locations?query=CALLE+FELIPE+ALVAREZ+Madrid+Spain&key=Ah274jwZ6fNiPYZQBTIoyfaV50oTOmCNlMz5RpJGulTHkvdifuvqA1xLCNmiFfDe&maxResults=1
+2020-01-03 09:24:52,559 - geopy - DEBUG - Bing.geocode: https://dev.virtualearth.net/REST/v1/Locations?query=AVENIDA+SANTA+EUGENIA+Madrid+Spain&key=Ah274jwZ6fNiPYZQBTIoyfaV50oTOmCNlMz5RpJGulTHkvdifuvqA1xLCNmiFfDe&maxResults=1
+2020-01-03 09:24:52,991 - geopy - DEBUG - Bing.geocode: https://dev.virtualearth.net/REST/v1/Locations?query=AVENIDA+SANTA+EUGENIA+Madrid+Spain&key=Ah274jwZ6fNiPYZQBTIoyfaV50oTOmCNlMz5RpJGulTHkvdifuvqA1xLCNmiFfDe&maxResults=1
+2020-01-03 09:24:53,260 - geopy - DEBUG - Bing.geocode: https://dev.virtualearth.net/REST/v1/Locations?query=CARRETERA+DEHESA+DE+LA+VILLA+Madrid+Spain&key=Ah274jwZ6fNiPYZQBTIoyfaV50oTOmCNlMz5RpJGulTHkvdifuvqA1xLCNmiFfDe&maxResults=1
+2020-01-03 09:24:53,562 - geopy - DEBUG - Bing.geocode: https://dev.virtualearth.net/REST/v1/Locations?query=CALLE+PRADILLO+Madrid+Spain&key=Ah274jwZ6fNiPYZQBTIoyfaV50oTOmCNlMz5RpJGulTHkvdifuvqA1xLCNmiFfDe&maxResults=1
+2020-01-03 09:24:54,015 - geopy - DEBUG - Bing.geocode: https://dev.virtualearth.net/REST/v1/Locations?query=CALLE+CA%EF%BF%BDON+DEL+RIO+LOBOS+Madrid+Spain&key=Ah274jwZ6fNiPYZQBTIoyfaV50oTOmCNlMz5RpJGulTHkvdifuvqA1xLCNmiFfDe&maxResults=1
+2020-01-03 09:24:54,370 - geopy - DEBUG - Bing.geocode: https://dev.virtualearth.net/REST/v1/Locations?query=CALLE+NUESTRA+SE%EF%BF%BDORA+DE+VALVERDE+Madrid+Spain&key=Ah274jwZ6fNiPYZQBTIoyfaV50oTOmCNlMz5RpJGulTHkvdifuvqA1xLCNmiFfDe&maxResults=1
+2020-01-03 09:24:55,040 - geopy - DEBUG - Bing.geocode: https://dev.virtualearth.net/REST/v1/Locations?query=CALLE+PUERTO+DE+LA+CRUZ+VERDE+Madrid+Spain&key=Ah274jwZ6fNiPYZQBTIoyfaV50oTOmCNlMz5RpJGulTHkvdifuvqA1xLCNmiFfDe&maxResults=1
+2020-01-03 09:24:55,455 - geopy - DEBUG - Bing.geocode: https://dev.virtualearth.net/REST/v1/Locations?query=CALLE+PUERTO+DE+LA+CRUZ+VERDE+Madrid+Spain&key=Ah274jwZ6fNiPYZQBTIoyfaV50oTOmCNlMz5RpJGulTHkvdifuvqA1xLCNmiFfDe&maxResults=1
+2020-01-03 09:24:55,775 - geopy - DEBUG - Bing.geocode: https://dev.virtualearth.net/REST/v1/Locations?query=CALLE+MONASTERIO+DE+ARLANZA-AV.+SANTUARIO+DE+VALVERDE+Madrid+Spain&key=Ah274jwZ6fNiPYZQBTIoyfaV50oTOmCNlMz5RpJGulTHkvdifuvqA1xLCNmiFfDe&maxResults=1
+2020-01-03 09:24:56,166 - geopy - DEBUG - Bing.geocode: https://dev.virtualearth.net/REST/v1/Locations?query=CALLE+ANTONIO+DE+LEYVA+Madrid+Spain&key=Ah274jwZ6fNiPYZQBTIoyfaV50oTOmCNlMz5RpJGulTHkvdifuvqA1xLCNmiFfDe&maxResults=1
+2020-01-03 09:24:56,575 - geopy - DEBUG - Bing.geocode: https://dev.virtualearth.net/REST/v1/Locations?query=CALLE+GRAN+VIA+Madrid+Spain&key=Ah274jwZ6fNiPYZQBTIoyfaV50oTOmCNlMz5RpJGulTHkvdifuvqA1xLCNmiFfDe&maxResults=1
+2020-01-03 09:24:56,985 - geopy - DEBUG - Bing.geocode: https://dev.virtualearth.net/REST/v1/Locations?query=PASEO+JUAN+ANTONIO+VALLEJO-NAJERA+BOTAS+Madrid+Spain&key=Ah274jwZ6fNiPYZQBTIoyfaV50oTOmCNlMz5RpJGulTHkvdifuvqA1xLCNmiFfDe&maxResults=1
+2020-01-03 09:24:57,318 - geopy - DEBUG - Bing.geocode: https://dev.virtualearth.net/REST/v1/Locations?query=CALLE+GRAN+VIA+Madrid+Spain&key=Ah274jwZ6fNiPYZQBTIoyfaV50oTOmCNlMz5RpJGulTHkvdifuvqA1xLCNmiFfDe&maxResults=1
+2020-01-03 09:24:57,616 - geopy - DEBUG - Bing.geocode: https://dev.virtualearth.net/REST/v1/Locations?query=POLIGONO+ALUCHE-AVENIDA+DE+LOS+POBLADOS+Madrid+Spain&key=Ah274jwZ6fNiPYZQBTIoyfaV50oTOmCNlMz5RpJGulTHkvdifuvqA1xLCNmiFfDe&maxResults=1
+2020-01-03 09:24:58,214 - geopy - DEBUG - Bing.geocode: https://dev.virtualearth.net/REST/v1/Locations?query=CALLE+GENERAL+RICARDOS+Madrid+Spain&key=Ah274jwZ6fNiPYZQBTIoyfaV50oTOmCNlMz5RpJGulTHkvdifuvqA1xLCNmiFfDe&maxResults=1
+2020-01-03 09:24:58,623 - geopy - DEBUG - Bing.geocode: https://dev.virtualearth.net/REST/v1/Locations?query=AVENIDA+POBLADOS+Madrid+Spain&key=Ah274jwZ6fNiPYZQBTIoyfaV50oTOmCNlMz5RpJGulTHkvdifuvqA1xLCNmiFfDe&maxResults=1
+2020-01-03 09:24:58,977 - geopy - DEBUG - Bing.geocode: https://dev.virtualearth.net/REST/v1/Locations?query=AVENIDA+ENSANCHE+DE+VALLECAS+Madrid+Spain&key=Ah274jwZ6fNiPYZQBTIoyfaV50oTOmCNlMz5RpJGulTHkvdifuvqA1xLCNmiFfDe&maxResults=1
+2020-01-03 09:24:59,358 - geopy - DEBUG - Bing.geocode: https://dev.virtualearth.net/REST/v1/Locations?query=CALLE+SANCHIDRIAN+Madrid+Spain&key=Ah274jwZ6fNiPYZQBTIoyfaV50oTOmCNlMz5RpJGulTHkvdifuvqA1xLCNmiFfDe&maxResults=1
+2020-01-03 09:24:59,715 - geopy - DEBUG - Bing.geocode: https://dev.virtualearth.net/REST/v1/Locations?query=CALLE+MIGUEL+ANGEL+Madrid+Spain&key=Ah274jwZ6fNiPYZQBTIoyfaV50oTOmCNlMz5RpJGulTHkvdifuvqA1xLCNmiFfDe&maxResults=1
+2020-01-03 09:25:00,158 - geopy - DEBUG - Bing.geocode: https://dev.virtualearth.net/REST/v1/Locations?query=PASEO+EL+PARDO+Madrid+Spain&key=Ah274jwZ6fNiPYZQBTIoyfaV50oTOmCNlMz5RpJGulTHkvdifuvqA1xLCNmiFfDe&maxResults=1
+2020-01-03 09:25:00,875 - geopy - DEBUG - Bing.geocode: https://dev.virtualearth.net/REST/v1/Locations?query=CALLE+SANTA+GENOVEVA+Madrid+Spain&key=Ah274jwZ6fNiPYZQBTIoyfaV50oTOmCNlMz5RpJGulTHkvdifuvqA1xLCNmiFfDe&maxResults=1
+2020-01-03 09:25:01,285 - geopy - DEBUG - Bing.geocode: https://dev.virtualearth.net/REST/v1/Locations?query=CALLE+FLORA+Madrid+Spain&key=Ah274jwZ6fNiPYZQBTIoyfaV50oTOmCNlMz5RpJGulTHkvdifuvqA1xLCNmiFfDe&maxResults=1
+2020-01-03 09:25:01,628 - geopy - DEBUG - Bing.geocode: https://dev.virtualearth.net/REST/v1/Locations?query=PLAZA+CONDE+DEL+VALLE+DE+SUCHIL+Madrid+Spain&key=Ah274jwZ6fNiPYZQBTIoyfaV50oTOmCNlMz5RpJGulTHkvdifuvqA1xLCNmiFfDe&maxResults=1
+2020-01-03 09:25:02,114 - geopy - DEBUG - Bing.geocode: https://dev.virtualearth.net/REST/v1/Locations?query=AVENIDA+DAROCA+Madrid+Spain&key=Ah274jwZ6fNiPYZQBTIoyfaV50oTOmCNlMz5RpJGulTHkvdifuvqA1xLCNmiFfDe&maxResults=1
+2020-01-03 09:25:43,813 - __main__ - INFO - Starting app at 2020-01-03 09:25:43.813760
+2020-01-03 09:25:43,818 - werkzeug - INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2020-01-03 09:25:43,819 - werkzeug - INFO -  * Restarting with stat
+2020-01-03 09:25:45,597 - __main__ - INFO - Starting app at 2020-01-03 09:25:45.597650
+2020-01-03 09:25:45,602 - werkzeug - WARNING -  * Debugger is active!
+2020-01-03 09:25:45,602 - werkzeug - INFO -  * Debugger PIN: 604-780-389
+2020-01-03 09:25:45,606 - data_handler - INFO - Setting all data
+2020-01-03 09:25:45,620 - get_coordinates - INFO - Fixing addresses...
+2020-01-03 09:25:45,630 - get_coordinates - INFO - Geocoding directions
+2020-01-03 09:25:45,630 - geopy - DEBUG - Bing.geocode: https://dev.virtualearth.net/REST/v1/Locations?query=CALLE+CASTELLO+1%2C+Madrid%2C+Spain&key=Ah274jwZ6fNiPYZQBTIoyfaV50oTOmCNlMz5RpJGulTHkvdifuvqA1xLCNmiFfDe&maxResults=1
+2020-01-03 09:25:46,034 - geopy - DEBUG - Bing.geocode: https://dev.virtualearth.net/REST/v1/Locations?query=AVENIDA+GRAN+VIA+DE+HORTALEZA+1%2C+Madrid%2C+Spain&key=Ah274jwZ6fNiPYZQBTIoyfaV50oTOmCNlMz5RpJGulTHkvdifuvqA1xLCNmiFfDe&maxResults=1
+2020-01-03 09:25:46,442 - geopy - DEBUG - Bing.geocode: https://dev.virtualearth.net/REST/v1/Locations?query=CALLE+FELIPE+ALVAREZ+10%2C+Madrid%2C+Spain&key=Ah274jwZ6fNiPYZQBTIoyfaV50oTOmCNlMz5RpJGulTHkvdifuvqA1xLCNmiFfDe&maxResults=1
+2020-01-03 09:25:46,820 - geopy - DEBUG - Bing.geocode: https://dev.virtualearth.net/REST/v1/Locations?query=AVENIDA+SANTA+EUGENIA+1%2C+Madrid%2C+Spain&key=Ah274jwZ6fNiPYZQBTIoyfaV50oTOmCNlMz5RpJGulTHkvdifuvqA1xLCNmiFfDe&maxResults=1
+2020-01-03 09:25:47,201 - geopy - DEBUG - Bing.geocode: https://dev.virtualearth.net/REST/v1/Locations?query=AVENIDA+SANTA+EUGENIA+1%2C+Madrid%2C+Spain&key=Ah274jwZ6fNiPYZQBTIoyfaV50oTOmCNlMz5RpJGulTHkvdifuvqA1xLCNmiFfDe&maxResults=1
+2020-01-03 09:25:47,478 - geopy - DEBUG - Bing.geocode: https://dev.virtualearth.net/REST/v1/Locations?query=CARRETERA+DEHESA+DE+LA+VILLA+1%2C+Madrid%2C+Spain&key=Ah274jwZ6fNiPYZQBTIoyfaV50oTOmCNlMz5RpJGulTHkvdifuvqA1xLCNmiFfDe&maxResults=1
+2020-01-03 09:25:48,286 - geopy - DEBUG - Bing.geocode: https://dev.virtualearth.net/REST/v1/Locations?query=CALLE+PRADILLO+26%2C+Madrid%2C+Spain&key=Ah274jwZ6fNiPYZQBTIoyfaV50oTOmCNlMz5RpJGulTHkvdifuvqA1xLCNmiFfDe&maxResults=1
+2020-01-03 09:25:48,696 - geopy - DEBUG - Bing.geocode: https://dev.virtualearth.net/REST/v1/Locations?query=CALLE+CA%EF%BF%BDON+DEL+RIO+LOBOS++7A%2C+Madrid%2C+Spain&key=Ah274jwZ6fNiPYZQBTIoyfaV50oTOmCNlMz5RpJGulTHkvdifuvqA1xLCNmiFfDe&maxResults=1
+2020-01-03 09:25:49,128 - geopy - DEBUG - Bing.geocode: https://dev.virtualearth.net/REST/v1/Locations?query=CALLE+NUESTRA+SE%EF%BF%BDORA+DE+VALVERDE+1%2C+Madrid%2C+Spain&key=Ah274jwZ6fNiPYZQBTIoyfaV50oTOmCNlMz5RpJGulTHkvdifuvqA1xLCNmiFfDe&maxResults=1
+2020-01-03 09:25:49,558 - geopy - DEBUG - Bing.geocode: https://dev.virtualearth.net/REST/v1/Locations?query=CALLE+PUERTO+DE+LA+CRUZ+VERDE+49%2C+Madrid%2C+Spain&key=Ah274jwZ6fNiPYZQBTIoyfaV50oTOmCNlMz5RpJGulTHkvdifuvqA1xLCNmiFfDe&maxResults=1
+2020-01-03 09:25:50,031 - geopy - DEBUG - Bing.geocode: https://dev.virtualearth.net/REST/v1/Locations?query=CALLE+PUERTO+DE+LA+CRUZ+VERDE+49%2C+Madrid%2C+Spain&key=Ah274jwZ6fNiPYZQBTIoyfaV50oTOmCNlMz5RpJGulTHkvdifuvqA1xLCNmiFfDe&maxResults=1
+2020-01-03 09:25:50,390 - geopy - DEBUG - Bing.geocode: https://dev.virtualearth.net/REST/v1/Locations?query=CALLE+MONASTERIO+DE+ARLANZA-AV.+SANTUARIO+DE+VALVERDE+1%2C+Madrid%2C+Spain&key=Ah274jwZ6fNiPYZQBTIoyfaV50oTOmCNlMz5RpJGulTHkvdifuvqA1xLCNmiFfDe&maxResults=1
+2020-01-03 09:25:50,953 - geopy - DEBUG - Bing.geocode: https://dev.virtualearth.net/REST/v1/Locations?query=CALLE+ANTONIO+DE+LEYVA+84%2C+Madrid%2C+Spain&key=Ah274jwZ6fNiPYZQBTIoyfaV50oTOmCNlMz5RpJGulTHkvdifuvqA1xLCNmiFfDe&maxResults=1
+2020-01-03 09:25:51,358 - geopy - DEBUG - Bing.geocode: https://dev.virtualearth.net/REST/v1/Locations?query=CALLE+GRAN+VIA+66%2C+Madrid%2C+Spain&key=Ah274jwZ6fNiPYZQBTIoyfaV50oTOmCNlMz5RpJGulTHkvdifuvqA1xLCNmiFfDe&maxResults=1
+2020-01-03 09:25:51,767 - geopy - DEBUG - Bing.geocode: https://dev.virtualearth.net/REST/v1/Locations?query=PASEO+JUAN+ANTONIO+VALLEJO-NAJERA+BOTAS+1%2C+Madrid%2C+Spain&key=Ah274jwZ6fNiPYZQBTIoyfaV50oTOmCNlMz5RpJGulTHkvdifuvqA1xLCNmiFfDe&maxResults=1
+2020-01-03 09:25:52,264 - geopy - DEBUG - Bing.geocode: https://dev.virtualearth.net/REST/v1/Locations?query=CALLE+GRAN+VIA+1%2C+Madrid%2C+Spain&key=Ah274jwZ6fNiPYZQBTIoyfaV50oTOmCNlMz5RpJGulTHkvdifuvqA1xLCNmiFfDe&maxResults=1
+2020-01-03 09:25:52,744 - geopy - DEBUG - Bing.geocode: https://dev.virtualearth.net/REST/v1/Locations?query=POLIGONO+ALUCHE-AVENIDA+DE+LOS+POBLADOS+1%2C+Madrid%2C+Spain&key=Ah274jwZ6fNiPYZQBTIoyfaV50oTOmCNlMz5RpJGulTHkvdifuvqA1xLCNmiFfDe&maxResults=1
+2020-01-03 09:25:53,406 - geopy - DEBUG - Bing.geocode: https://dev.virtualearth.net/REST/v1/Locations?query=CALLE+GENERAL+RICARDOS+1%2C+Madrid%2C+Spain&key=Ah274jwZ6fNiPYZQBTIoyfaV50oTOmCNlMz5RpJGulTHkvdifuvqA1xLCNmiFfDe&maxResults=1
+2020-01-03 09:25:53,816 - geopy - DEBUG - Bing.geocode: https://dev.virtualearth.net/REST/v1/Locations?query=AVENIDA+POBLADOS+1%2C+Madrid%2C+Spain&key=Ah274jwZ6fNiPYZQBTIoyfaV50oTOmCNlMz5RpJGulTHkvdifuvqA1xLCNmiFfDe&maxResults=1
+2020-01-03 09:25:54,186 - geopy - DEBUG - Bing.geocode: https://dev.virtualearth.net/REST/v1/Locations?query=AVENIDA+ENSANCHE+DE+VALLECAS+44%2C+Madrid%2C+Spain&key=Ah274jwZ6fNiPYZQBTIoyfaV50oTOmCNlMz5RpJGulTHkvdifuvqA1xLCNmiFfDe&maxResults=1
+2020-01-03 09:25:54,533 - geopy - DEBUG - Bing.geocode: https://dev.virtualearth.net/REST/v1/Locations?query=CALLE+SANCHIDRIAN++13A%2C+Madrid%2C+Spain&key=Ah274jwZ6fNiPYZQBTIoyfaV50oTOmCNlMz5RpJGulTHkvdifuvqA1xLCNmiFfDe&maxResults=1
+2020-01-03 09:25:54,942 - geopy - DEBUG - Bing.geocode: https://dev.virtualearth.net/REST/v1/Locations?query=CALLE+MIGUEL+ANGEL+1%2C+Madrid%2C+Spain&key=Ah274jwZ6fNiPYZQBTIoyfaV50oTOmCNlMz5RpJGulTHkvdifuvqA1xLCNmiFfDe&maxResults=1
+2020-01-03 09:25:55,557 - geopy - DEBUG - Bing.geocode: https://dev.virtualearth.net/REST/v1/Locations?query=PASEO+EL+PARDO+37%2C+Madrid%2C+Spain&key=Ah274jwZ6fNiPYZQBTIoyfaV50oTOmCNlMz5RpJGulTHkvdifuvqA1xLCNmiFfDe&maxResults=1
+2020-01-03 09:25:55,966 - geopy - DEBUG - Bing.geocode: https://dev.virtualearth.net/REST/v1/Locations?query=CALLE+SANTA+GENOVEVA+1%2C+Madrid%2C+Spain&key=Ah274jwZ6fNiPYZQBTIoyfaV50oTOmCNlMz5RpJGulTHkvdifuvqA1xLCNmiFfDe&maxResults=1
+2020-01-03 09:25:56,376 - geopy - DEBUG - Bing.geocode: https://dev.virtualearth.net/REST/v1/Locations?query=CALLE+FLORA+1%2C+Madrid%2C+Spain&key=Ah274jwZ6fNiPYZQBTIoyfaV50oTOmCNlMz5RpJGulTHkvdifuvqA1xLCNmiFfDe&maxResults=1
+2020-01-03 09:25:57,093 - geopy - DEBUG - Bing.geocode: https://dev.virtualearth.net/REST/v1/Locations?query=PLAZA+CONDE+DEL+VALLE+DE+SUCHIL+3%2C+Madrid%2C+Spain&key=Ah274jwZ6fNiPYZQBTIoyfaV50oTOmCNlMz5RpJGulTHkvdifuvqA1xLCNmiFfDe&maxResults=1
+2020-01-03 09:25:57,606 - geopy - DEBUG - Bing.geocode: https://dev.virtualearth.net/REST/v1/Locations?query=AVENIDA+DAROCA+1%2C+Madrid%2C+Spain&key=Ah274jwZ6fNiPYZQBTIoyfaV50oTOmCNlMz5RpJGulTHkvdifuvqA1xLCNmiFfDe&maxResults=1
+2020-01-03 09:25:58,117 - geopy - DEBUG - Bing.geocode: https://dev.virtualearth.net/REST/v1/Locations?query=CALLE+ARENAL+1%2C+Madrid%2C+Spain&key=Ah274jwZ6fNiPYZQBTIoyfaV50oTOmCNlMz5RpJGulTHkvdifuvqA1xLCNmiFfDe&maxResults=1
+2020-01-03 09:25:58,629 - geopy - DEBUG - Bing.geocode: https://dev.virtualearth.net/REST/v1/Locations?query=CALLE+SERRANO+141%2C+Madrid%2C+Spain&key=Ah274jwZ6fNiPYZQBTIoyfaV50oTOmCNlMz5RpJGulTHkvdifuvqA1xLCNmiFfDe&maxResults=1
+2020-01-03 09:25:59,038 - geopy - DEBUG - Bing.geocode: https://dev.virtualearth.net/REST/v1/Locations?query=CALLE+DOCE+DE+OCTUBRE+26%2C+Madrid%2C+Spain&key=Ah274jwZ6fNiPYZQBTIoyfaV50oTOmCNlMz5RpJGulTHkvdifuvqA1xLCNmiFfDe&maxResults=1
+2020-01-03 09:25:59,550 - geopy - DEBUG - Bing.geocode: https://dev.virtualearth.net/REST/v1/Locations?query=AVENIDA+FERMINA+SEVILLANO+42%2C+Madrid%2C+Spain&key=Ah274jwZ6fNiPYZQBTIoyfaV50oTOmCNlMz5RpJGulTHkvdifuvqA1xLCNmiFfDe&maxResults=1
+2020-01-03 09:25:59,960 - geopy - DEBUG - Bing.geocode: https://dev.virtualearth.net/REST/v1/Locations?query=CALLE+VILLABLANCA+11%2C+Madrid%2C+Spain&key=Ah274jwZ6fNiPYZQBTIoyfaV50oTOmCNlMz5RpJGulTHkvdifuvqA1xLCNmiFfDe&maxResults=1
+2020-01-03 09:26:00,369 - geopy - DEBUG - Bing.geocode: https://dev.virtualearth.net/REST/v1/Locations?query=CALLE+GENOVA+2%2C+Madrid%2C+Spain&key=Ah274jwZ6fNiPYZQBTIoyfaV50oTOmCNlMz5RpJGulTHkvdifuvqA1xLCNmiFfDe&maxResults=1
+2020-01-03 09:26:00,781 - geopy - DEBUG - Bing.geocode: https://dev.virtualearth.net/REST/v1/Locations?query=PLAZA+INDEPENDENCIA+1%2C+Madrid%2C+Spain&key=Ah274jwZ6fNiPYZQBTIoyfaV50oTOmCNlMz5RpJGulTHkvdifuvqA1xLCNmiFfDe&maxResults=1
+2020-01-03 09:26:01,138 - geopy - DEBUG - Bing.geocode: https://dev.virtualearth.net/REST/v1/Locations?query=CARRETERA+EL+PARDO+A+FUENCARRAL+0%2C+Madrid%2C+Spain&key=Ah274jwZ6fNiPYZQBTIoyfaV50oTOmCNlMz5RpJGulTHkvdifuvqA1xLCNmiFfDe&maxResults=1
+2020-01-03 09:26:01,654 - geopy - DEBUG - Bing.geocode: https://dev.virtualearth.net/REST/v1/Locations?query=CALLE+SAN+ENRIQUE+DE+OSSO+36%2C+Madrid%2C+Spain&key=Ah274jwZ6fNiPYZQBTIoyfaV50oTOmCNlMz5RpJGulTHkvdifuvqA1xLCNmiFfDe&maxResults=1
+2020-01-03 09:26:02,054 - geopy - DEBUG - Bing.geocode: https://dev.virtualearth.net/REST/v1/Locations?query=AVENIDA+ALBUFERA+149%2C+Madrid%2C+Spain&key=Ah274jwZ6fNiPYZQBTIoyfaV50oTOmCNlMz5RpJGulTHkvdifuvqA1xLCNmiFfDe&maxResults=1
+2020-01-03 09:26:02,417 - geopy - DEBUG - Bing.geocode: https://dev.virtualearth.net/REST/v1/Locations?query=AVENIDA+ALBUFERA+1%2C+Madrid%2C+Spain&key=Ah274jwZ6fNiPYZQBTIoyfaV50oTOmCNlMz5RpJGulTHkvdifuvqA1xLCNmiFfDe&maxResults=1
+2020-01-03 09:26:02,773 - geopy - DEBUG - Bing.geocode: https://dev.virtualearth.net/REST/v1/Locations?query=CALLE+BRAVO+MURILLO+1%2C+Madrid%2C+Spain&key=Ah274jwZ6fNiPYZQBTIoyfaV50oTOmCNlMz5RpJGulTHkvdifuvqA1xLCNmiFfDe&maxResults=1
+2020-01-03 09:26:03,177 - geopy - DEBUG - Bing.geocode: https://dev.virtualearth.net/REST/v1/Locations?query=CALLE+BRAVO+MURILLO+1%2C+Madrid%2C+Spain&key=Ah274jwZ6fNiPYZQBTIoyfaV50oTOmCNlMz5RpJGulTHkvdifuvqA1xLCNmiFfDe&maxResults=1
+2020-01-03 09:26:03,493 - geopy - DEBUG - Bing.geocode: https://dev.virtualearth.net/REST/v1/Locations?query=CALLE+GRAN+VIA+78%2C+Madrid%2C+Spain&key=Ah274jwZ6fNiPYZQBTIoyfaV50oTOmCNlMz5RpJGulTHkvdifuvqA1xLCNmiFfDe&maxResults=1
+2020-01-03 09:26:03,954 - geopy - DEBUG - Bing.geocode: https://dev.virtualearth.net/REST/v1/Locations?query=CALLE+MARIA+DE+MOLINA+60%2C+Madrid%2C+Spain&key=Ah274jwZ6fNiPYZQBTIoyfaV50oTOmCNlMz5RpJGulTHkvdifuvqA1xLCNmiFfDe&maxResults=1
+2020-01-03 09:26:04,347 - geopy - DEBUG - Bing.geocode: https://dev.virtualearth.net/REST/v1/Locations?query=CALLE+ALCALA+44%2C+Madrid%2C+Spain&key=Ah274jwZ6fNiPYZQBTIoyfaV50oTOmCNlMz5RpJGulTHkvdifuvqA1xLCNmiFfDe&maxResults=1
+2020-01-03 09:26:04,694 - geopy - DEBUG - Bing.geocode: https://dev.virtualearth.net/REST/v1/Locations?query=CALLE+ALCALA+44%2C+Madrid%2C+Spain&key=Ah274jwZ6fNiPYZQBTIoyfaV50oTOmCNlMz5RpJGulTHkvdifuvqA1xLCNmiFfDe&maxResults=1
+2020-01-03 09:26:04,987 - geopy - DEBUG - Bing.geocode: https://dev.virtualearth.net/REST/v1/Locations?query=CALLE+MENDEZ+ALVARO+1%2C+Madrid%2C+Spain&key=Ah274jwZ6fNiPYZQBTIoyfaV50oTOmCNlMz5RpJGulTHkvdifuvqA1xLCNmiFfDe&maxResults=1
+2020-01-03 09:26:05,356 - geopy - DEBUG - Bing.geocode: https://dev.virtualearth.net/REST/v1/Locations?query=PASEO+RECOLETOS+23%2C+Madrid%2C+Spain&key=Ah274jwZ6fNiPYZQBTIoyfaV50oTOmCNlMz5RpJGulTHkvdifuvqA1xLCNmiFfDe&maxResults=1
+2020-01-03 09:26:05,704 - geopy - DEBUG - Bing.geocode: https://dev.virtualearth.net/REST/v1/Locations?query=AVENIDA+CARABANCHEL+ALTO+122%2C+Madrid%2C+Spain&key=Ah274jwZ6fNiPYZQBTIoyfaV50oTOmCNlMz5RpJGulTHkvdifuvqA1xLCNmiFfDe&maxResults=1
+2020-01-03 09:26:06,309 - geopy - DEBUG - Bing.geocode: https://dev.virtualearth.net/REST/v1/Locations?query=CALLE+TOMASA+RUIZ+1%2C+Madrid%2C+Spain&key=Ah274jwZ6fNiPYZQBTIoyfaV50oTOmCNlMz5RpJGulTHkvdifuvqA1xLCNmiFfDe&maxResults=1
+2020-01-03 09:26:06,719 - geopy - DEBUG - Bing.geocode: https://dev.virtualearth.net/REST/v1/Locations?query=CALLE+DOCTOR+ESQUERDO+1%2C+Madrid%2C+Spain&key=Ah274jwZ6fNiPYZQBTIoyfaV50oTOmCNlMz5RpJGulTHkvdifuvqA1xLCNmiFfDe&maxResults=1
+2020-01-03 09:26:07,128 - geopy - DEBUG - Bing.geocode: https://dev.virtualearth.net/REST/v1/Locations?query=CALLE+SANTA+ENGRACIA+1%2C+Madrid%2C+Spain&key=Ah274jwZ6fNiPYZQBTIoyfaV50oTOmCNlMz5RpJGulTHkvdifuvqA1xLCNmiFfDe&maxResults=1
+2020-01-03 09:26:07,854 - get_coordinates - INFO - Complete CSV saved in /home/psaucedo/Desktop/OpenDataMadrid/out_csv/geo_out.csv.
+2020-01-03 09:26:07,864 - engine - INFO - Validating dataset over 10 folds.
+2020-01-03 09:26:07,865 - engine - INFO - Reading /home/psaucedo/Desktop/OpenDataMadrid/out_csv/geo_out.csv file for the sake of training, testing and rendering Random Forest
+2020-01-03 09:26:07,879 - engine - INFO - Oversampling imbalanced dataset.
+2020-01-03 09:26:07,883 - engine - INFO - Data partition for Random Forest with Cross-Validation conducted.
+2020-01-03 09:26:07,883 - engine - INFO - Training and fitting RandomForestClassifier.
+2020-01-03 09:26:09,500 - engine - INFO - Testing model overvalidation dataset.
+2020-01-03 09:26:09,502 - engine - INFO - Training and fitting RandomForestClassifier.
+2020-01-03 09:26:10,249 - engine - INFO - Testing model overvalidation dataset.
+2020-01-03 09:26:10,251 - engine - INFO - Training and fitting RandomForestClassifier.
+2020-01-03 09:26:11,044 - engine - INFO - Testing model overvalidation dataset.
+2020-01-03 09:26:11,047 - engine - INFO - Training and fitting RandomForestClassifier.
+2020-01-03 09:26:11,930 - engine - INFO - Testing model overvalidation dataset.
+2020-01-03 09:26:11,932 - engine - INFO - Training and fitting RandomForestClassifier.
+2020-01-03 09:26:12,597 - engine - INFO - Testing model overvalidation dataset.
+2020-01-03 09:26:12,598 - engine - INFO - Training and fitting RandomForestClassifier.
+2020-01-03 09:26:13,228 - engine - INFO - Testing model overvalidation dataset.
+2020-01-03 09:26:13,230 - engine - INFO - Training and fitting RandomForestClassifier.
+2020-01-03 09:26:13,889 - engine - INFO - Testing model overvalidation dataset.
+2020-01-03 09:26:13,891 - engine - INFO - Training and fitting RandomForestClassifier.
+2020-01-03 09:26:14,686 - engine - INFO - Testing model overvalidation dataset.
+2020-01-03 09:26:14,708 - engine - INFO - Training and fitting RandomForestClassifier.
+2020-01-03 09:26:15,684 - engine - INFO - Testing model overvalidation dataset.
+2020-01-03 09:26:15,686 - engine - INFO - Training and fitting RandomForestClassifier.
+2020-01-03 09:26:16,651 - engine - INFO - Testing model overvalidation dataset.
+2020-01-03 09:26:16,654 - engine - INFO - Best model has an accuracy of 100.00%
+2020-01-03 09:26:16,655 - data_handler - INFO - RandomForestClassifier model trained and saved in /home/psaucedo/Desktop/OpenDataMadrid/model.pkl
+2020-01-03 09:26:16,656 - engine - INFO - Reading /home/psaucedo/Desktop/OpenDataMadrid/out_csv/geo_out.csv file for the sake of training, testing and rendering KDE
+2020-01-03 09:26:18,268 - engine - INFO - KDE model is fitted
+2020-01-03 09:26:18,269 - data_handler - INFO - KernelDensity model trained and saved in /home/psaucedo/Desktop/OpenDataMadrid/KDEmodel.pkl
+2020-01-03 09:26:18,279 - werkzeug - INFO - 127.0.0.1 - - [03/Jan/2020 09:26:18] "GET / HTTP/1.1" 200 -
+2020-01-03 09:26:52,860 - data_handler - INFO - RandomForestClassifier model loaded successfully.
+2020-01-03 09:26:52,860 - data_handler - INFO - KernelDensity model loaded successfully.
+2020-01-03 09:26:52,868 - werkzeug - INFO - 127.0.0.1 - - [03/Jan/2020 09:26:52] "POST /visualize HTTP/1.1" 200 -
+2020-01-03 09:26:53,201 - werkzeug - INFO - 127.0.0.1 - - [03/Jan/2020 09:26:53] "POST /get_heatmap HTTP/1.1" 200 -
+2020-01-03 09:30:21,365 - werkzeug - INFO -  * Detected change in '/home/psaucedo/Desktop/OpenDataMadrid/get_coordinates.py', reloading
+2020-01-03 09:30:21,708 - werkzeug - INFO -  * Restarting with stat
+2020-01-03 09:30:23,352 - __main__ - INFO - Starting app at 2020-01-03 09:30:23.352844
+2020-01-03 09:30:23,358 - werkzeug - WARNING -  * Debugger is active!
+2020-01-03 09:30:23,358 - werkzeug - INFO -  * Debugger PIN: 604-780-389
+2020-01-03 09:30:33,595 - werkzeug - INFO -  * Detected change in '/home/psaucedo/Desktop/OpenDataMadrid/get_coordinates.py', reloading
+2020-01-03 09:30:33,753 - werkzeug - INFO -  * Restarting with stat
+2020-01-03 09:30:35,345 - __main__ - INFO - Starting app at 2020-01-03 09:30:35.345582
+2020-01-03 09:30:35,350 - werkzeug - WARNING -  * Debugger is active!
+2020-01-03 09:30:35,350 - werkzeug - INFO -  * Debugger PIN: 604-780-389
+2020-01-03 09:30:40,485 - werkzeug - INFO -  * Detected change in '/home/psaucedo/Desktop/OpenDataMadrid/get_coordinates.py', reloading
+2020-01-03 09:30:40,742 - werkzeug - INFO -  * Restarting with stat
+2020-01-03 09:30:43,032 - __main__ - INFO - Starting app at 2020-01-03 09:30:43.032924
+2020-01-03 09:30:43,041 - werkzeug - WARNING -  * Debugger is active!
+2020-01-03 09:30:43,041 - werkzeug - INFO -  * Debugger PIN: 604-780-389
+2020-01-03 09:30:48,178 - werkzeug - INFO -  * Detected change in '/home/psaucedo/Desktop/OpenDataMadrid/get_coordinates.py', reloading
+2020-01-03 09:30:48,406 - werkzeug - INFO -  * Restarting with stat
+2020-01-03 09:30:50,960 - __main__ - INFO - Starting app at 2020-01-03 09:30:50.960278
+2020-01-03 09:30:50,967 - werkzeug - WARNING -  * Debugger is active!
+2020-01-03 09:30:50,967 - werkzeug - INFO -  * Debugger PIN: 604-780-389
+2020-01-03 09:30:53,048 - werkzeug - INFO -  * Detected change in '/home/psaucedo/Desktop/OpenDataMadrid/get_coordinates.py', reloading
+2020-01-03 09:30:53,293 - werkzeug - INFO -  * Restarting with stat
+2020-01-03 09:30:55,751 - __main__ - INFO - Starting app at 2020-01-03 09:30:55.751528
+2020-01-03 09:30:55,760 - werkzeug - WARNING -  * Debugger is active!
+2020-01-03 09:30:55,761 - werkzeug - INFO -  * Debugger PIN: 604-780-389
+2020-01-03 09:30:57,833 - werkzeug - INFO -  * Detected change in '/home/psaucedo/Desktop/OpenDataMadrid/get_coordinates.py', reloading
+2020-01-03 09:30:58,063 - werkzeug - INFO -  * Restarting with stat
+2020-01-03 09:31:00,201 - __main__ - INFO - Starting app at 2020-01-03 09:31:00.201626
+2020-01-03 09:31:00,212 - werkzeug - WARNING -  * Debugger is active!
+2020-01-03 09:31:00,213 - werkzeug - INFO -  * Debugger PIN: 604-780-389
+2020-01-03 09:31:11,804 - data_handler - INFO - Setting all data
+2020-01-03 09:31:11,817 - get_coordinates - INFO - Fixing addresses...
+2020-01-03 09:31:11,828 - get_coordinates - INFO - Geocoding directions
+2020-01-03 09:31:11,829 - geopy - DEBUG - Bing.geocode: https://dev.virtualearth.net/REST/v1/Locations?query=CALLE+CASTELLO+1%2C+Madrid%2C+Spain&key=Ah274jwZ6fNiPYZQBTIoyfaV50oTOmCNlMz5RpJGulTHkvdifuvqA1xLCNmiFfDe&maxResults=1
+2020-01-03 09:31:12,143 - geopy - DEBUG - Bing.geocode: https://dev.virtualearth.net/REST/v1/Locations?query=AVENIDA+GRAN+VIA+DE+HORTALEZA+1%2C+Madrid%2C+Spain&key=Ah274jwZ6fNiPYZQBTIoyfaV50oTOmCNlMz5RpJGulTHkvdifuvqA1xLCNmiFfDe&maxResults=1
+2020-01-03 09:31:12,480 - geopy - DEBUG - Bing.geocode: https://dev.virtualearth.net/REST/v1/Locations?query=CALLE+FELIPE+ALVAREZ+10%2C+Madrid%2C+Spain&key=Ah274jwZ6fNiPYZQBTIoyfaV50oTOmCNlMz5RpJGulTHkvdifuvqA1xLCNmiFfDe&maxResults=1
+2020-01-03 09:31:12,825 - geopy - DEBUG - Bing.geocode: https://dev.virtualearth.net/REST/v1/Locations?query=AVENIDA+SANTA+EUGENIA+1%2C+Madrid%2C+Spain&key=Ah274jwZ6fNiPYZQBTIoyfaV50oTOmCNlMz5RpJGulTHkvdifuvqA1xLCNmiFfDe&maxResults=1
+2020-01-03 09:31:13,133 - geopy - DEBUG - Bing.geocode: https://dev.virtualearth.net/REST/v1/Locations?query=AVENIDA+SANTA+EUGENIA+1%2C+Madrid%2C+Spain&key=Ah274jwZ6fNiPYZQBTIoyfaV50oTOmCNlMz5RpJGulTHkvdifuvqA1xLCNmiFfDe&maxResults=1
+2020-01-03 09:31:13,443 - geopy - DEBUG - Bing.geocode: https://dev.virtualearth.net/REST/v1/Locations?query=CARRETERA+DEHESA+DE+LA+VILLA+1%2C+Madrid%2C+Spain&key=Ah274jwZ6fNiPYZQBTIoyfaV50oTOmCNlMz5RpJGulTHkvdifuvqA1xLCNmiFfDe&maxResults=1
+2020-01-03 09:31:13,730 - geopy - DEBUG - Bing.geocode: https://dev.virtualearth.net/REST/v1/Locations?query=CALLE+PRADILLO+26%2C+Madrid%2C+Spain&key=Ah274jwZ6fNiPYZQBTIoyfaV50oTOmCNlMz5RpJGulTHkvdifuvqA1xLCNmiFfDe&maxResults=1
+2020-01-03 09:31:14,041 - geopy - DEBUG - Bing.geocode: https://dev.virtualearth.net/REST/v1/Locations?query=CALLE+CA%EF%BF%BDON+DEL+RIO+LOBOS++7A%2C+Madrid%2C+Spain&key=Ah274jwZ6fNiPYZQBTIoyfaV50oTOmCNlMz5RpJGulTHkvdifuvqA1xLCNmiFfDe&maxResults=1
+2020-01-03 09:31:14,418 - geopy - DEBUG - Bing.geocode: https://dev.virtualearth.net/REST/v1/Locations?query=CALLE+NUESTRA+SE%EF%BF%BDORA+DE+VALVERDE+1%2C+Madrid%2C+Spain&key=Ah274jwZ6fNiPYZQBTIoyfaV50oTOmCNlMz5RpJGulTHkvdifuvqA1xLCNmiFfDe&maxResults=1
+2020-01-03 09:31:14,739 - geopy - DEBUG - Bing.geocode: https://dev.virtualearth.net/REST/v1/Locations?query=CALLE+PUERTO+DE+LA+CRUZ+VERDE+49%2C+Madrid%2C+Spain&key=Ah274jwZ6fNiPYZQBTIoyfaV50oTOmCNlMz5RpJGulTHkvdifuvqA1xLCNmiFfDe&maxResults=1
+2020-01-03 09:31:15,075 - geopy - DEBUG - Bing.geocode: https://dev.virtualearth.net/REST/v1/Locations?query=CALLE+PUERTO+DE+LA+CRUZ+VERDE+49%2C+Madrid%2C+Spain&key=Ah274jwZ6fNiPYZQBTIoyfaV50oTOmCNlMz5RpJGulTHkvdifuvqA1xLCNmiFfDe&maxResults=1
+2020-01-03 09:31:15,442 - geopy - DEBUG - Bing.geocode: https://dev.virtualearth.net/REST/v1/Locations?query=CALLE+MONASTERIO+DE+ARLANZA-AV.+SANTUARIO+DE+VALVERDE+1%2C+Madrid%2C+Spain&key=Ah274jwZ6fNiPYZQBTIoyfaV50oTOmCNlMz5RpJGulTHkvdifuvqA1xLCNmiFfDe&maxResults=1
+2020-01-03 09:31:15,857 - geopy - DEBUG - Bing.geocode: https://dev.virtualearth.net/REST/v1/Locations?query=CALLE+ANTONIO+DE+LEYVA+84%2C+Madrid%2C+Spain&key=Ah274jwZ6fNiPYZQBTIoyfaV50oTOmCNlMz5RpJGulTHkvdifuvqA1xLCNmiFfDe&maxResults=1
+2020-01-03 09:31:16,271 - geopy - DEBUG - Bing.geocode: https://dev.virtualearth.net/REST/v1/Locations?query=CALLE+GRAN+VIA+66%2C+Madrid%2C+Spain&key=Ah274jwZ6fNiPYZQBTIoyfaV50oTOmCNlMz5RpJGulTHkvdifuvqA1xLCNmiFfDe&maxResults=1
+2020-01-03 09:31:16,593 - geopy - DEBUG - Bing.geocode: https://dev.virtualearth.net/REST/v1/Locations?query=PASEO+JUAN+ANTONIO+VALLEJO-NAJERA+BOTAS+1%2C+Madrid%2C+Spain&key=Ah274jwZ6fNiPYZQBTIoyfaV50oTOmCNlMz5RpJGulTHkvdifuvqA1xLCNmiFfDe&maxResults=1
+2020-01-03 09:31:16,990 - geopy - DEBUG - Bing.geocode: https://dev.virtualearth.net/REST/v1/Locations?query=CALLE+GRAN+VIA+1%2C+Madrid%2C+Spain&key=Ah274jwZ6fNiPYZQBTIoyfaV50oTOmCNlMz5RpJGulTHkvdifuvqA1xLCNmiFfDe&maxResults=1
+2020-01-03 09:31:17,311 - geopy - DEBUG - Bing.geocode: https://dev.virtualearth.net/REST/v1/Locations?query=POLIGONO+ALUCHE-AVENIDA+DE+LOS+POBLADOS+1%2C+Madrid%2C+Spain&key=Ah274jwZ6fNiPYZQBTIoyfaV50oTOmCNlMz5RpJGulTHkvdifuvqA1xLCNmiFfDe&maxResults=1
+2020-01-03 09:31:17,608 - geopy - DEBUG - Bing.geocode: https://dev.virtualearth.net/REST/v1/Locations?query=CALLE+GENERAL+RICARDOS+1%2C+Madrid%2C+Spain&key=Ah274jwZ6fNiPYZQBTIoyfaV50oTOmCNlMz5RpJGulTHkvdifuvqA1xLCNmiFfDe&maxResults=1
+2020-01-03 09:31:17,951 - geopy - DEBUG - Bing.geocode: https://dev.virtualearth.net/REST/v1/Locations?query=AVENIDA+POBLADOS+1%2C+Madrid%2C+Spain&key=Ah274jwZ6fNiPYZQBTIoyfaV50oTOmCNlMz5RpJGulTHkvdifuvqA1xLCNmiFfDe&maxResults=1
+2020-01-03 09:31:18,259 - geopy - DEBUG - Bing.geocode: https://dev.virtualearth.net/REST/v1/Locations?query=AVENIDA+ENSANCHE+DE+VALLECAS+44%2C+Madrid%2C+Spain&key=Ah274jwZ6fNiPYZQBTIoyfaV50oTOmCNlMz5RpJGulTHkvdifuvqA1xLCNmiFfDe&maxResults=1
+2020-01-03 09:31:18,547 - geopy - DEBUG - Bing.geocode: https://dev.virtualearth.net/REST/v1/Locations?query=CALLE+SANCHIDRIAN++13A%2C+Madrid%2C+Spain&key=Ah274jwZ6fNiPYZQBTIoyfaV50oTOmCNlMz5RpJGulTHkvdifuvqA1xLCNmiFfDe&maxResults=1
+2020-01-03 09:31:18,831 - geopy - DEBUG - Bing.geocode: https://dev.virtualearth.net/REST/v1/Locations?query=CALLE+MIGUEL+ANGEL+1%2C+Madrid%2C+Spain&key=Ah274jwZ6fNiPYZQBTIoyfaV50oTOmCNlMz5RpJGulTHkvdifuvqA1xLCNmiFfDe&maxResults=1
+2020-01-03 09:31:19,144 - geopy - DEBUG - Bing.geocode: https://dev.virtualearth.net/REST/v1/Locations?query=PASEO+EL+PARDO+37%2C+Madrid%2C+Spain&key=Ah274jwZ6fNiPYZQBTIoyfaV50oTOmCNlMz5RpJGulTHkvdifuvqA1xLCNmiFfDe&maxResults=1
+2020-01-03 09:31:19,446 - geopy - DEBUG - Bing.geocode: https://dev.virtualearth.net/REST/v1/Locations?query=CALLE+SANTA+GENOVEVA+1%2C+Madrid%2C+Spain&key=Ah274jwZ6fNiPYZQBTIoyfaV50oTOmCNlMz5RpJGulTHkvdifuvqA1xLCNmiFfDe&maxResults=1
+2020-01-03 09:31:19,958 - geopy - DEBUG - Bing.geocode: https://dev.virtualearth.net/REST/v1/Locations?query=CALLE+FLORA+1%2C+Madrid%2C+Spain&key=Ah274jwZ6fNiPYZQBTIoyfaV50oTOmCNlMz5RpJGulTHkvdifuvqA1xLCNmiFfDe&maxResults=1
+2020-01-03 09:31:20,254 - geopy - DEBUG - Bing.geocode: https://dev.virtualearth.net/REST/v1/Locations?query=PLAZA+CONDE+DEL+VALLE+DE+SUCHIL+3%2C+Madrid%2C+Spain&key=Ah274jwZ6fNiPYZQBTIoyfaV50oTOmCNlMz5RpJGulTHkvdifuvqA1xLCNmiFfDe&maxResults=1
+2020-01-03 09:31:20,591 - geopy - DEBUG - Bing.geocode: https://dev.virtualearth.net/REST/v1/Locations?query=AVENIDA+DAROCA+1%2C+Madrid%2C+Spain&key=Ah274jwZ6fNiPYZQBTIoyfaV50oTOmCNlMz5RpJGulTHkvdifuvqA1xLCNmiFfDe&maxResults=1
+2020-01-03 09:31:20,884 - geopy - DEBUG - Bing.geocode: https://dev.virtualearth.net/REST/v1/Locations?query=CALLE+ARENAL+1%2C+Madrid%2C+Spain&key=Ah274jwZ6fNiPYZQBTIoyfaV50oTOmCNlMz5RpJGulTHkvdifuvqA1xLCNmiFfDe&maxResults=1
+2020-01-03 09:31:21,177 - geopy - DEBUG - Bing.geocode: https://dev.virtualearth.net/REST/v1/Locations?query=CALLE+SERRANO+141%2C+Madrid%2C+Spain&key=Ah274jwZ6fNiPYZQBTIoyfaV50oTOmCNlMz5RpJGulTHkvdifuvqA1xLCNmiFfDe&maxResults=1
+2020-01-03 09:31:21,597 - geopy - DEBUG - Bing.geocode: https://dev.virtualearth.net/REST/v1/Locations?query=CALLE+DOCE+DE+OCTUBRE+26%2C+Madrid%2C+Spain&key=Ah274jwZ6fNiPYZQBTIoyfaV50oTOmCNlMz5RpJGulTHkvdifuvqA1xLCNmiFfDe&maxResults=1
+2020-01-03 09:31:21,935 - geopy - DEBUG - Bing.geocode: https://dev.virtualearth.net/REST/v1/Locations?query=AVENIDA+FERMINA+SEVILLANO+42%2C+Madrid%2C+Spain&key=Ah274jwZ6fNiPYZQBTIoyfaV50oTOmCNlMz5RpJGulTHkvdifuvqA1xLCNmiFfDe&maxResults=1
+2020-01-03 09:31:22,227 - geopy - DEBUG - Bing.geocode: https://dev.virtualearth.net/REST/v1/Locations?query=CALLE+VILLABLANCA+11%2C+Madrid%2C+Spain&key=Ah274jwZ6fNiPYZQBTIoyfaV50oTOmCNlMz5RpJGulTHkvdifuvqA1xLCNmiFfDe&maxResults=1
+2020-01-03 09:31:22,538 - geopy - DEBUG - Bing.geocode: https://dev.virtualearth.net/REST/v1/Locations?query=CALLE+GENOVA+2%2C+Madrid%2C+Spain&key=Ah274jwZ6fNiPYZQBTIoyfaV50oTOmCNlMz5RpJGulTHkvdifuvqA1xLCNmiFfDe&maxResults=1
+2020-01-03 09:31:22,854 - geopy - DEBUG - Bing.geocode: https://dev.virtualearth.net/REST/v1/Locations?query=PLAZA+INDEPENDENCIA+1%2C+Madrid%2C+Spain&key=Ah274jwZ6fNiPYZQBTIoyfaV50oTOmCNlMz5RpJGulTHkvdifuvqA1xLCNmiFfDe&maxResults=1
+2020-01-03 09:31:23,173 - geopy - DEBUG - Bing.geocode: https://dev.virtualearth.net/REST/v1/Locations?query=CARRETERA+EL+PARDO+A+FUENCARRAL+0%2C+Madrid%2C+Spain&key=Ah274jwZ6fNiPYZQBTIoyfaV50oTOmCNlMz5RpJGulTHkvdifuvqA1xLCNmiFfDe&maxResults=1
+2020-01-03 09:31:23,444 - geopy - DEBUG - Bing.geocode: https://dev.virtualearth.net/REST/v1/Locations?query=CALLE+SAN+ENRIQUE+DE+OSSO+36%2C+Madrid%2C+Spain&key=Ah274jwZ6fNiPYZQBTIoyfaV50oTOmCNlMz5RpJGulTHkvdifuvqA1xLCNmiFfDe&maxResults=1
+2020-01-03 09:31:23,856 - geopy - DEBUG - Bing.geocode: https://dev.virtualearth.net/REST/v1/Locations?query=AVENIDA+ALBUFERA+149%2C+Madrid%2C+Spain&key=Ah274jwZ6fNiPYZQBTIoyfaV50oTOmCNlMz5RpJGulTHkvdifuvqA1xLCNmiFfDe&maxResults=1
+2020-01-03 09:31:24,161 - geopy - DEBUG - Bing.geocode: https://dev.virtualearth.net/REST/v1/Locations?query=AVENIDA+ALBUFERA+1%2C+Madrid%2C+Spain&key=Ah274jwZ6fNiPYZQBTIoyfaV50oTOmCNlMz5RpJGulTHkvdifuvqA1xLCNmiFfDe&maxResults=1
+2020-01-03 09:31:24,572 - geopy - DEBUG - Bing.geocode: https://dev.virtualearth.net/REST/v1/Locations?query=CALLE+BRAVO+MURILLO+1%2C+Madrid%2C+Spain&key=Ah274jwZ6fNiPYZQBTIoyfaV50oTOmCNlMz5RpJGulTHkvdifuvqA1xLCNmiFfDe&maxResults=1
+2020-01-03 09:31:24,977 - geopy - DEBUG - Bing.geocode: https://dev.virtualearth.net/REST/v1/Locations?query=CALLE+BRAVO+MURILLO+1%2C+Madrid%2C+Spain&key=Ah274jwZ6fNiPYZQBTIoyfaV50oTOmCNlMz5RpJGulTHkvdifuvqA1xLCNmiFfDe&maxResults=1
+2020-01-03 09:31:25,383 - geopy - DEBUG - Bing.geocode: https://dev.virtualearth.net/REST/v1/Locations?query=CALLE+GRAN+VIA+78%2C+Madrid%2C+Spain&key=Ah274jwZ6fNiPYZQBTIoyfaV50oTOmCNlMz5RpJGulTHkvdifuvqA1xLCNmiFfDe&maxResults=1
+2020-01-03 09:31:25,691 - geopy - DEBUG - Bing.geocode: https://dev.virtualearth.net/REST/v1/Locations?query=CALLE+MARIA+DE+MOLINA+60%2C+Madrid%2C+Spain&key=Ah274jwZ6fNiPYZQBTIoyfaV50oTOmCNlMz5RpJGulTHkvdifuvqA1xLCNmiFfDe&maxResults=1
+2020-01-03 09:31:26,016 - geopy - DEBUG - Bing.geocode: https://dev.virtualearth.net/REST/v1/Locations?query=CALLE+ALCALA+44%2C+Madrid%2C+Spain&key=Ah274jwZ6fNiPYZQBTIoyfaV50oTOmCNlMz5RpJGulTHkvdifuvqA1xLCNmiFfDe&maxResults=1
+2020-01-03 09:31:26,342 - geopy - DEBUG - Bing.geocode: https://dev.virtualearth.net/REST/v1/Locations?query=CALLE+ALCALA+44%2C+Madrid%2C+Spain&key=Ah274jwZ6fNiPYZQBTIoyfaV50oTOmCNlMz5RpJGulTHkvdifuvqA1xLCNmiFfDe&maxResults=1
+2020-01-03 09:31:26,715 - geopy - DEBUG - Bing.geocode: https://dev.virtualearth.net/REST/v1/Locations?query=CALLE+MENDEZ+ALVARO+1%2C+Madrid%2C+Spain&key=Ah274jwZ6fNiPYZQBTIoyfaV50oTOmCNlMz5RpJGulTHkvdifuvqA1xLCNmiFfDe&maxResults=1
+2020-01-03 09:31:27,003 - geopy - DEBUG - Bing.geocode: https://dev.virtualearth.net/REST/v1/Locations?query=PASEO+RECOLETOS+23%2C+Madrid%2C+Spain&key=Ah274jwZ6fNiPYZQBTIoyfaV50oTOmCNlMz5RpJGulTHkvdifuvqA1xLCNmiFfDe&maxResults=1
+2020-01-03 09:31:27,636 - geopy - DEBUG - Bing.geocode: https://dev.virtualearth.net/REST/v1/Locations?query=AVENIDA+CARABANCHEL+ALTO+122%2C+Madrid%2C+Spain&key=Ah274jwZ6fNiPYZQBTIoyfaV50oTOmCNlMz5RpJGulTHkvdifuvqA1xLCNmiFfDe&maxResults=1
+2020-01-03 09:31:27,969 - geopy - DEBUG - Bing.geocode: https://dev.virtualearth.net/REST/v1/Locations?query=CALLE+TOMASA+RUIZ+1%2C+Madrid%2C+Spain&key=Ah274jwZ6fNiPYZQBTIoyfaV50oTOmCNlMz5RpJGulTHkvdifuvqA1xLCNmiFfDe&maxResults=1
+2020-01-03 09:31:28,279 - geopy - DEBUG - Bing.geocode: https://dev.virtualearth.net/REST/v1/Locations?query=CALLE+DOCTOR+ESQUERDO+1%2C+Madrid%2C+Spain&key=Ah274jwZ6fNiPYZQBTIoyfaV50oTOmCNlMz5RpJGulTHkvdifuvqA1xLCNmiFfDe&maxResults=1
+2020-01-03 09:31:28,577 - geopy - DEBUG - Bing.geocode: https://dev.virtualearth.net/REST/v1/Locations?query=CALLE+SANTA+ENGRACIA+1%2C+Madrid%2C+Spain&key=Ah274jwZ6fNiPYZQBTIoyfaV50oTOmCNlMz5RpJGulTHkvdifuvqA1xLCNmiFfDe&maxResults=1
+2020-01-03 09:31:28,888 - get_coordinates - INFO - Complete CSV saved in /home/psaucedo/Desktop/OpenDataMadrid/out_csv/geo_out.csv.
+2020-01-03 09:31:28,915 - engine - INFO - Validating dataset over 10 folds.
+2020-01-03 09:31:28,915 - engine - INFO - Reading /home/psaucedo/Desktop/OpenDataMadrid/out_csv/geo_out.csv file for the sake of training, testing and rendering Random Forest
+2020-01-03 09:31:28,927 - engine - INFO - Oversampling imbalanced dataset.
+2020-01-03 09:31:28,929 - engine - INFO - Data partition for Random Forest with Cross-Validation conducted.
+2020-01-03 09:31:28,929 - engine - INFO - Training and fitting RandomForestClassifier.
+2020-01-03 09:31:30,757 - engine - INFO - Testing model overvalidation dataset.
+2020-01-03 09:31:30,760 - engine - INFO - Training and fitting RandomForestClassifier.
+2020-01-03 09:31:31,527 - engine - INFO - Testing model overvalidation dataset.
+2020-01-03 09:31:31,529 - engine - INFO - Training and fitting RandomForestClassifier.
+2020-01-03 09:31:32,277 - engine - INFO - Testing model overvalidation dataset.
+2020-01-03 09:31:32,279 - engine - INFO - Training and fitting RandomForestClassifier.
+2020-01-03 09:31:32,947 - engine - INFO - Testing model overvalidation dataset.
+2020-01-03 09:31:32,950 - engine - INFO - Training and fitting RandomForestClassifier.
+2020-01-03 09:31:33,647 - engine - INFO - Testing model overvalidation dataset.
+2020-01-03 09:31:33,649 - engine - INFO - Training and fitting RandomForestClassifier.
+2020-01-03 09:31:34,304 - engine - INFO - Testing model overvalidation dataset.
+2020-01-03 09:31:34,306 - engine - INFO - Training and fitting RandomForestClassifier.
+2020-01-03 09:31:34,967 - engine - INFO - Testing model overvalidation dataset.
+2020-01-03 09:31:34,968 - engine - INFO - Training and fitting RandomForestClassifier.
+2020-01-03 09:31:35,649 - engine - INFO - Testing model overvalidation dataset.
+2020-01-03 09:31:35,651 - engine - INFO - Training and fitting RandomForestClassifier.
+2020-01-03 09:31:36,325 - engine - INFO - Testing model overvalidation dataset.
+2020-01-03 09:31:36,327 - engine - INFO - Training and fitting RandomForestClassifier.
+2020-01-03 09:31:36,995 - engine - INFO - Testing model overvalidation dataset.
+2020-01-03 09:31:36,996 - engine - INFO - Best model has an accuracy of 100.00%
+2020-01-03 09:31:36,999 - data_handler - INFO - RandomForestClassifier model trained and saved in /home/psaucedo/Desktop/OpenDataMadrid/model.pkl
+2020-01-03 09:31:36,999 - engine - INFO - Reading /home/psaucedo/Desktop/OpenDataMadrid/out_csv/geo_out.csv file for the sake of training, testing and rendering KDE
+2020-01-03 09:31:37,889 - engine - INFO - KDE model is fitted
+2020-01-03 09:31:37,890 - data_handler - INFO - KernelDensity model trained and saved in /home/psaucedo/Desktop/OpenDataMadrid/KDEmodel.pkl
+2020-01-03 09:31:37,895 - werkzeug - INFO - 127.0.0.1 - - [03/Jan/2020 09:31:37] "GET / HTTP/1.1" 200 -
+2020-01-03 09:31:37,923 - werkzeug - INFO - 127.0.0.1 - - [03/Jan/2020 09:31:37] "GET /static/css/style.css HTTP/1.1" 200 -
+2020-01-03 09:31:38,048 - werkzeug - INFO - 127.0.0.1 - - [03/Jan/2020 09:31:38] "GET /static/img/map.jpg HTTP/1.1" 200 -
+2020-01-03 09:31:41,601 - data_handler - INFO - RandomForestClassifier model loaded successfully.
+2020-01-03 09:31:41,601 - data_handler - INFO - KernelDensity model loaded successfully.
+2020-01-03 09:31:41,610 - werkzeug - INFO - 127.0.0.1 - - [03/Jan/2020 09:31:41] "POST /visualize HTTP/1.1" 200 -
+2020-01-03 09:31:41,650 - werkzeug - INFO - 127.0.0.1 - - [03/Jan/2020 09:31:41] "GET /static/js/leaflet-slider.js HTTP/1.1" 200 -
+2020-01-03 09:31:41,654 - werkzeug - INFO - 127.0.0.1 - - [03/Jan/2020 09:31:41] "GET /static/css/leaflet-slider.css HTTP/1.1" 200 -
+2020-01-03 09:31:41,657 - werkzeug - INFO - 127.0.0.1 - - [03/Jan/2020 09:31:41] "GET /static/js/leaflet-heat.js HTTP/1.1" 200 -
+2020-01-03 09:31:41,657 - werkzeug - INFO - 127.0.0.1 - - [03/Jan/2020 09:31:41] "GET /static/js/leafletmap.js HTTP/1.1" 200 -
+2020-01-03 09:31:41,762 - werkzeug - INFO - 127.0.0.1 - - [03/Jan/2020 09:31:41] "GET /static/maps/map.geojson HTTP/1.1" 200 -
+2020-01-03 09:31:41,924 - werkzeug - INFO - 127.0.0.1 - - [03/Jan/2020 09:31:41] "POST /get_heatmap HTTP/1.1" 200 -
+2020-01-03 09:33:09,600 - werkzeug - INFO -  * Detected change in '/home/psaucedo/Desktop/OpenDataMadrid/get_coordinates.py', reloading
+2020-01-03 09:33:10,093 - werkzeug - INFO -  * Restarting with stat
+2020-01-03 09:33:11,916 - __main__ - INFO - Starting app at 2020-01-03 09:33:11.916172
+2020-01-03 09:33:11,923 - werkzeug - WARNING -  * Debugger is active!
+2020-01-03 09:33:11,924 - werkzeug - INFO -  * Debugger PIN: 604-780-389
+2020-01-03 09:33:11,941 - data_handler - INFO - Data is updated since 2020-01-03 00:00:00
+2020-01-03 09:33:11,951 - werkzeug - INFO - 127.0.0.1 - - [03/Jan/2020 09:33:11] "GET / HTTP/1.1" 200 -
+2020-01-03 09:33:18,700 - data_handler - INFO - Setting all data
+2020-01-03 09:33:18,713 - get_coordinates - INFO - Fixing addresses...
+2020-01-03 09:33:18,725 - get_coordinates - INFO - Geocoding directions
+2020-01-03 09:33:18,726 - geopy - DEBUG - Bing.geocode: https://dev.virtualearth.net/REST/v1/Locations?query=CALLE+CASTELLO+1%2C+Madrid%2C+Spain&key=Ah274jwZ6fNiPYZQBTIoyfaV50oTOmCNlMz5RpJGulTHkvdifuvqA1xLCNmiFfDe&maxResults=1
+2020-01-03 09:33:19,078 - geopy - DEBUG - Bing.geocode: https://dev.virtualearth.net/REST/v1/Locations?query=AVENIDA+GRAN+VIA+DE+HORTALEZA+1%2C+Madrid%2C+Spain&key=Ah274jwZ6fNiPYZQBTIoyfaV50oTOmCNlMz5RpJGulTHkvdifuvqA1xLCNmiFfDe&maxResults=1
+2020-01-03 09:33:19,455 - geopy - DEBUG - Bing.geocode: https://dev.virtualearth.net/REST/v1/Locations?query=CALLE+FELIPE+ALVAREZ+10%2C+Madrid%2C+Spain&key=Ah274jwZ6fNiPYZQBTIoyfaV50oTOmCNlMz5RpJGulTHkvdifuvqA1xLCNmiFfDe&maxResults=1
+2020-01-03 09:33:19,865 - geopy - DEBUG - Bing.geocode: https://dev.virtualearth.net/REST/v1/Locations?query=AVENIDA+SANTA+EUGENIA+1%2C+Madrid%2C+Spain&key=Ah274jwZ6fNiPYZQBTIoyfaV50oTOmCNlMz5RpJGulTHkvdifuvqA1xLCNmiFfDe&maxResults=1
+2020-01-03 09:33:20,182 - geopy - DEBUG - Bing.geocode: https://dev.virtualearth.net/REST/v1/Locations?query=AVENIDA+SANTA+EUGENIA+1%2C+Madrid%2C+Spain&key=Ah274jwZ6fNiPYZQBTIoyfaV50oTOmCNlMz5RpJGulTHkvdifuvqA1xLCNmiFfDe&maxResults=1
+2020-01-03 09:33:20,489 - geopy - DEBUG - Bing.geocode: https://dev.virtualearth.net/REST/v1/Locations?query=CARRETERA+DEHESA+DE+LA+VILLA+1%2C+Madrid%2C+Spain&key=Ah274jwZ6fNiPYZQBTIoyfaV50oTOmCNlMz5RpJGulTHkvdifuvqA1xLCNmiFfDe&maxResults=1
+2020-01-03 09:33:20,808 - geopy - DEBUG - Bing.geocode: https://dev.virtualearth.net/REST/v1/Locations?query=CALLE+PRADILLO+26%2C+Madrid%2C+Spain&key=Ah274jwZ6fNiPYZQBTIoyfaV50oTOmCNlMz5RpJGulTHkvdifuvqA1xLCNmiFfDe&maxResults=1
+2020-01-03 09:33:21,123 - geopy - DEBUG - Bing.geocode: https://dev.virtualearth.net/REST/v1/Locations?query=CALLE+CA%EF%BF%BDON+DEL+RIO+LOBOS++7A%2C+Madrid%2C+Spain&key=Ah274jwZ6fNiPYZQBTIoyfaV50oTOmCNlMz5RpJGulTHkvdifuvqA1xLCNmiFfDe&maxResults=1
+2020-01-03 09:33:21,437 - geopy - DEBUG - Bing.geocode: https://dev.virtualearth.net/REST/v1/Locations?query=CALLE+NUESTRA+SE%EF%BF%BDORA+DE+VALVERDE+1%2C+Madrid%2C+Spain&key=Ah274jwZ6fNiPYZQBTIoyfaV50oTOmCNlMz5RpJGulTHkvdifuvqA1xLCNmiFfDe&maxResults=1
+2020-01-03 09:33:21,811 - geopy - DEBUG - Bing.geocode: https://dev.virtualearth.net/REST/v1/Locations?query=CALLE+PUERTO+DE+LA+CRUZ+VERDE+49%2C+Madrid%2C+Spain&key=Ah274jwZ6fNiPYZQBTIoyfaV50oTOmCNlMz5RpJGulTHkvdifuvqA1xLCNmiFfDe&maxResults=1
+2020-01-03 09:33:22,130 - geopy - DEBUG - Bing.geocode: https://dev.virtualearth.net/REST/v1/Locations?query=CALLE+PUERTO+DE+LA+CRUZ+VERDE+49%2C+Madrid%2C+Spain&key=Ah274jwZ6fNiPYZQBTIoyfaV50oTOmCNlMz5RpJGulTHkvdifuvqA1xLCNmiFfDe&maxResults=1
+2020-01-03 09:33:22,567 - geopy - DEBUG - Bing.geocode: https://dev.virtualearth.net/REST/v1/Locations?query=CALLE+MONASTERIO+DE+ARLANZA-AV.+SANTUARIO+DE+VALVERDE+1%2C+Madrid%2C+Spain&key=Ah274jwZ6fNiPYZQBTIoyfaV50oTOmCNlMz5RpJGulTHkvdifuvqA1xLCNmiFfDe&maxResults=1
+2020-01-03 09:33:22,976 - geopy - DEBUG - Bing.geocode: https://dev.virtualearth.net/REST/v1/Locations?query=CALLE+ANTONIO+DE+LEYVA+84%2C+Madrid%2C+Spain&key=Ah274jwZ6fNiPYZQBTIoyfaV50oTOmCNlMz5RpJGulTHkvdifuvqA1xLCNmiFfDe&maxResults=1
+2020-01-03 09:33:23,347 - geopy - DEBUG - Bing.geocode: https://dev.virtualearth.net/REST/v1/Locations?query=CALLE+GRAN+VIA+66%2C+Madrid%2C+Spain&key=Ah274jwZ6fNiPYZQBTIoyfaV50oTOmCNlMz5RpJGulTHkvdifuvqA1xLCNmiFfDe&maxResults=1
+2020-01-03 09:33:23,664 - geopy - DEBUG - Bing.geocode: https://dev.virtualearth.net/REST/v1/Locations?query=PASEO+JUAN+ANTONIO+VALLEJO-NAJERA+BOTAS+1%2C+Madrid%2C+Spain&key=Ah274jwZ6fNiPYZQBTIoyfaV50oTOmCNlMz5RpJGulTHkvdifuvqA1xLCNmiFfDe&maxResults=1
+2020-01-03 09:33:23,968 - geopy - DEBUG - Bing.geocode: https://dev.virtualearth.net/REST/v1/Locations?query=CALLE+GRAN+VIA+1%2C+Madrid%2C+Spain&key=Ah274jwZ6fNiPYZQBTIoyfaV50oTOmCNlMz5RpJGulTHkvdifuvqA1xLCNmiFfDe&maxResults=1
+2020-01-03 09:33:24,280 - geopy - DEBUG - Bing.geocode: https://dev.virtualearth.net/REST/v1/Locations?query=POLIGONO+ALUCHE-AVENIDA+DE+LOS+POBLADOS+1%2C+Madrid%2C+Spain&key=Ah274jwZ6fNiPYZQBTIoyfaV50oTOmCNlMz5RpJGulTHkvdifuvqA1xLCNmiFfDe&maxResults=1
+2020-01-03 09:33:24,597 - geopy - DEBUG - Bing.geocode: https://dev.virtualearth.net/REST/v1/Locations?query=CALLE+GENERAL+RICARDOS+1%2C+Madrid%2C+Spain&key=Ah274jwZ6fNiPYZQBTIoyfaV50oTOmCNlMz5RpJGulTHkvdifuvqA1xLCNmiFfDe&maxResults=1
+2020-01-03 09:33:24,987 - geopy - DEBUG - Bing.geocode: https://dev.virtualearth.net/REST/v1/Locations?query=AVENIDA+POBLADOS+1%2C+Madrid%2C+Spain&key=Ah274jwZ6fNiPYZQBTIoyfaV50oTOmCNlMz5RpJGulTHkvdifuvqA1xLCNmiFfDe&maxResults=1
+2020-01-03 09:33:25,276 - geopy - DEBUG - Bing.geocode: https://dev.virtualearth.net/REST/v1/Locations?query=AVENIDA+ENSANCHE+DE+VALLECAS+44%2C+Madrid%2C+Spain&key=Ah274jwZ6fNiPYZQBTIoyfaV50oTOmCNlMz5RpJGulTHkvdifuvqA1xLCNmiFfDe&maxResults=1
+2020-01-03 09:33:25,584 - geopy - DEBUG - Bing.geocode: https://dev.virtualearth.net/REST/v1/Locations?query=CALLE+SANCHIDRIAN++13A%2C+Madrid%2C+Spain&key=Ah274jwZ6fNiPYZQBTIoyfaV50oTOmCNlMz5RpJGulTHkvdifuvqA1xLCNmiFfDe&maxResults=1
+2020-01-03 09:33:25,897 - geopy - DEBUG - Bing.geocode: https://dev.virtualearth.net/REST/v1/Locations?query=CALLE+MIGUEL+ANGEL+1%2C+Madrid%2C+Spain&key=Ah274jwZ6fNiPYZQBTIoyfaV50oTOmCNlMz5RpJGulTHkvdifuvqA1xLCNmiFfDe&maxResults=1
+2020-01-03 09:33:26,190 - geopy - DEBUG - Bing.geocode: https://dev.virtualearth.net/REST/v1/Locations?query=PASEO+EL+PARDO+37%2C+Madrid%2C+Spain&key=Ah274jwZ6fNiPYZQBTIoyfaV50oTOmCNlMz5RpJGulTHkvdifuvqA1xLCNmiFfDe&maxResults=1
+2020-01-03 09:33:26,500 - geopy - DEBUG - Bing.geocode: https://dev.virtualearth.net/REST/v1/Locations?query=CALLE+SANTA+GENOVEVA+1%2C+Madrid%2C+Spain&key=Ah274jwZ6fNiPYZQBTIoyfaV50oTOmCNlMz5RpJGulTHkvdifuvqA1xLCNmiFfDe&maxResults=1
+2020-01-03 09:33:26,831 - geopy - DEBUG - Bing.geocode: https://dev.virtualearth.net/REST/v1/Locations?query=CALLE+FLORA+1%2C+Madrid%2C+Spain&key=Ah274jwZ6fNiPYZQBTIoyfaV50oTOmCNlMz5RpJGulTHkvdifuvqA1xLCNmiFfDe&maxResults=1
+2020-01-03 09:33:27,127 - geopy - DEBUG - Bing.geocode: https://dev.virtualearth.net/REST/v1/Locations?query=PLAZA+CONDE+DEL+VALLE+DE+SUCHIL+3%2C+Madrid%2C+Spain&key=Ah274jwZ6fNiPYZQBTIoyfaV50oTOmCNlMz5RpJGulTHkvdifuvqA1xLCNmiFfDe&maxResults=1
+2020-01-03 09:33:27,449 - geopy - DEBUG - Bing.geocode: https://dev.virtualearth.net/REST/v1/Locations?query=AVENIDA+DAROCA+1%2C+Madrid%2C+Spain&key=Ah274jwZ6fNiPYZQBTIoyfaV50oTOmCNlMz5RpJGulTHkvdifuvqA1xLCNmiFfDe&maxResults=1
+2020-01-03 09:33:27,748 - geopy - DEBUG - Bing.geocode: https://dev.virtualearth.net/REST/v1/Locations?query=CALLE+ARENAL+1%2C+Madrid%2C+Spain&key=Ah274jwZ6fNiPYZQBTIoyfaV50oTOmCNlMz5RpJGulTHkvdifuvqA1xLCNmiFfDe&maxResults=1
+2020-01-03 09:33:28,066 - geopy - DEBUG - Bing.geocode: https://dev.virtualearth.net/REST/v1/Locations?query=CALLE+SERRANO+141%2C+Madrid%2C+Spain&key=Ah274jwZ6fNiPYZQBTIoyfaV50oTOmCNlMz5RpJGulTHkvdifuvqA1xLCNmiFfDe&maxResults=1
+2020-01-03 09:33:28,383 - geopy - DEBUG - Bing.geocode: https://dev.virtualearth.net/REST/v1/Locations?query=CALLE+DOCE+DE+OCTUBRE+26%2C+Madrid%2C+Spain&key=Ah274jwZ6fNiPYZQBTIoyfaV50oTOmCNlMz5RpJGulTHkvdifuvqA1xLCNmiFfDe&maxResults=1
+2020-01-03 09:33:28,673 - geopy - DEBUG - Bing.geocode: https://dev.virtualearth.net/REST/v1/Locations?query=AVENIDA+FERMINA+SEVILLANO+42%2C+Madrid%2C+Spain&key=Ah274jwZ6fNiPYZQBTIoyfaV50oTOmCNlMz5RpJGulTHkvdifuvqA1xLCNmiFfDe&maxResults=1
+2020-01-03 09:33:28,991 - geopy - DEBUG - Bing.geocode: https://dev.virtualearth.net/REST/v1/Locations?query=CALLE+VILLABLANCA+11%2C+Madrid%2C+Spain&key=Ah274jwZ6fNiPYZQBTIoyfaV50oTOmCNlMz5RpJGulTHkvdifuvqA1xLCNmiFfDe&maxResults=1
+2020-01-03 09:33:29,286 - geopy - DEBUG - Bing.geocode: https://dev.virtualearth.net/REST/v1/Locations?query=CALLE+GENOVA+2%2C+Madrid%2C+Spain&key=Ah274jwZ6fNiPYZQBTIoyfaV50oTOmCNlMz5RpJGulTHkvdifuvqA1xLCNmiFfDe&maxResults=1
+2020-01-03 09:33:29,563 - geopy - DEBUG - Bing.geocode: https://dev.virtualearth.net/REST/v1/Locations?query=PLAZA+INDEPENDENCIA+1%2C+Madrid%2C+Spain&key=Ah274jwZ6fNiPYZQBTIoyfaV50oTOmCNlMz5RpJGulTHkvdifuvqA1xLCNmiFfDe&maxResults=1
+2020-01-03 09:33:29,870 - geopy - DEBUG - Bing.geocode: https://dev.virtualearth.net/REST/v1/Locations?query=CARRETERA+EL+PARDO+A+FUENCARRAL+0%2C+Madrid%2C+Spain&key=Ah274jwZ6fNiPYZQBTIoyfaV50oTOmCNlMz5RpJGulTHkvdifuvqA1xLCNmiFfDe&maxResults=1
+2020-01-03 09:33:30,181 - geopy - DEBUG - Bing.geocode: https://dev.virtualearth.net/REST/v1/Locations?query=CALLE+SAN+ENRIQUE+DE+OSSO+36%2C+Madrid%2C+Spain&key=Ah274jwZ6fNiPYZQBTIoyfaV50oTOmCNlMz5RpJGulTHkvdifuvqA1xLCNmiFfDe&maxResults=1
+2020-01-03 09:33:30,617 - geopy - DEBUG - Bing.geocode: https://dev.virtualearth.net/REST/v1/Locations?query=AVENIDA+ALBUFERA+149%2C+Madrid%2C+Spain&key=Ah274jwZ6fNiPYZQBTIoyfaV50oTOmCNlMz5RpJGulTHkvdifuvqA1xLCNmiFfDe&maxResults=1
+2020-01-03 09:33:30,944 - geopy - DEBUG - Bing.geocode: https://dev.virtualearth.net/REST/v1/Locations?query=AVENIDA+ALBUFERA+1%2C+Madrid%2C+Spain&key=Ah274jwZ6fNiPYZQBTIoyfaV50oTOmCNlMz5RpJGulTHkvdifuvqA1xLCNmiFfDe&maxResults=1
+2020-01-03 09:33:31,223 - geopy - DEBUG - Bing.geocode: https://dev.virtualearth.net/REST/v1/Locations?query=CALLE+BRAVO+MURILLO+1%2C+Madrid%2C+Spain&key=Ah274jwZ6fNiPYZQBTIoyfaV50oTOmCNlMz5RpJGulTHkvdifuvqA1xLCNmiFfDe&maxResults=1
+2020-01-03 09:33:31,643 - geopy - DEBUG - Bing.geocode: https://dev.virtualearth.net/REST/v1/Locations?query=CALLE+BRAVO+MURILLO+1%2C+Madrid%2C+Spain&key=Ah274jwZ6fNiPYZQBTIoyfaV50oTOmCNlMz5RpJGulTHkvdifuvqA1xLCNmiFfDe&maxResults=1
+2020-01-03 09:33:32,052 - geopy - DEBUG - Bing.geocode: https://dev.virtualearth.net/REST/v1/Locations?query=CALLE+GRAN+VIA+78%2C+Madrid%2C+Spain&key=Ah274jwZ6fNiPYZQBTIoyfaV50oTOmCNlMz5RpJGulTHkvdifuvqA1xLCNmiFfDe&maxResults=1
+2020-01-03 09:33:32,364 - geopy - DEBUG - Bing.geocode: https://dev.virtualearth.net/REST/v1/Locations?query=CALLE+MARIA+DE+MOLINA+60%2C+Madrid%2C+Spain&key=Ah274jwZ6fNiPYZQBTIoyfaV50oTOmCNlMz5RpJGulTHkvdifuvqA1xLCNmiFfDe&maxResults=1
+2020-01-03 09:33:32,687 - geopy - DEBUG - Bing.geocode: https://dev.virtualearth.net/REST/v1/Locations?query=CALLE+ALCALA+44%2C+Madrid%2C+Spain&key=Ah274jwZ6fNiPYZQBTIoyfaV50oTOmCNlMz5RpJGulTHkvdifuvqA1xLCNmiFfDe&maxResults=1
+2020-01-03 09:33:33,064 - geopy - DEBUG - Bing.geocode: https://dev.virtualearth.net/REST/v1/Locations?query=CALLE+ALCALA+44%2C+Madrid%2C+Spain&key=Ah274jwZ6fNiPYZQBTIoyfaV50oTOmCNlMz5RpJGulTHkvdifuvqA1xLCNmiFfDe&maxResults=1
+2020-01-03 09:33:33,392 - geopy - DEBUG - Bing.geocode: https://dev.virtualearth.net/REST/v1/Locations?query=CALLE+MENDEZ+ALVARO+1%2C+Madrid%2C+Spain&key=Ah274jwZ6fNiPYZQBTIoyfaV50oTOmCNlMz5RpJGulTHkvdifuvqA1xLCNmiFfDe&maxResults=1
+2020-01-03 09:33:33,696 - geopy - DEBUG - Bing.geocode: https://dev.virtualearth.net/REST/v1/Locations?query=PASEO+RECOLETOS+23%2C+Madrid%2C+Spain&key=Ah274jwZ6fNiPYZQBTIoyfaV50oTOmCNlMz5RpJGulTHkvdifuvqA1xLCNmiFfDe&maxResults=1
+2020-01-03 09:33:33,997 - geopy - DEBUG - Bing.geocode: https://dev.virtualearth.net/REST/v1/Locations?query=AVENIDA+CARABANCHEL+ALTO+122%2C+Madrid%2C+Spain&key=Ah274jwZ6fNiPYZQBTIoyfaV50oTOmCNlMz5RpJGulTHkvdifuvqA1xLCNmiFfDe&maxResults=1
+2020-01-03 09:33:34,327 - geopy - DEBUG - Bing.geocode: https://dev.virtualearth.net/REST/v1/Locations?query=CALLE+TOMASA+RUIZ+1%2C+Madrid%2C+Spain&key=Ah274jwZ6fNiPYZQBTIoyfaV50oTOmCNlMz5RpJGulTHkvdifuvqA1xLCNmiFfDe&maxResults=1
+2020-01-03 09:33:34,603 - geopy - DEBUG - Bing.geocode: https://dev.virtualearth.net/REST/v1/Locations?query=CALLE+DOCTOR+ESQUERDO+1%2C+Madrid%2C+Spain&key=Ah274jwZ6fNiPYZQBTIoyfaV50oTOmCNlMz5RpJGulTHkvdifuvqA1xLCNmiFfDe&maxResults=1
+2020-01-03 09:33:34,918 - geopy - DEBUG - Bing.geocode: https://dev.virtualearth.net/REST/v1/Locations?query=CALLE+SANTA+ENGRACIA+1%2C+Madrid%2C+Spain&key=Ah274jwZ6fNiPYZQBTIoyfaV50oTOmCNlMz5RpJGulTHkvdifuvqA1xLCNmiFfDe&maxResults=1
+2020-01-03 09:33:35,245 - get_coordinates - INFO - Complete CSV saved in /home/psaucedo/Desktop/OpenDataMadrid/out_csv/geo_out.csv.
+2020-01-03 09:33:35,269 - engine - INFO - Validating dataset over 10 folds.
+2020-01-03 09:33:35,269 - engine - INFO - Reading /home/psaucedo/Desktop/OpenDataMadrid/out_csv/geo_out.csv file for the sake of training, testing and rendering Random Forest
+2020-01-03 09:33:35,281 - engine - INFO - Oversampling imbalanced dataset.
+2020-01-03 09:33:35,283 - engine - INFO - Data partition for Random Forest with Cross-Validation conducted.
+2020-01-03 09:33:35,283 - engine - INFO - Training and fitting RandomForestClassifier.
+2020-01-03 09:33:36,924 - engine - INFO - Testing model overvalidation dataset.
+2020-01-03 09:33:36,927 - engine - INFO - Training and fitting RandomForestClassifier.
+2020-01-03 09:33:37,620 - engine - INFO - Testing model overvalidation dataset.
+2020-01-03 09:33:37,621 - engine - INFO - Training and fitting RandomForestClassifier.
+2020-01-03 09:33:38,261 - engine - INFO - Testing model overvalidation dataset.
+2020-01-03 09:33:38,263 - engine - INFO - Training and fitting RandomForestClassifier.
+2020-01-03 09:33:38,927 - engine - INFO - Testing model overvalidation dataset.
+2020-01-03 09:33:38,929 - engine - INFO - Training and fitting RandomForestClassifier.
+2020-01-03 09:33:39,557 - engine - INFO - Testing model overvalidation dataset.
+2020-01-03 09:33:39,560 - engine - INFO - Training and fitting RandomForestClassifier.
+2020-01-03 09:33:40,216 - engine - INFO - Testing model overvalidation dataset.
+2020-01-03 09:33:40,218 - engine - INFO - Training and fitting RandomForestClassifier.
+2020-01-03 09:33:40,855 - engine - INFO - Testing model overvalidation dataset.
+2020-01-03 09:33:40,857 - engine - INFO - Training and fitting RandomForestClassifier.
+2020-01-03 09:33:41,499 - engine - INFO - Testing model overvalidation dataset.
+2020-01-03 09:33:41,500 - engine - INFO - Training and fitting RandomForestClassifier.
+2020-01-03 09:33:42,133 - engine - INFO - Testing model overvalidation dataset.
+2020-01-03 09:33:42,135 - engine - INFO - Training and fitting RandomForestClassifier.
+2020-01-03 09:33:42,754 - engine - INFO - Testing model overvalidation dataset.
+2020-01-03 09:33:42,756 - engine - INFO - Best model has an accuracy of 100.00%
+2020-01-03 09:33:42,757 - data_handler - INFO - RandomForestClassifier model trained and saved in /home/psaucedo/Desktop/OpenDataMadrid/model.pkl
+2020-01-03 09:33:42,757 - engine - INFO - Reading /home/psaucedo/Desktop/OpenDataMadrid/out_csv/geo_out.csv file for the sake of training, testing and rendering KDE
+2020-01-03 09:33:43,647 - engine - INFO - KDE model is fitted
+2020-01-03 09:33:43,647 - data_handler - INFO - KernelDensity model trained and saved in /home/psaucedo/Desktop/OpenDataMadrid/KDEmodel.pkl
+2020-01-03 09:33:43,648 - werkzeug - INFO - 127.0.0.1 - - [03/Jan/2020 09:33:43] "GET / HTTP/1.1" 200 -
+2020-01-03 09:33:43,673 - werkzeug - INFO - 127.0.0.1 - - [03/Jan/2020 09:33:43] "GET /static/css/style.css HTTP/1.1" 200 -
+2020-01-03 09:33:43,739 - werkzeug - INFO - 127.0.0.1 - - [03/Jan/2020 09:33:43] "GET /static/img/map.jpg HTTP/1.1" 200 -
+2020-01-03 09:33:46,950 - data_handler - INFO - RandomForestClassifier model loaded successfully.
+2020-01-03 09:33:46,950 - data_handler - INFO - KernelDensity model loaded successfully.
+2020-01-03 09:33:46,960 - werkzeug - INFO - 127.0.0.1 - - [03/Jan/2020 09:33:46] "POST /visualize HTTP/1.1" 200 -
+2020-01-03 09:33:46,998 - werkzeug - INFO - 127.0.0.1 - - [03/Jan/2020 09:33:46] "GET /static/js/leaflet-slider.js HTTP/1.1" 200 -
+2020-01-03 09:33:47,001 - werkzeug - INFO - 127.0.0.1 - - [03/Jan/2020 09:33:47] "GET /static/css/leaflet-slider.css HTTP/1.1" 200 -
+2020-01-03 09:33:47,002 - werkzeug - INFO - 127.0.0.1 - - [03/Jan/2020 09:33:47] "GET /static/js/leaflet-heat.js HTTP/1.1" 200 -
+2020-01-03 09:33:47,005 - werkzeug - INFO - 127.0.0.1 - - [03/Jan/2020 09:33:47] "GET /static/js/leafletmap.js HTTP/1.1" 200 -
+2020-01-03 09:33:47,097 - werkzeug - INFO - 127.0.0.1 - - [03/Jan/2020 09:33:47] "GET /static/maps/map.geojson HTTP/1.1" 200 -
+2020-01-03 09:33:47,266 - werkzeug - INFO - 127.0.0.1 - - [03/Jan/2020 09:33:47] "POST /get_heatmap HTTP/1.1" 200 -
+2020-01-03 09:34:49,866 - werkzeug - INFO -  * Detected change in '/home/psaucedo/Desktop/OpenDataMadrid/get_coordinates.py', reloading
+2020-01-03 09:34:50,264 - werkzeug - INFO -  * Restarting with stat
+2020-01-03 09:34:52,426 - __main__ - INFO - Starting app at 2020-01-03 09:34:52.426670
+2020-01-03 09:34:52,435 - werkzeug - WARNING -  * Debugger is active!
+2020-01-03 09:34:52,436 - werkzeug - INFO -  * Debugger PIN: 604-780-389
+2020-01-03 09:35:07,788 - werkzeug - INFO -  * Detected change in '/home/psaucedo/Desktop/OpenDataMadrid/get_coordinates.py', reloading
+2020-01-03 09:35:08,038 - werkzeug - INFO -  * Restarting with stat
+2020-01-03 09:35:09,763 - __main__ - INFO - Starting app at 2020-01-03 09:35:09.763437
+2020-01-03 09:35:09,770 - werkzeug - WARNING -  * Debugger is active!
+2020-01-03 09:35:09,770 - werkzeug - INFO -  * Debugger PIN: 604-780-389
+2020-01-03 09:35:10,875 - data_handler - INFO - Setting all data
+2020-01-03 09:35:10,897 - get_coordinates - INFO - Fixing addresses...
+2020-01-03 09:35:10,912 - get_coordinates - INFO - Geocoding directions
+2020-01-03 09:35:10,913 - geopy - DEBUG - Bing.geocode: https://dev.virtualearth.net/REST/v1/Locations?query=CALLE+CASTELLO+1%2C+Madrid%2C+Spain&key=Ah274jwZ6fNiPYZQBTIoyfaV50oTOmCNlMz5RpJGulTHkvdifuvqA1xLCNmiFfDe&maxResults=1
+2020-01-03 09:35:11,310 - geopy - DEBUG - Bing.geocode: https://dev.virtualearth.net/REST/v1/Locations?query=AVENIDA+GRAN+VIA+DE+HORTALEZA+1%2C+Madrid%2C+Spain&key=Ah274jwZ6fNiPYZQBTIoyfaV50oTOmCNlMz5RpJGulTHkvdifuvqA1xLCNmiFfDe&maxResults=1
+2020-01-03 09:35:11,804 - geopy - DEBUG - Bing.geocode: https://dev.virtualearth.net/REST/v1/Locations?query=CALLE+FELIPE+ALVAREZ+10%2C+Madrid%2C+Spain&key=Ah274jwZ6fNiPYZQBTIoyfaV50oTOmCNlMz5RpJGulTHkvdifuvqA1xLCNmiFfDe&maxResults=1
+2020-01-03 09:35:12,114 - geopy - DEBUG - Bing.geocode: https://dev.virtualearth.net/REST/v1/Locations?query=AVENIDA+SANTA+EUGENIA+1%2C+Madrid%2C+Spain&key=Ah274jwZ6fNiPYZQBTIoyfaV50oTOmCNlMz5RpJGulTHkvdifuvqA1xLCNmiFfDe&maxResults=1
+2020-01-03 09:35:12,404 - geopy - DEBUG - Bing.geocode: https://dev.virtualearth.net/REST/v1/Locations?query=AVENIDA+SANTA+EUGENIA+1%2C+Madrid%2C+Spain&key=Ah274jwZ6fNiPYZQBTIoyfaV50oTOmCNlMz5RpJGulTHkvdifuvqA1xLCNmiFfDe&maxResults=1
+2020-01-03 09:35:12,720 - geopy - DEBUG - Bing.geocode: https://dev.virtualearth.net/REST/v1/Locations?query=CARRETERA+DEHESA+DE+LA+VILLA+1%2C+Madrid%2C+Spain&key=Ah274jwZ6fNiPYZQBTIoyfaV50oTOmCNlMz5RpJGulTHkvdifuvqA1xLCNmiFfDe&maxResults=1
+2020-01-03 09:35:13,055 - geopy - DEBUG - Bing.geocode: https://dev.virtualearth.net/REST/v1/Locations?query=CALLE+PRADILLO+26%2C+Madrid%2C+Spain&key=Ah274jwZ6fNiPYZQBTIoyfaV50oTOmCNlMz5RpJGulTHkvdifuvqA1xLCNmiFfDe&maxResults=1
+2020-01-03 09:35:13,381 - geopy - DEBUG - Bing.geocode: https://dev.virtualearth.net/REST/v1/Locations?query=CALLE+CA%EF%BF%BDON+DEL+RIO+LOBOS++7A%2C+Madrid%2C+Spain&key=Ah274jwZ6fNiPYZQBTIoyfaV50oTOmCNlMz5RpJGulTHkvdifuvqA1xLCNmiFfDe&maxResults=1
+2020-01-03 09:35:13,735 - geopy - DEBUG - Bing.geocode: https://dev.virtualearth.net/REST/v1/Locations?query=CALLE+NUESTRA+SE%EF%BF%BDORA+DE+VALVERDE+1%2C+Madrid%2C+Spain&key=Ah274jwZ6fNiPYZQBTIoyfaV50oTOmCNlMz5RpJGulTHkvdifuvqA1xLCNmiFfDe&maxResults=1
+2020-01-03 09:35:14,055 - geopy - DEBUG - Bing.geocode: https://dev.virtualearth.net/REST/v1/Locations?query=CALLE+PUERTO+DE+LA+CRUZ+VERDE+49%2C+Madrid%2C+Spain&key=Ah274jwZ6fNiPYZQBTIoyfaV50oTOmCNlMz5RpJGulTHkvdifuvqA1xLCNmiFfDe&maxResults=1
+2020-01-03 09:35:14,451 - geopy - DEBUG - Bing.geocode: https://dev.virtualearth.net/REST/v1/Locations?query=CALLE+PUERTO+DE+LA+CRUZ+VERDE+49%2C+Madrid%2C+Spain&key=Ah274jwZ6fNiPYZQBTIoyfaV50oTOmCNlMz5RpJGulTHkvdifuvqA1xLCNmiFfDe&maxResults=1
+2020-01-03 09:35:14,962 - geopy - DEBUG - Bing.geocode: https://dev.virtualearth.net/REST/v1/Locations?query=CALLE+MONASTERIO+DE+ARLANZA-AV.+SANTUARIO+DE+VALVERDE+1%2C+Madrid%2C+Spain&key=Ah274jwZ6fNiPYZQBTIoyfaV50oTOmCNlMz5RpJGulTHkvdifuvqA1xLCNmiFfDe&maxResults=1
+2020-01-03 09:35:15,372 - geopy - DEBUG - Bing.geocode: https://dev.virtualearth.net/REST/v1/Locations?query=CALLE+ANTONIO+DE+LEYVA+84%2C+Madrid%2C+Spain&key=Ah274jwZ6fNiPYZQBTIoyfaV50oTOmCNlMz5RpJGulTHkvdifuvqA1xLCNmiFfDe&maxResults=1
+2020-01-03 09:35:15,781 - geopy - DEBUG - Bing.geocode: https://dev.virtualearth.net/REST/v1/Locations?query=CALLE+GRAN+VIA+66%2C+Madrid%2C+Spain&key=Ah274jwZ6fNiPYZQBTIoyfaV50oTOmCNlMz5RpJGulTHkvdifuvqA1xLCNmiFfDe&maxResults=1
+2020-01-03 09:35:16,089 - geopy - DEBUG - Bing.geocode: https://dev.virtualearth.net/REST/v1/Locations?query=PASEO+JUAN+ANTONIO+VALLEJO-NAJERA+BOTAS+1%2C+Madrid%2C+Spain&key=Ah274jwZ6fNiPYZQBTIoyfaV50oTOmCNlMz5RpJGulTHkvdifuvqA1xLCNmiFfDe&maxResults=1
+2020-01-03 09:35:16,417 - geopy - DEBUG - Bing.geocode: https://dev.virtualearth.net/REST/v1/Locations?query=CALLE+GRAN+VIA+1%2C+Madrid%2C+Spain&key=Ah274jwZ6fNiPYZQBTIoyfaV50oTOmCNlMz5RpJGulTHkvdifuvqA1xLCNmiFfDe&maxResults=1
+2020-01-03 09:35:16,836 - geopy - DEBUG - Bing.geocode: https://dev.virtualearth.net/REST/v1/Locations?query=POLIGONO+ALUCHE-AVENIDA+DE+LOS+POBLADOS+1%2C+Madrid%2C+Spain&key=Ah274jwZ6fNiPYZQBTIoyfaV50oTOmCNlMz5RpJGulTHkvdifuvqA1xLCNmiFfDe&maxResults=1
+2020-01-03 09:35:17,137 - geopy - DEBUG - Bing.geocode: https://dev.virtualearth.net/REST/v1/Locations?query=CALLE+GENERAL+RICARDOS+1%2C+Madrid%2C+Spain&key=Ah274jwZ6fNiPYZQBTIoyfaV50oTOmCNlMz5RpJGulTHkvdifuvqA1xLCNmiFfDe&maxResults=1
+2020-01-03 09:35:17,455 - geopy - DEBUG - Bing.geocode: https://dev.virtualearth.net/REST/v1/Locations?query=AVENIDA+POBLADOS+1%2C+Madrid%2C+Spain&key=Ah274jwZ6fNiPYZQBTIoyfaV50oTOmCNlMz5RpJGulTHkvdifuvqA1xLCNmiFfDe&maxResults=1
+2020-01-03 09:35:17,769 - geopy - DEBUG - Bing.geocode: https://dev.virtualearth.net/REST/v1/Locations?query=AVENIDA+ENSANCHE+DE+VALLECAS+44%2C+Madrid%2C+Spain&key=Ah274jwZ6fNiPYZQBTIoyfaV50oTOmCNlMz5RpJGulTHkvdifuvqA1xLCNmiFfDe&maxResults=1
+2020-01-03 09:35:18,341 - geopy - DEBUG - Bing.geocode: https://dev.virtualearth.net/REST/v1/Locations?query=CALLE+SANCHIDRIAN++13A%2C+Madrid%2C+Spain&key=Ah274jwZ6fNiPYZQBTIoyfaV50oTOmCNlMz5RpJGulTHkvdifuvqA1xLCNmiFfDe&maxResults=1
+2020-01-03 09:35:18,647 - geopy - DEBUG - Bing.geocode: https://dev.virtualearth.net/REST/v1/Locations?query=CALLE+MIGUEL+ANGEL+1%2C+Madrid%2C+Spain&key=Ah274jwZ6fNiPYZQBTIoyfaV50oTOmCNlMz5RpJGulTHkvdifuvqA1xLCNmiFfDe&maxResults=1
+2020-01-03 09:35:18,946 - geopy - DEBUG - Bing.geocode: https://dev.virtualearth.net/REST/v1/Locations?query=PASEO+EL+PARDO+37%2C+Madrid%2C+Spain&key=Ah274jwZ6fNiPYZQBTIoyfaV50oTOmCNlMz5RpJGulTHkvdifuvqA1xLCNmiFfDe&maxResults=1
+2020-01-03 09:35:19,271 - geopy - DEBUG - Bing.geocode: https://dev.virtualearth.net/REST/v1/Locations?query=CALLE+SANTA+GENOVEVA+1%2C+Madrid%2C+Spain&key=Ah274jwZ6fNiPYZQBTIoyfaV50oTOmCNlMz5RpJGulTHkvdifuvqA1xLCNmiFfDe&maxResults=1
+2020-01-03 09:35:19,673 - geopy - DEBUG - Bing.geocode: https://dev.virtualearth.net/REST/v1/Locations?query=CALLE+FLORA+1%2C+Madrid%2C+Spain&key=Ah274jwZ6fNiPYZQBTIoyfaV50oTOmCNlMz5RpJGulTHkvdifuvqA1xLCNmiFfDe&maxResults=1
+2020-01-03 09:35:19,989 - geopy - DEBUG - Bing.geocode: https://dev.virtualearth.net/REST/v1/Locations?query=PLAZA+CONDE+DEL+VALLE+DE+SUCHIL+3%2C+Madrid%2C+Spain&key=Ah274jwZ6fNiPYZQBTIoyfaV50oTOmCNlMz5RpJGulTHkvdifuvqA1xLCNmiFfDe&maxResults=1
+2020-01-03 09:35:20,277 - geopy - DEBUG - Bing.geocode: https://dev.virtualearth.net/REST/v1/Locations?query=AVENIDA+DAROCA+1%2C+Madrid%2C+Spain&key=Ah274jwZ6fNiPYZQBTIoyfaV50oTOmCNlMz5RpJGulTHkvdifuvqA1xLCNmiFfDe&maxResults=1
+2020-01-03 09:35:20,594 - geopy - DEBUG - Bing.geocode: https://dev.virtualearth.net/REST/v1/Locations?query=CALLE+ARENAL+1%2C+Madrid%2C+Spain&key=Ah274jwZ6fNiPYZQBTIoyfaV50oTOmCNlMz5RpJGulTHkvdifuvqA1xLCNmiFfDe&maxResults=1
+2020-01-03 09:35:20,909 - geopy - DEBUG - Bing.geocode: https://dev.virtualearth.net/REST/v1/Locations?query=CALLE+SERRANO+141%2C+Madrid%2C+Spain&key=Ah274jwZ6fNiPYZQBTIoyfaV50oTOmCNlMz5RpJGulTHkvdifuvqA1xLCNmiFfDe&maxResults=1
+2020-01-03 09:35:21,229 - geopy - DEBUG - Bing.geocode: https://dev.virtualearth.net/REST/v1/Locations?query=CALLE+DOCE+DE+OCTUBRE+26%2C+Madrid%2C+Spain&key=Ah274jwZ6fNiPYZQBTIoyfaV50oTOmCNlMz5RpJGulTHkvdifuvqA1xLCNmiFfDe&maxResults=1
+2020-01-03 09:35:21,546 - geopy - DEBUG - Bing.geocode: https://dev.virtualearth.net/REST/v1/Locations?query=AVENIDA+FERMINA+SEVILLANO+42%2C+Madrid%2C+Spain&key=Ah274jwZ6fNiPYZQBTIoyfaV50oTOmCNlMz5RpJGulTHkvdifuvqA1xLCNmiFfDe&maxResults=1
+2020-01-03 09:35:21,852 - geopy - DEBUG - Bing.geocode: https://dev.virtualearth.net/REST/v1/Locations?query=CALLE+VILLABLANCA+11%2C+Madrid%2C+Spain&key=Ah274jwZ6fNiPYZQBTIoyfaV50oTOmCNlMz5RpJGulTHkvdifuvqA1xLCNmiFfDe&maxResults=1
+2020-01-03 09:35:22,152 - geopy - DEBUG - Bing.geocode: https://dev.virtualearth.net/REST/v1/Locations?query=CALLE+GENOVA+2%2C+Madrid%2C+Spain&key=Ah274jwZ6fNiPYZQBTIoyfaV50oTOmCNlMz5RpJGulTHkvdifuvqA1xLCNmiFfDe&maxResults=1
+2020-01-03 09:35:22,468 - geopy - DEBUG - Bing.geocode: https://dev.virtualearth.net/REST/v1/Locations?query=PLAZA+INDEPENDENCIA+1%2C+Madrid%2C+Spain&key=Ah274jwZ6fNiPYZQBTIoyfaV50oTOmCNlMz5RpJGulTHkvdifuvqA1xLCNmiFfDe&maxResults=1
+2020-01-03 09:35:22,769 - geopy - DEBUG - Bing.geocode: https://dev.virtualearth.net/REST/v1/Locations?query=CARRETERA+EL+PARDO+A+FUENCARRAL+0%2C+Madrid%2C+Spain&key=Ah274jwZ6fNiPYZQBTIoyfaV50oTOmCNlMz5RpJGulTHkvdifuvqA1xLCNmiFfDe&maxResults=1
+2020-01-03 09:35:23,078 - geopy - DEBUG - Bing.geocode: https://dev.virtualearth.net/REST/v1/Locations?query=CALLE+SAN+ENRIQUE+DE+OSSO+36%2C+Madrid%2C+Spain&key=Ah274jwZ6fNiPYZQBTIoyfaV50oTOmCNlMz5RpJGulTHkvdifuvqA1xLCNmiFfDe&maxResults=1
+2020-01-03 09:35:23,477 - geopy - DEBUG - Bing.geocode: https://dev.virtualearth.net/REST/v1/Locations?query=AVENIDA+ALBUFERA+149%2C+Madrid%2C+Spain&key=Ah274jwZ6fNiPYZQBTIoyfaV50oTOmCNlMz5RpJGulTHkvdifuvqA1xLCNmiFfDe&maxResults=1
+2020-01-03 09:35:23,782 - geopy - DEBUG - Bing.geocode: https://dev.virtualearth.net/REST/v1/Locations?query=AVENIDA+ALBUFERA+1%2C+Madrid%2C+Spain&key=Ah274jwZ6fNiPYZQBTIoyfaV50oTOmCNlMz5RpJGulTHkvdifuvqA1xLCNmiFfDe&maxResults=1
+2020-01-03 09:35:24,091 - geopy - DEBUG - Bing.geocode: https://dev.virtualearth.net/REST/v1/Locations?query=CALLE+BRAVO+MURILLO+1%2C+Madrid%2C+Spain&key=Ah274jwZ6fNiPYZQBTIoyfaV50oTOmCNlMz5RpJGulTHkvdifuvqA1xLCNmiFfDe&maxResults=1
+2020-01-03 09:35:24,487 - geopy - DEBUG - Bing.geocode: https://dev.virtualearth.net/REST/v1/Locations?query=CALLE+BRAVO+MURILLO+1%2C+Madrid%2C+Spain&key=Ah274jwZ6fNiPYZQBTIoyfaV50oTOmCNlMz5RpJGulTHkvdifuvqA1xLCNmiFfDe&maxResults=1
+2020-01-03 09:35:24,794 - geopy - DEBUG - Bing.geocode: https://dev.virtualearth.net/REST/v1/Locations?query=CALLE+GRAN+VIA+78%2C+Madrid%2C+Spain&key=Ah274jwZ6fNiPYZQBTIoyfaV50oTOmCNlMz5RpJGulTHkvdifuvqA1xLCNmiFfDe&maxResults=1
+2020-01-03 09:35:25,203 - geopy - DEBUG - Bing.geocode: https://dev.virtualearth.net/REST/v1/Locations?query=CALLE+MARIA+DE+MOLINA+60%2C+Madrid%2C+Spain&key=Ah274jwZ6fNiPYZQBTIoyfaV50oTOmCNlMz5RpJGulTHkvdifuvqA1xLCNmiFfDe&maxResults=1
+2020-01-03 09:35:25,502 - geopy - DEBUG - Bing.geocode: https://dev.virtualearth.net/REST/v1/Locations?query=CALLE+ALCALA+44%2C+Madrid%2C+Spain&key=Ah274jwZ6fNiPYZQBTIoyfaV50oTOmCNlMz5RpJGulTHkvdifuvqA1xLCNmiFfDe&maxResults=1
+2020-01-03 09:35:25,825 - geopy - DEBUG - Bing.geocode: https://dev.virtualearth.net/REST/v1/Locations?query=CALLE+ALCALA+44%2C+Madrid%2C+Spain&key=Ah274jwZ6fNiPYZQBTIoyfaV50oTOmCNlMz5RpJGulTHkvdifuvqA1xLCNmiFfDe&maxResults=1
+2020-01-03 09:35:26,119 - geopy - DEBUG - Bing.geocode: https://dev.virtualearth.net/REST/v1/Locations?query=CALLE+MENDEZ+ALVARO+1%2C+Madrid%2C+Spain&key=Ah274jwZ6fNiPYZQBTIoyfaV50oTOmCNlMz5RpJGulTHkvdifuvqA1xLCNmiFfDe&maxResults=1
+2020-01-03 09:35:26,443 - geopy - DEBUG - Bing.geocode: https://dev.virtualearth.net/REST/v1/Locations?query=PASEO+RECOLETOS+23%2C+Madrid%2C+Spain&key=Ah274jwZ6fNiPYZQBTIoyfaV50oTOmCNlMz5RpJGulTHkvdifuvqA1xLCNmiFfDe&maxResults=1
+2020-01-03 09:35:26,751 - geopy - DEBUG - Bing.geocode: https://dev.virtualearth.net/REST/v1/Locations?query=AVENIDA+CARABANCHEL+ALTO+122%2C+Madrid%2C+Spain&key=Ah274jwZ6fNiPYZQBTIoyfaV50oTOmCNlMz5RpJGulTHkvdifuvqA1xLCNmiFfDe&maxResults=1
+2020-01-03 09:35:27,082 - geopy - DEBUG - Bing.geocode: https://dev.virtualearth.net/REST/v1/Locations?query=CALLE+TOMASA+RUIZ+1%2C+Madrid%2C+Spain&key=Ah274jwZ6fNiPYZQBTIoyfaV50oTOmCNlMz5RpJGulTHkvdifuvqA1xLCNmiFfDe&maxResults=1
+2020-01-03 09:35:27,391 - geopy - DEBUG - Bing.geocode: https://dev.virtualearth.net/REST/v1/Locations?query=CALLE+DOCTOR+ESQUERDO+1%2C+Madrid%2C+Spain&key=Ah274jwZ6fNiPYZQBTIoyfaV50oTOmCNlMz5RpJGulTHkvdifuvqA1xLCNmiFfDe&maxResults=1
+2020-01-03 09:35:27,694 - geopy - DEBUG - Bing.geocode: https://dev.virtualearth.net/REST/v1/Locations?query=CALLE+SANTA+ENGRACIA+1%2C+Madrid%2C+Spain&key=Ah274jwZ6fNiPYZQBTIoyfaV50oTOmCNlMz5RpJGulTHkvdifuvqA1xLCNmiFfDe&maxResults=1
+2020-01-03 09:35:28,041 - get_coordinates - INFO - Complete CSV saved in /home/psaucedo/Desktop/OpenDataMadrid/out_csv/geo_out.csv.
+2020-01-03 09:35:28,046 - engine - INFO - Validating dataset over 10 folds.
+2020-01-03 09:35:28,046 - engine - INFO - Reading /home/psaucedo/Desktop/OpenDataMadrid/out_csv/geo_out.csv file for the sake of training, testing and rendering Random Forest
+2020-01-03 09:35:28,056 - engine - INFO - Oversampling imbalanced dataset.
+2020-01-03 09:35:28,058 - engine - INFO - Data partition for Random Forest with Cross-Validation conducted.
+2020-01-03 09:35:28,058 - engine - INFO - Training and fitting RandomForestClassifier.
+2020-01-03 09:35:29,852 - engine - INFO - Testing model overvalidation dataset.
+2020-01-03 09:35:29,855 - engine - INFO - Training and fitting RandomForestClassifier.
+2020-01-03 09:35:30,582 - engine - INFO - Testing model overvalidation dataset.
+2020-01-03 09:35:30,584 - engine - INFO - Training and fitting RandomForestClassifier.
+2020-01-03 09:35:31,242 - engine - INFO - Testing model overvalidation dataset.
+2020-01-03 09:35:31,245 - engine - INFO - Training and fitting RandomForestClassifier.
+2020-01-03 09:35:31,929 - engine - INFO - Testing model overvalidation dataset.
+2020-01-03 09:35:31,931 - engine - INFO - Training and fitting RandomForestClassifier.
+2020-01-03 09:35:32,589 - engine - INFO - Testing model overvalidation dataset.
+2020-01-03 09:35:32,590 - engine - INFO - Training and fitting RandomForestClassifier.
+2020-01-03 09:35:33,213 - engine - INFO - Testing model overvalidation dataset.
+2020-01-03 09:35:33,216 - engine - INFO - Training and fitting RandomForestClassifier.
+2020-01-03 09:35:33,973 - engine - INFO - Testing model overvalidation dataset.
+2020-01-03 09:35:33,975 - engine - INFO - Training and fitting RandomForestClassifier.
+2020-01-03 09:35:34,919 - engine - INFO - Testing model overvalidation dataset.
+2020-01-03 09:35:34,921 - engine - INFO - Training and fitting RandomForestClassifier.
+2020-01-03 09:35:35,546 - engine - INFO - Testing model overvalidation dataset.
+2020-01-03 09:35:35,547 - engine - INFO - Training and fitting RandomForestClassifier.
+2020-01-03 09:35:36,180 - engine - INFO - Testing model overvalidation dataset.
+2020-01-03 09:35:36,181 - engine - INFO - Best model has an accuracy of 100.00%
+2020-01-03 09:35:36,182 - data_handler - INFO - RandomForestClassifier model trained and saved in /home/psaucedo/Desktop/OpenDataMadrid/model.pkl
+2020-01-03 09:35:36,183 - engine - INFO - Reading /home/psaucedo/Desktop/OpenDataMadrid/out_csv/geo_out.csv file for the sake of training, testing and rendering KDE
+2020-01-03 09:35:37,317 - engine - INFO - KDE model is fitted
+2020-01-03 09:35:37,318 - data_handler - INFO - KernelDensity model trained and saved in /home/psaucedo/Desktop/OpenDataMadrid/KDEmodel.pkl
+2020-01-03 09:35:37,323 - werkzeug - INFO - 127.0.0.1 - - [03/Jan/2020 09:35:37] "GET / HTTP/1.1" 200 -
+2020-01-03 09:35:40,679 - data_handler - INFO - RandomForestClassifier model loaded successfully.
+2020-01-03 09:35:40,679 - data_handler - INFO - KernelDensity model loaded successfully.
+2020-01-03 09:35:40,686 - werkzeug - INFO - 127.0.0.1 - - [03/Jan/2020 09:35:40] "POST /visualize HTTP/1.1" 200 -
+2020-01-03 09:35:40,965 - werkzeug - INFO - 127.0.0.1 - - [03/Jan/2020 09:35:40] "POST /get_heatmap HTTP/1.1" 200 -
+2020-01-03 09:36:44,479 - werkzeug - INFO -  * Detected change in '/home/psaucedo/Desktop/OpenDataMadrid/get_coordinates.py', reloading
+2020-01-03 09:36:44,901 - werkzeug - INFO -  * Restarting with stat
+2020-01-03 09:36:46,734 - __main__ - INFO - Starting app at 2020-01-03 09:36:46.734298
+2020-01-03 09:36:46,741 - werkzeug - WARNING -  * Debugger is active!
+2020-01-03 09:36:46,742 - werkzeug - INFO -  * Debugger PIN: 604-780-389
+2020-01-03 09:36:55,333 - data_handler - INFO - RandomForestClassifier model loaded successfully.
+2020-01-03 09:36:55,333 - data_handler - INFO - KernelDensity model loaded successfully.
+2020-01-03 09:36:55,348 - werkzeug - INFO - 127.0.0.1 - - [03/Jan/2020 09:36:55] "POST /visualize HTTP/1.1" 200 -
+2020-01-03 09:36:55,370 - werkzeug - INFO - 127.0.0.1 - - [03/Jan/2020 09:36:55] "GET /static/css/style.css HTTP/1.1" 200 -
+2020-01-03 09:36:55,384 - werkzeug - INFO - 127.0.0.1 - - [03/Jan/2020 09:36:55] "GET /static/js/leaflet-slider.js HTTP/1.1" 200 -
+2020-01-03 09:36:55,385 - werkzeug - INFO - 127.0.0.1 - - [03/Jan/2020 09:36:55] "GET /static/css/leaflet-slider.css HTTP/1.1" 200 -
+2020-01-03 09:36:55,386 - werkzeug - INFO - 127.0.0.1 - - [03/Jan/2020 09:36:55] "GET /static/js/leaflet-heat.js HTTP/1.1" 200 -
+2020-01-03 09:36:55,387 - werkzeug - INFO - 127.0.0.1 - - [03/Jan/2020 09:36:55] "GET /static/js/leafletmap.js HTTP/1.1" 200 -
+2020-01-03 09:36:55,506 - werkzeug - INFO - 127.0.0.1 - - [03/Jan/2020 09:36:55] "GET /static/img/map.jpg HTTP/1.1" 200 -
+2020-01-03 09:36:55,538 - werkzeug - INFO - 127.0.0.1 - - [03/Jan/2020 09:36:55] "GET /static/maps/map.geojson HTTP/1.1" 200 -
+2020-01-03 09:36:55,721 - werkzeug - INFO - 127.0.0.1 - - [03/Jan/2020 09:36:55] "GET /static/img/favicon.ico HTTP/1.1" 200 -
+2020-01-03 09:36:55,772 - werkzeug - INFO - 127.0.0.1 - - [03/Jan/2020 09:36:55] "POST /get_heatmap HTTP/1.1" 200 -
+2020-01-03 09:37:16,396 - werkzeug - INFO -  * Detected change in '/home/psaucedo/Desktop/OpenDataMadrid/get_coordinates.py', reloading
+2020-01-03 09:37:16,595 - werkzeug - INFO -  * Restarting with stat
+2020-01-03 09:37:18,268 - __main__ - INFO - Starting app at 2020-01-03 09:37:18.268506
+2020-01-03 09:37:18,273 - werkzeug - WARNING -  * Debugger is active!
+2020-01-03 09:37:18,274 - werkzeug - INFO -  * Debugger PIN: 604-780-389
+2020-01-03 09:42:40,817 - data_handler - INFO - Data is updated since 2020-01-03 00:00:00
+2020-01-03 09:42:40,824 - werkzeug - INFO - 127.0.0.1 - - [03/Jan/2020 09:42:40] "GET / HTTP/1.1" 200 -
+2020-01-03 09:42:42,327 - data_handler - INFO - RandomForestClassifier model loaded successfully.
+2020-01-03 09:42:42,327 - data_handler - INFO - KernelDensity model loaded successfully.
+2020-01-03 09:42:42,339 - werkzeug - INFO - 127.0.0.1 - - [03/Jan/2020 09:42:42] "POST /visualize HTTP/1.1" 200 -
+2020-01-03 09:42:42,599 - werkzeug - INFO - 127.0.0.1 - - [03/Jan/2020 09:42:42] "POST /get_heatmap HTTP/1.1" 200 -
+2020-01-03 09:42:47,657 - __main__ - INFO - You have clicked in 40.42499671108253, -3.68865966796875 . Predicted Harm level in case of accident: 6
+2020-01-03 09:42:47,659 - werkzeug - INFO - 127.0.0.1 - - [03/Jan/2020 09:42:47] "POST /get_click HTTP/1.1" 200 -
+2020-01-03 09:42:48,906 - __main__ - INFO - You have clicked in 40.42761022357258, -3.6872863769531246 . Predicted Harm level in case of accident: 2
+2020-01-03 09:42:48,907 - werkzeug - INFO - 127.0.0.1 - - [03/Jan/2020 09:42:48] "POST /get_click HTTP/1.1" 200 -
+2020-01-03 09:42:50,828 - __main__ - INFO - You have clicked in 40.44224401675592, -3.7023925781249996 . Predicted Harm level in case of accident: 14
+2020-01-03 09:42:50,829 - werkzeug - INFO - 127.0.0.1 - - [03/Jan/2020 09:42:50] "POST /get_click HTTP/1.1" 200 -
+2020-01-03 09:42:53,517 - __main__ - INFO - You have clicked in 40.42499671108253, -3.7010192871093746 . Predicted Harm level in case of accident: 7
+2020-01-03 09:42:53,518 - werkzeug - INFO - 127.0.0.1 - - [03/Jan/2020 09:42:53] "POST /get_click HTTP/1.1" 200 -
+2020-01-03 09:42:56,053 - __main__ - INFO - You have clicked in 40.45138852013111, -3.8228988647460933 . Predicted Harm level in case of accident: 5
+2020-01-03 09:42:56,054 - werkzeug - INFO - 127.0.0.1 - - [03/Jan/2020 09:42:56] "POST /get_click HTTP/1.1" 200 -
+2020-01-03 09:42:57,002 - __main__ - INFO - You have clicked in 40.46392753009237, -3.8414382934570317 . Predicted Harm level in case of accident: 3
+2020-01-03 09:42:57,003 - werkzeug - INFO - 127.0.0.1 - - [03/Jan/2020 09:42:57] "POST /get_click HTTP/1.1" 200 -
+2020-01-03 09:42:57,663 - __main__ - INFO - You have clicked in 40.44590196740629, -3.8452148437499996 . Predicted Harm level in case of accident: 5
+2020-01-03 09:42:57,664 - werkzeug - INFO - 127.0.0.1 - - [03/Jan/2020 09:42:57] "POST /get_click HTTP/1.1" 200 -
+2020-01-03 09:42:58,876 - __main__ - INFO - You have clicked in 40.456613392013615, -3.5722732543945312 . Predicted Harm level in case of accident: 7
+2020-01-03 09:42:58,877 - werkzeug - INFO - 127.0.0.1 - - [03/Jan/2020 09:42:58] "POST /get_click HTTP/1.1" 200 -
+2020-01-03 09:43:52,044 - data_handler - INFO - Data is updated since 2020-01-03 00:00:00
+2020-01-03 09:43:52,045 - werkzeug - INFO - 127.0.0.1 - - [03/Jan/2020 09:43:52] "GET / HTTP/1.1" 200 -
+2020-01-03 09:44:42,664 - data_handler - INFO - Data is updated since 2020-01-03 00:00:00
+2020-01-03 09:44:42,667 - werkzeug - INFO - 127.0.0.1 - - [03/Jan/2020 09:44:42] "GET / HTTP/1.1" 200 -
+2020-01-03 09:44:42,695 - werkzeug - INFO - 127.0.0.1 - - [03/Jan/2020 09:44:42] "GET /static/css/style.css HTTP/1.1" 200 -
+2020-01-03 09:44:42,746 - werkzeug - INFO - 127.0.0.1 - - [03/Jan/2020 09:44:42] "GET /static/img/map.jpg HTTP/1.1" 200 -
+2020-01-03 09:44:42,786 - werkzeug - INFO - 127.0.0.1 - - [03/Jan/2020 09:44:42] "GET /static/img/favicon.ico HTTP/1.1" 200 -
+2020-01-03 09:45:00,660 - data_handler - INFO - Data is updated since 2020-01-03 00:00:00
+2020-01-03 09:45:00,663 - werkzeug - INFO - 127.0.0.1 - - [03/Jan/2020 09:45:00] "GET / HTTP/1.1" 200 -
+2020-01-03 09:45:00,693 - werkzeug - INFO - 127.0.0.1 - - [03/Jan/2020 09:45:00] "GET /static/css/style.css HTTP/1.1" 200 -
+2020-01-03 09:45:00,735 - werkzeug - INFO - 127.0.0.1 - - [03/Jan/2020 09:45:00] "GET /static/img/map.jpg HTTP/1.1" 200 -
+2020-01-03 09:45:00,767 - werkzeug - INFO - 127.0.0.1 - - [03/Jan/2020 09:45:00] "GET /static/img/favicon.ico HTTP/1.1" 200 -
+2020-01-03 09:46:07,207 - data_handler - INFO - Data is updated since 2020-01-03 00:00:00
+2020-01-03 09:46:07,209 - werkzeug - INFO - 127.0.0.1 - - [03/Jan/2020 09:46:07] "GET / HTTP/1.1" 200 -
+2020-01-03 09:46:07,236 - werkzeug - INFO - 127.0.0.1 - - [03/Jan/2020 09:46:07] "GET /static/css/style.css HTTP/1.1" 200 -
+2020-01-03 09:46:07,305 - werkzeug - INFO - 127.0.0.1 - - [03/Jan/2020 09:46:07] "GET /static/img/map.jpg HTTP/1.1" 200 -
+2020-01-03 09:46:07,344 - werkzeug - INFO - 127.0.0.1 - - [03/Jan/2020 09:46:07] "GET /static/img/favicon.ico HTTP/1.1" 200 -
+2020-01-03 09:46:46,518 - data_handler - INFO - RandomForestClassifier model loaded successfully.
+2020-01-03 09:46:46,519 - data_handler - INFO - KernelDensity model loaded successfully.
+2020-01-03 09:46:46,520 - werkzeug - INFO - 127.0.0.1 - - [03/Jan/2020 09:46:46] "POST /visualize HTTP/1.1" 200 -
+2020-01-03 09:46:46,780 - werkzeug - INFO - 127.0.0.1 - - [03/Jan/2020 09:46:46] "POST /get_heatmap HTTP/1.1" 200 -
+2020-01-03 09:52:58,261 - data_handler - INFO - Data is updated since 2020-01-03 00:00:00
+2020-01-03 09:52:58,266 - werkzeug - INFO - 127.0.0.1 - - [03/Jan/2020 09:52:58] "GET / HTTP/1.1" 200 -
+2020-01-03 09:52:58,302 - werkzeug - INFO - 127.0.0.1 - - [03/Jan/2020 09:52:58] "GET /static/img/madrid.png HTTP/1.1" 200 -
+2020-01-03 09:54:48,777 - data_handler - INFO - Data is updated since 2020-01-03 00:00:00
+2020-01-03 09:54:48,782 - werkzeug - INFO - 127.0.0.1 - - [03/Jan/2020 09:54:48] "GET / HTTP/1.1" 200 -
+2020-01-03 09:54:48,810 - werkzeug - INFO - 127.0.0.1 - - [03/Jan/2020 09:54:48] "GET /static/css/style.css HTTP/1.1" 200 -
+2020-01-03 09:54:48,810 - werkzeug - INFO - 127.0.0.1 - - [03/Jan/2020 09:54:48] "GET /static/img/madrid.png HTTP/1.1" 200 -
+2020-01-03 09:54:48,857 - werkzeug - INFO - 127.0.0.1 - - [03/Jan/2020 09:54:48] "GET /static/img/map.jpg HTTP/1.1" 200 -
+2020-01-03 09:54:48,977 - werkzeug - INFO - 127.0.0.1 - - [03/Jan/2020 09:54:48] "GET /static/img/favicon.ico HTTP/1.1" 200 -
+2020-01-03 09:55:20,774 - data_handler - INFO - RandomForestClassifier model loaded successfully.
+2020-01-03 09:55:20,775 - data_handler - INFO - KernelDensity model loaded successfully.
+2020-01-03 09:55:20,776 - werkzeug - INFO - 127.0.0.1 - - [03/Jan/2020 09:55:20] "POST /visualize HTTP/1.1" 200 -
+2020-01-03 09:55:21,025 - werkzeug - INFO - 127.0.0.1 - - [03/Jan/2020 09:55:21] "POST /get_heatmap HTTP/1.1" 200 -
+2020-01-03 09:57:39,987 - data_handler - INFO - RandomForestClassifier model loaded successfully.
+2020-01-03 09:57:39,988 - data_handler - INFO - KernelDensity model loaded successfully.
+2020-01-03 09:57:39,989 - werkzeug - INFO - 127.0.0.1 - - [03/Jan/2020 09:57:39] "POST /visualize HTTP/1.1" 200 -
+2020-01-03 09:57:40,024 - werkzeug - INFO - 127.0.0.1 - - [03/Jan/2020 09:57:40] "GET /static/css/style.css HTTP/1.1" 200 -
+2020-01-03 09:57:40,043 - werkzeug - INFO - 127.0.0.1 - - [03/Jan/2020 09:57:40] "GET /static/js/leaflet-slider.js HTTP/1.1" 200 -
+2020-01-03 09:57:40,045 - werkzeug - INFO - 127.0.0.1 - - [03/Jan/2020 09:57:40] "GET /static/js/leaflet-heat.js HTTP/1.1" 200 -
+2020-01-03 09:57:40,045 - werkzeug - INFO - 127.0.0.1 - - [03/Jan/2020 09:57:40] "GET /static/css/leaflet-slider.css HTTP/1.1" 200 -
+2020-01-03 09:57:40,048 - werkzeug - INFO - 127.0.0.1 - - [03/Jan/2020 09:57:40] "GET /static/js/leafletmap.js HTTP/1.1" 200 -
+2020-01-03 09:57:40,048 - werkzeug - INFO - 127.0.0.1 - - [03/Jan/2020 09:57:40] "GET /static/img/madrid.png HTTP/1.1" 200 -
+2020-01-03 09:57:40,148 - werkzeug - INFO - 127.0.0.1 - - [03/Jan/2020 09:57:40] "GET /static/img/map.jpg HTTP/1.1" 200 -
+2020-01-03 09:57:40,193 - werkzeug - INFO - 127.0.0.1 - - [03/Jan/2020 09:57:40] "GET /static/maps/map.geojson HTTP/1.1" 200 -
+2020-01-03 09:57:40,268 - werkzeug - INFO - 127.0.0.1 - - [03/Jan/2020 09:57:40] "GET /static/img/favicon.ico HTTP/1.1" 200 -
+2020-01-03 09:57:40,375 - werkzeug - INFO - 127.0.0.1 - - [03/Jan/2020 09:57:40] "POST /get_heatmap HTTP/1.1" 200 -
+2020-01-03 09:57:53,085 - data_handler - INFO - Data is updated since 2020-01-03 00:00:00
+2020-01-03 09:57:53,086 - werkzeug - INFO - 127.0.0.1 - - [03/Jan/2020 09:57:53] "GET / HTTP/1.1" 200 -
+2020-01-03 09:57:55,145 - data_handler - INFO - Data is updated since 2020-01-03 00:00:00
+2020-01-03 09:57:55,145 - werkzeug - INFO - 127.0.0.1 - - [03/Jan/2020 09:57:55] "GET / HTTP/1.1" 200 -
+2020-01-03 09:57:55,171 - werkzeug - INFO - 127.0.0.1 - - [03/Jan/2020 09:57:55] "GET /static/css/style.css HTTP/1.1" 200 -
+2020-01-03 09:57:55,173 - werkzeug - INFO - 127.0.0.1 - - [03/Jan/2020 09:57:55] "GET /static/img/madrid.png HTTP/1.1" 200 -
+2020-01-03 09:57:55,210 - werkzeug - INFO - 127.0.0.1 - - [03/Jan/2020 09:57:55] "GET /static/img/map.jpg HTTP/1.1" 200 -
+2020-01-03 09:57:55,306 - werkzeug - INFO - 127.0.0.1 - - [03/Jan/2020 09:57:55] "GET /static/img/favicon.ico HTTP/1.1" 200 -
+2020-01-03 09:58:03,722 - data_handler - INFO - Data is updated since 2020-01-03 00:00:00
+2020-01-03 09:58:03,723 - werkzeug - INFO - 127.0.0.1 - - [03/Jan/2020 09:58:03] "GET / HTTP/1.1" 200 -
+2020-01-03 09:58:03,742 - werkzeug - INFO - 127.0.0.1 - - [03/Jan/2020 09:58:03] "GET /static/css/style.css HTTP/1.1" 200 -
+2020-01-03 09:58:03,746 - werkzeug - INFO - 127.0.0.1 - - [03/Jan/2020 09:58:03] "GET /static/img/madrid.png HTTP/1.1" 200 -
+2020-01-03 09:58:03,791 - werkzeug - INFO - 127.0.0.1 - - [03/Jan/2020 09:58:03] "GET /static/img/map.jpg HTTP/1.1" 200 -
+2020-01-03 09:58:03,878 - werkzeug - INFO - 127.0.0.1 - - [03/Jan/2020 09:58:03] "GET /static/img/favicon.ico HTTP/1.1" 200 -
+2020-01-03 09:59:01,629 - data_handler - INFO - RandomForestClassifier model loaded successfully.
+2020-01-03 09:59:01,629 - data_handler - INFO - KernelDensity model loaded successfully.
+2020-01-03 09:59:01,631 - werkzeug - INFO - 127.0.0.1 - - [03/Jan/2020 09:59:01] "POST /visualize HTTP/1.1" 200 -
+2020-01-03 09:59:01,902 - werkzeug - INFO - 127.0.0.1 - - [03/Jan/2020 09:59:01] "POST /get_heatmap HTTP/1.1" 200 -
+2020-01-03 09:59:24,936 - __main__ - INFO - You have clicked in 40.42499671108253, -3.68865966796875 . Predicted Harm level in case of accident: 6
+2020-01-03 09:59:24,937 - werkzeug - INFO - 127.0.0.1 - - [03/Jan/2020 09:59:24] "POST /get_click HTTP/1.1" 200 -
+2020-01-03 09:59:25,823 - __main__ - INFO - You have clicked in 40.42813291388417, -3.704452514648437 . Predicted Harm level in case of accident: 7
+2020-01-03 09:59:25,824 - werkzeug - INFO - 127.0.0.1 - - [03/Jan/2020 09:59:25] "POST /get_click HTTP/1.1" 200 -
+2020-01-03 10:06:21,152 - data_handler - INFO - Data is updated since 2020-01-03 00:00:00
+2020-01-03 10:06:21,153 - werkzeug - INFO - 127.0.0.1 - - [03/Jan/2020 10:06:21] "GET / HTTP/1.1" 200 -
+2020-01-03 10:06:34,189 - data_handler - INFO - RandomForestClassifier model loaded successfully.
+2020-01-03 10:06:34,190 - data_handler - INFO - KernelDensity model loaded successfully.
+2020-01-03 10:06:34,192 - werkzeug - INFO - 127.0.0.1 - - [03/Jan/2020 10:06:34] "POST /visualize HTTP/1.1" 200 -
+2020-01-03 10:06:34,488 - werkzeug - INFO - 127.0.0.1 - - [03/Jan/2020 10:06:34] "POST /get_heatmap HTTP/1.1" 200 -
+2020-01-03 10:08:14,901 - data_handler - INFO - Data is updated since 2020-01-03 00:00:00
+2020-01-03 10:08:14,902 - werkzeug - INFO - 127.0.0.1 - - [03/Jan/2020 10:08:14] "GET / HTTP/1.1" 200 -
+2020-01-03 10:08:23,285 - data_handler - INFO - RandomForestClassifier model loaded successfully.
+2020-01-03 10:08:23,286 - data_handler - INFO - KernelDensity model loaded successfully.
+2020-01-03 10:08:23,287 - werkzeug - INFO - 127.0.0.1 - - [03/Jan/2020 10:08:23] "POST /visualize HTTP/1.1" 200 -
+2020-01-03 10:08:23,314 - werkzeug - INFO - 127.0.0.1 - - [03/Jan/2020 10:08:23] "GET /static/css/style.css HTTP/1.1" 200 -
+2020-01-03 10:08:23,331 - werkzeug - INFO - 127.0.0.1 - - [03/Jan/2020 10:08:23] "GET /static/js/leafletmap.js HTTP/1.1" 200 -
+2020-01-03 10:08:23,331 - werkzeug - INFO - 127.0.0.1 - - [03/Jan/2020 10:08:23] "GET /static/css/leaflet-slider.css HTTP/1.1" 200 -
+2020-01-03 10:08:23,332 - werkzeug - INFO - 127.0.0.1 - - [03/Jan/2020 10:08:23] "GET /static/img/madrid.png HTTP/1.1" 200 -
+2020-01-03 10:08:23,332 - werkzeug - INFO - 127.0.0.1 - - [03/Jan/2020 10:08:23] "GET /static/js/leaflet-slider.js HTTP/1.1" 200 -
+2020-01-03 10:08:23,333 - werkzeug - INFO - 127.0.0.1 - - [03/Jan/2020 10:08:23] "GET /static/js/leaflet-heat.js HTTP/1.1" 200 -
+2020-01-03 10:08:23,441 - werkzeug - INFO - 127.0.0.1 - - [03/Jan/2020 10:08:23] "GET /static/img/map.jpg HTTP/1.1" 200 -
+2020-01-03 10:08:23,483 - werkzeug - INFO - 127.0.0.1 - - [03/Jan/2020 10:08:23] "GET /static/maps/map.geojson HTTP/1.1" 200 -
+2020-01-03 10:08:23,714 - werkzeug - INFO - 127.0.0.1 - - [03/Jan/2020 10:08:23] "POST /get_heatmap HTTP/1.1" 200 -
+2020-01-03 10:09:05,092 - data_handler - INFO - Data is updated since 2020-01-03 00:00:00
+2020-01-03 10:09:05,093 - werkzeug - INFO - 127.0.0.1 - - [03/Jan/2020 10:09:05] "GET / HTTP/1.1" 200 -
+2020-01-03 10:09:13,366 - data_handler - INFO - RandomForestClassifier model loaded successfully.
+2020-01-03 10:09:13,367 - data_handler - INFO - KernelDensity model loaded successfully.
+2020-01-03 10:09:13,368 - werkzeug - INFO - 127.0.0.1 - - [03/Jan/2020 10:09:13] "POST /visualize HTTP/1.1" 200 -
+2020-01-03 10:09:13,395 - werkzeug - INFO - 127.0.0.1 - - [03/Jan/2020 10:09:13] "GET /static/css/style.css HTTP/1.1" 200 -
+2020-01-03 10:09:13,411 - werkzeug - INFO - 127.0.0.1 - - [03/Jan/2020 10:09:13] "GET /static/js/leaflet-heat.js HTTP/1.1" 200 -
+2020-01-03 10:09:13,412 - werkzeug - INFO - 127.0.0.1 - - [03/Jan/2020 10:09:13] "GET /static/js/leaflet-slider.js HTTP/1.1" 200 -
+2020-01-03 10:09:13,413 - werkzeug - INFO - 127.0.0.1 - - [03/Jan/2020 10:09:13] "GET /static/css/leaflet-slider.css HTTP/1.1" 200 -
+2020-01-03 10:09:13,415 - werkzeug - INFO - 127.0.0.1 - - [03/Jan/2020 10:09:13] "GET /static/js/leafletmap.js HTTP/1.1" 200 -
+2020-01-03 10:09:13,416 - werkzeug - INFO - 127.0.0.1 - - [03/Jan/2020 10:09:13] "GET /static/img/madrid.png HTTP/1.1" 200 -
+2020-01-03 10:09:13,523 - werkzeug - INFO - 127.0.0.1 - - [03/Jan/2020 10:09:13] "GET /static/img/map.jpg HTTP/1.1" 200 -
+2020-01-03 10:09:13,561 - werkzeug - INFO - 127.0.0.1 - - [03/Jan/2020 10:09:13] "GET /static/maps/map.geojson HTTP/1.1" 200 -
+2020-01-03 10:09:13,765 - werkzeug - INFO - 127.0.0.1 - - [03/Jan/2020 10:09:13] "POST /get_heatmap HTTP/1.1" 200 -
+2020-01-03 10:22:03,755 - data_handler - INFO - Data is updated since 2020-01-03 00:00:00
+2020-01-03 10:22:03,756 - werkzeug - INFO - 127.0.0.1 - - [03/Jan/2020 10:22:03] "GET / HTTP/1.1" 200 -
+2020-01-03 10:22:47,996 - data_handler - INFO - Data is updated since 2020-01-03 00:00:00
+2020-01-03 10:22:47,999 - werkzeug - INFO - 127.0.0.1 - - [03/Jan/2020 10:22:47] "GET / HTTP/1.1" 200 -
+2020-01-03 10:22:48,017 - werkzeug - INFO - 127.0.0.1 - - [03/Jan/2020 10:22:48] "GET /static/css/style.css HTTP/1.1" 200 -
+2020-01-03 10:22:48,023 - werkzeug - INFO - 127.0.0.1 - - [03/Jan/2020 10:22:48] "GET /static/img/madrid.png HTTP/1.1" 200 -
+2020-01-03 10:22:48,163 - werkzeug - INFO - 127.0.0.1 - - [03/Jan/2020 10:22:48] "GET /static/img/map.jpg HTTP/1.1" 200 -
+2020-01-03 10:22:48,287 - werkzeug - INFO - 127.0.0.1 - - [03/Jan/2020 10:22:48] "GET /static/img/favicon.ico HTTP/1.1" 200 -
+2020-01-03 10:23:15,823 - data_handler - INFO - RandomForestClassifier model loaded successfully.
+2020-01-03 10:23:15,824 - data_handler - INFO - KernelDensity model loaded successfully.
+2020-01-03 10:23:15,826 - werkzeug - INFO - 127.0.0.1 - - [03/Jan/2020 10:23:15] "POST /visualize HTTP/1.1" 200 -
+2020-01-03 10:23:16,125 - werkzeug - INFO - 127.0.0.1 - - [03/Jan/2020 10:23:16] "POST /get_heatmap HTTP/1.1" 200 -
+2020-01-03 10:28:01,851 - data_handler - INFO - Data is updated since 2020-01-03 00:00:00
+2020-01-03 10:28:01,852 - werkzeug - INFO - 127.0.0.1 - - [03/Jan/2020 10:28:01] "GET / HTTP/1.1" 200 -
+2020-01-03 11:32:04,961 - data_handler - INFO - RandomForestClassifier model loaded successfully.
+2020-01-03 11:32:04,962 - data_handler - INFO - KernelDensity model loaded successfully.
+2020-01-03 11:32:04,963 - werkzeug - INFO - 127.0.0.1 - - [03/Jan/2020 11:32:04] "POST /visualize HTTP/1.1" 200 -
+2020-01-03 11:32:05,223 - werkzeug - INFO - 127.0.0.1 - - [03/Jan/2020 11:32:05] "POST /get_heatmap HTTP/1.1" 200 -
+2020-01-03 11:38:50,757 - data_handler - INFO - Data is updated since 2020-01-03 00:00:00
+2020-01-03 11:38:50,757 - werkzeug - INFO - 127.0.0.1 - - [03/Jan/2020 11:38:50] "GET / HTTP/1.1" 200 -

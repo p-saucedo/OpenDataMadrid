@@ -64,7 +64,8 @@ window.onload = function () {
         horaTime = layer.feature.properties.HORA.split(':')
         horaSum = parseInt(horaTime[0]) * 100 + parseInt(horaTime[1])
 
-        if( horaSum <(valueSum + 100)){ // Cumplen la condicion
+        //if( horaSum >= valueSum && horaSum <(valueSum + 100)){
+        if(horaSum <(valueSum + 100)){
           layer.setStyle({opacity : 1, fillOpacity: 0.8})
           c = []
           c.push(layer.feature.geometry.coordinates[1], layer.feature.geometry.coordinates[0])
