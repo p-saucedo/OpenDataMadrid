@@ -56,6 +56,7 @@ class Get_Coordinates:
         logger.info("Fixing addresses...")
         io['FixedAddress'] = io['CALLE'].apply(AddresFixer.fixAddress)
         io['NUMERO'] = io['NUMERO'].str.replace('-', '1')
+        io['NUMERO'] = io['NUMERO'].str.replace('0', '1')
         io['FullAddress'] = io['FixedAddress'].map(str) + " " + io['NUMERO'].map(str) + ", " + io['City'].map(str) + ", " + io['Country'].map(str)
 
         try:

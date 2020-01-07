@@ -86,7 +86,7 @@ def check_updates():
 
     # Si no existe
     except FileNotFoundError:
-        with open(fpath_conf, 'w') as f:
+        with open(fpath_conf, 'w+') as f:
             logger.info("Setting all data")
             config['DATES'] = {'last_update' : today.strftime('%d/%m/%Y')}
         
