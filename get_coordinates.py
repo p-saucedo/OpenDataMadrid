@@ -93,6 +93,7 @@ class Get_Coordinates:
         except GeocoderTimedOut:
             return self.do_geocode(addresses,geolocator)
 
+
     def csv_from_excel(self,filename):
 
         f_xlsx = 'datasets/' + filename + '.xlsx'

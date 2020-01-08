@@ -120,7 +120,7 @@ window.onload = function () {
 			    type: 'POST',
 			    success: function(response){
   
-            var p = "Has clickado en " + e.latlng.lat + ", " + e.latlng.lng ;
+            var p = "Has clickado en " + response['address'] ;
             var l = "En caso de accidente, la gravedad seria de : " + response['lesividad'];
             var t = "Probabilidad de accidente: " + response['prob'] + " %";
     

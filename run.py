@@ -11,6 +11,8 @@ from watcher import get_logger
 from datetime import datetime, date
 from data_handler import check_updates, load_model, load_KDEmodel
 from engine import Engine as eng
+from reverse_coordinates import Reverse
+
 # Vamos a loguearlo un poco, que nunca viene mal
 logger = get_logger(__name__)
 
@@ -28,6 +30,7 @@ data_dir = os.path.join(basedir, 'out_csv')
 fpath_val = os.path.join(data_dir, 'geo_out.csv')
 model = None
 kde_model = None
+reverse = None
 
 @app.route("/")
 def index():
@@ -44,40 +47,10 @@ def visualize_map():
     global kde_model
     kde_model = load_KDEmodel()
 
-    
+    global reverse
+    reverse = Reverse()
+
     return render_template("visualize.html", prob = '0.0%', les = '0')
-
-
-@app.route("/get_heatmap", methods=["GET","POST"])
-def heatmap():
-
-    # Coordenadas del centro del mapa
-    start_coords = (40.416775, -3.703790)
-    # Creando el mapa
-    folium_map = folium.Map(location=start_coords, 
-                            zoom_start=14)
-
-    # Leamos el dataset
-    df = pd.read_csv(fpath_val, delimiter=';')
-    df['count'] = 1
-
-
-    # Create an object sorted by timestamp in case chronological evolution is desired.
-    # df_hour_list = []
-    # for hour in df.HORA.sort_values().unique():
-    #     df_hour_list.append(df.loc[df.HORA == hour, ['latitude', 'longitude', 'count']]\
-    #         .groupby(['latitude', 'longitude']).sum().reset_index().values.tolist())
-
-    # Generamos el mapa de calor responsivo
-    HeatMap(data=df[['latitude', 'longitude', 'LESIVIDAD*']].groupby(['latitude', 'longitude']).sum()\
-                                                            .reset_index().values.tolist(), radius=8, max_zoom=13)\
-                                                            .add_to(folium_map)
-    
-    for i in range(0, len(df)):
-        folium.Marker([df.iloc[i]['latitude'], df.iloc[i]['longitude']], icon = folium.Icon(color='lightgray') ).add_to(folium_map)
-
-    # HeatMapWithTime(df_hour_list, radius=8, min_opacity=0.5, max_opacity=0.8, auto_play=True).add_to(folium_map)
-    return folium_map._repr_html_()
 
 @app.route("/get_click", methods=["GET","POST"])
 def info_click():
@@ -93,13 +66,17 @@ def info_click():
         global kde_model
         prob = kde_model.predict_value(x_test.reshape(1,-1))
 
+        global reverse
+        addr = reverse.reverse_coord(latitude, longitude)
+
         print("You have clicked in {}, {} . Predicted Harm level in case of accident: {}".format(latitude, longitude, les))
         logger.info("You have clicked in {}, {} . Predicted Harm level in case of accident: {}".format(latitude, longitude, les))
-
+        print('Has hecho click en {}'.format(addr))
         
         p = dict()
         p['lesividad'] = les
         p['prob'] = prob[0]
+        p['address'] = addr
 
     return jsonify(p)
 

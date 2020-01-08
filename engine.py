@@ -336,11 +336,11 @@ class Engine:
 
         def fit(self, X):
 
-            bandwidths = 10 ** np.linspace(0, 2, 100)
+            bandwidths = np.linspace(0, 4, 400)
             parameter_candidates = [
                 {
                 'bandwidth': bandwidths,
-                'kernel': ['gaussian', 'tophat', 'linear']
+                'kernel': ['gaussian', 'tophat', 'linear', 'epanechnikov', 'exponential', 'cosine']
                 }
             ] 
   
@@ -356,13 +356,16 @@ class Engine:
 
         def predict_proba(self, X):
             logprobs = np.array(self.model.score_samples(X)).T
-            result = np.exp(logprobs)
+            #result = np.exp(logprobs)
+            result = logprobs
             return result
 
         def predict_value(self, X):
             prob = self.predict_proba(X)
-            print('Probabilidad de accidente es de {}%'.format(np.around(prob*100,4)[0]))
-            return np.around(prob*100,4)
+            if prob < 0:
+                prob[0] = 0.0
+            print('Probabilidad de accidente es de {}%'.format(np.around(prob,2)[0]))
+            return np.around(prob, 2)
 
         def validate(self, f):
             X = self.setData(f)
