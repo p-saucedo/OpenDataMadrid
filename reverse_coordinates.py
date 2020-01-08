@@ -3,7 +3,6 @@ import pandas
 from geopy.exc import GeocoderTimedOut
 from geopy.geocoders import Bing
 
-
 class Reverse:
     def __init__(self):
          # Used for Bing

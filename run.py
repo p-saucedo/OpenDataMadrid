@@ -69,9 +69,9 @@ def info_click():
         global reverse
         addr = reverse.reverse_coord(latitude, longitude)
 
-        print("You have clicked in {}, {} . Predicted Harm level in case of accident: {}".format(latitude, longitude, les))
-        logger.info("You have clicked in {}, {} . Predicted Harm level in case of accident: {}".format(latitude, longitude, les))
-        print('Has hecho click en {}'.format(addr))
+        print("You have clicked in {}, {} ( {}). Predicted Harm level in case of accident: {}".format(latitude, longitude, addr, les))
+        logger.info("You have clicked in {}, {} ( {}). Predicted Harm level in case of accident: {}".format(latitude, longitude, addr, les))
+        
         
         p = dict()
         p['lesividad'] = les
